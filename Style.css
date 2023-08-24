@@ -96,6 +96,78 @@ p {
 }
 
 /*Home page*/
+/* Dark mode styles */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Dark mode toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f1b94d;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider:before {
+  background-color: #f1b94d;
+}
+
+input:checked + .slider.round {
+  background-color: #f1b94d;
+}
+
+input:checked + .slider.round:before {
+  background-color: black;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Spacing adjustments */
 .nav_bar {
   padding: 20px;
   display: flex;
@@ -104,12 +176,13 @@ p {
 }
 
 .logo {
-  width: 100px;
+  max-width: 100%;
   height: auto;
 }
 
 .button-container a {
   text-decoration: none;
+  margin-right: 10px; /* Adjust as needed */
 }
 
 .Login-button-Home,
@@ -123,7 +196,7 @@ p {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  margin-left: 15px;
+  margin-left: 10px; /* Adjusted spacing */
 }
 
 .Login-button-Home:hover,
@@ -141,38 +214,126 @@ p {
 /* styles.css */
 .Landing-Page {
   color: white;
-  padding: 100px 0;
-  text-align: center;
+  padding: 100px;
+  padding-left: 200px;
+  text-align: left;
+}
+
+.Landing-Page .content-container {
+  max-width: 988px;
+  margin: 0 auto;
 }
 
 .buy-trade {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: #f1b94d;
 }
-
 .cryptocurrencies {
   font-size: 2rem;
-  margin-bottom: 40px;
 }
-
 p {
   font-size: 1.2rem;
-  margin-bottom: 40px;
+  color: #000;
 }
-
 .Start-trading {
-  width: 200px;
-  height: 60px;
+  width: 174px;
+  height: 64px;
+  flex-shrink: 0;
   border-radius: 30px;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
   background-color: #f1b94d;
-  color: #34495e;
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .Start-trading:hover {
+  background-color: #34495e;
   color: white;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #f1b94d;
+  border: none;
+  color: #34495e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+#Portfolio-text {
+  text-align: center;
+}
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+span {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 auto;
+  max-width: 600px;
+  display: block;
+}
+
+/* Style specific sections */
+
+.Manage-PortfolioSection {
+  background-color: #34495e;
+  color: white;
+}
+
+.Recurring-Buys-Section {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Flexbox layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
