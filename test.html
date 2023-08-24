@@ -5,85 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-      }
-      .container {
-        border-radius: 15px;
-        /* Center the container horizontally */
-        margin-left: auto;
-        margin-right: 75px;
-      }
-      .logo {
+      .nav,
+      .nav-bar {
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: -1px;
+        left: 0;
+        width: 1174px;
+        height: 55px;
       }
-      .form-group {
-        margin-bottom: 5px;
-      }
-
-      .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 30px;
-        outline: none;
-      }
-      .form-group input::placeholder {
-        color: #999;
-      }
-      .form-group.row {
-        display: flex;
-        gap: 10px;
-        justify-content: flex-start;
-        align-items: right;
-      }
-      button {
-        padding: 10px 0;
-        width: 100%;
-        background-color: #f1b94d;
-        color: #fff;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
+      .nav {
+        top: 19px;
+        left: 195px;
+        width: 1156px;
+        height: 54px;
       }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <img src="logo.png" alt="Logo" />
+    <div class="nav">
+      <div class="nav-bar">
+        <button class="log-in">
+          <div class="log-in-child"></div>
+          <b class="log-in1">Log In</b>
+        </button>
+        <button class="get-started">
+          <div class="get-started-child"></div>
+          <b class="get-started1">Get Started</b>
+        </button>
+        <img
+          class="reigntec-01-2-icon"
+          alt=""
+          src="./public/reigntec01-1@2x.png"
+        />
+      </div>
     </div>
-    <div class="container">
-      <form>
-        <div class="form-group row">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Enter your name" />
-          </div>
-          <div class="form-group">
-            <input type="text" id="surname" placeholder="Enter your surname" />
-          </div>
+    <div class="info">
+      <div class="over-60-crypto-assets">
+        <button class="rectangle-parent">
+          <div class="frame-child"></div>
+          <b class="explore" id="exploreText">Explore</b>
+        </button>
+        <div class="over-60-crypto-assets-container">
+          <span class="over-60-crypto-assets-container1">
+            <p class="over-60-crypto-assets1">
+              <span>
+                <b>Over 60 crypto-assets</b>
+              </span>
+            </p>
+            <p class="blank-line">
+              <span>
+                <span>&nbsp;</span>
+              </span>
+            </p>
+            <p class="blog">
+              Our partnerships with leading global blockchain platforms,
+            </p>
+            <p class="blog">
+              bring you one of the widest selections of crypto-assets.
+            </p>
+          </span>
         </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="get-paid">
+        <button class="learn-more1">
+          <div class="frame-child"></div>
+          <b class="learn-more" id="learnMoreText">Learn more</b>
+        </button>
+        <div class="over-60-crypto-assets-container">
+          <span class="over-60-crypto-assets-container1">
+            <p class="blog">
+              <b>
+                <span>Get paid to trade</span>
+              </b>
+            </p>
+            <p class="blank-line">
+              <b>
+                <span>&nbsp;</span>
+              </b>
+            </p>
+            <p class="for-the-first">
+              For the first time in our market, we have fees that are lower than
+              zero for market makers - that means we pay you.
+            </p>
+          </span>
         </div>
-        <div class="form-group">
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-          />
-          <div id="password-error" style="color: red"></div>
+      </div>
+      <div class="get-verified">
+        <div class="get-verified-in-container">
+          <span class="over-60-crypto-assets-container1">
+            <p class="blog">
+              <b>
+                <span>Get verified in minutes</span>
+              </b>
+            </p>
+            <p class="blank-line">
+              <b>
+                <span>&nbsp;</span>
+              </b>
+            </p>
+            <p class="for-the-first">
+              We use AI and machine learning technology to validate your
+              identity and get you set up in minutes.
+            </p>
+          </span>
         </div>
-        <button id="register-button" type="submit" ><a href=""</button>
-      </form>
+        <button class="learn-more2">
+          <div class="frame-child"></div>
+          <b class="explore" id="learnMoreText1">Learn more</b>
+        </button>
+      </div>
     </div>
   </body>
 </html>
