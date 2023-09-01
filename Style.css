@@ -320,7 +320,7 @@ span {
 /* Style specific sections */
 
 .Manage-PortfolioSection {
-  background-color: #34495e;
+  background-color: #f1b94d; /* Change the background color here */
   color: white;
 }
 
@@ -336,4 +336,146 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+/* Style specific sections */
+
+.support1 {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.lorem-ipsum-dolor1 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.image2,
+.image3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-child {
+  width: 60px;
+  height: 60px;
+  background-color: #f1b94d;
+  border-radius: 50%;
+}
+
+.guarantee-icon {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Flexbox layout */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.form_section-Register {
+  width: 400px;
+  padding: 0px;
+  margin-left: 750px;
+  border-radius: 15px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group input {
+  text-align: left;
+  width: 372px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+}
+.form-group input::placeholder {
+  color: #999;
+}
+.form-group.row {
+  display: flex;
+  gap: 10px;
+}
+.form-group #email,
+#password {
+  text-align: left;
+  width: 372px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+}
+
+/* Add this CSS to your stylesheet */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Background color for the body */
+}
+/* Style for the footer */
+footer {
+  background-color: #f1b94d; /* Set your desired background color */
+  color: white;
+  padding: 50px 0;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+}
+
+/* Style for headings in the "Quick Links" section */
+.footer-section h2 {
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  /* Adjust the color as needed */
+}
+
+/* Remove underline from links within the footer section */
+.footer-section ul,
+.footer-section ul li {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set link color (adjust as needed) */
+}
+
+/* Change to a horizontal structure */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1b94d;
+}
+
+.footer-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bottomfooter p {
+  text-align: center;
+  display: inline-block;
+  padding: 50px;
 }

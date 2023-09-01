@@ -46,3 +46,12 @@ const body = document.body;
 darkModeToggle.addEventListener("change", () => {
   body.classList.toggle("dark-mode", darkModeToggle.checked);
 });
+
+const URL =
+  "https://api.valr.com/v1/wallet/crypto/:currencyCode/deposit/address";
+
+async function fetchData() {
+  const response = await fetch(URL);
+  console.log(response);
+}
+fetchData();

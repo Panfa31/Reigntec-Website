@@ -7,7 +7,7 @@
   </head>
   <link rel="stylesheet" href="Style.css" />
   <script src="javascript.js"></script>
-  <body class="dark-mode">
+  <body>
     <header>
       <nav>
         <a href="welcomepage.html"
@@ -19,26 +19,25 @@
         </div>
       </nav>
     </header>
-    <section class="form_section-Register">
+    <div class="form_section-Register">
       <h1>Let's get Started!</h1>
       <p>Enter your details below</p>
       <form action="#" class="form">
-        <div class="floating-label-input">
-          <input type="text" id="text" placeholder="Frist Name" />
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Frist Name" />
         </div>
-        <div class="floating-label-input">
-          <input type="text" id="text" placeholder="Last Name" />
+        <div class="form-group">
+          <input type="text" id="Surname" placeholder="Last Name" />
         </div>
-        <div class="floating-label-input">
+        <div class="form-group">
           <input type="text" id="email" placeholder="Email" />
         </div>
-        <div class="floating-label-input">
-          <input type="password" id="Password" placeholder="Password" />
-        </div>
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" />
         <a href="Homepage.html"
           ><button type="submit" class="Login-button">Register</button>
         </a>
       </form>
-    </section>
+    </div>
   </body>
 </html>
