@@ -4,160 +4,229 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-
   </head>
   <link rel="stylesheet" href="Style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
   <body>
-    <header>
-      <div class="nav">
-        <nav class="nav_bar">
-          <a href="welcomepage.html"
-            ><img src="reigntec-01.png" alt="Logo" class="logo"
-          /></a>
-          <label class="switch">
-            <input type="checkbox" id="darkModeToggle" />
-            <span class="slider round"></span>
-          </label>
-          <div class="button-container">
-            <a href="login page.html"
-              ><button class="Login-button-Home">Log in</button></a
-            >
-            <a href="Register Page.html"
-              ><button type="button" class="Register-button-Home">
-                Get started
-              </button></a
-            >
+          <div class="nav">
+            <div class="nav_bar">
+              <a href="welcomepage.html"
+                ><img src="reigntec-01.png" alt="Logo" class="logo"
+              /></a>
+              <label class="switch">
+                <input type="checkbox" id="darkModeToggle" />
+                <span class="slider round"></span>
+              </label>
+              <div class="button-container">
+                <a href="login page.html"
+                  ><button class="Login-button-Home">Log in</button></a
+                >
+                <a href="Register Page.html"
+                  ><button type="button" class="Register-button-Home">
+                    Get started
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!---Landing page -->
-    <div class="Landing-Page">
-      <h1 class="buy-trade">Buy, trade and store</h1>
-      <h1 class="cryptocurrencies">cryptocurrencies on Reigntec</h1>
-      <p>Trade crypto anywhere</p>
-      <a href="Register Page.html">
-        <button class="Start-trading">Start Trading</button>
-      </a>
+       <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "",
+      "proName": "BITSTAMP:BTCUSD"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:ETHUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:XRPUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:SOLUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:CYBERUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:DOGEUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:FETUSDT"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:ETHBTC"
+    },
+    {
+      "description": "",
+      "proName": "BINANCE:AVAXUSDT"
+    }
+  ],
+  "showSymbolLogo": false,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+        <!---Landing page -->
+        <div class="Landing-Page">
+          <h1 class="buy-trade">Buy, trade and store</h1>
+          <h1 class="cryptocurrencies">cryptocurrencies on Reigntec</h1>
+          <p>Trade crypto anywhere</p>
+          <a href="Register Page.html">
+            <button class="Start-trading">Start Trading</button>
+          </a>
+        </div>
+
+        <!---Category1 -->
+        <div class="row">
+          <div class="column">
+            <h3>Over 60 crypto-assets</h3>
+            <p>
+              Our partnerships with leading global blockchain platforms, bring you
+              one of the widest selections of crypto-assets.
+            </p>
+            <a href="#">
+              <button class="Explore">Explore</button>
+            </a>
+          </div>
+          <!---Category2 -->
+          <div class="column">
+            <h3>Get paid to trade</h3>
+            <p>
+              For the first time in our market, we have fees that are lower than
+              zero for market makers - that means we pay you.
+            </p>
+            <a href="#">
+              <button class="Learn-More">Learn More</button>
+            </a>
+          </div>
+          <!---Category3 -->
+          <div class="column">
+            <h3>Get verified in minutes</h3>
+            <p>
+              We use AI and machine learning technology to validate your identity
+              and get you set up in minutes.
+            </p>
+            <a href="#">
+              <button class="Learn-More">Learn More</button>
+            </a>
+          </div>
+        </div>
+    <div class="infomation">
+
+      <!---Create Portfolio-->
+      <section class="Create-PortfolioSection">
+        <div>
+          <h1 id="Portfolio-text">Create your cryptocurrency portfolio today</h1>
+        </div>
+      </section>
+
+      <!---=Mange Portfolio-->
+      <section class="Mange-PortfolioSection">
+        <div>
+          <h1>Manage your portfolio</h1>
+          <span>
+            Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
+            consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
+            amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
+            nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
+          </span>
+        </div>
+        </section>
+
+      <!---Recurring buys-->
+        <section class="Mange-PortfolioSection">
+        <div>
+          <h1>Recurring buys</h1>
+          <span>
+            Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
+            consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
+            amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
+            nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
+          </span>
+        </div>
+        </section>
     </div>
-
-    <!---Category1 -->
-    <div class="row">
-      <div class="column">
-        <h3>Over 60 crypto-assets</h3>
-        <p>
-          Our partnerships with leading global blockchain platforms, bring you
-          one of the widest selections of crypto-assets.
-        </p>
-        <a href="#">
-          <button class="Explore">Explore</button>
-        </a>
-      </div>
-      <!---Category2 -->
-      <div class="column">
-        <h3>Get paid to trade</h3>
-        <p>
-          For the first time in our market, we have fees that are lower than
-          zero for market makers - that means we pay you.
-        </p>
-        <a href="#">
-          <button class="Learn-More">Learn More</button>
-        </a>
-      </div>
-      <!---Category3 -->
-      <div class="column">
-        <h3>Get verified in minutes</h3>
-        <p>
-          We use AI and machine learning technology to validate your identity
-          and get you set up in minutes.
-        </p>
-        <a href="#">
-          <button class="Learn-More">Learn More</button>
-        </a>
-      </div>
-    </div>
-    <!---Create Portfolio-->
-    <section class="Create-PortfolioSection">
-      <div>
-        <h1 id="Portfolio-text">Create your cryptocurrency portfolio today</h1>
-      </div>
-    </section>
-
-    <!---=Mange Portfolio-->
-    <section class="Mange-PortfolioSection">
-      <div>
-        <h1>Manage your portfolio</h1>
-        <span>
-          Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
-          consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
-          amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
-          nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
-        </span>
-      </div>
-    </section>
-
-    <!---Recurring buys-->
-    <section class="Mange-PortfolioSection">
-      <div>
-        <h1>Recurring buys</h1>
-        <span>
-          Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
-          consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
-          amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
-          nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
-        </span>
-      </div>
-    </section>
-
-    <!---Why Choose Us-->
-    <section class="Why-Choose-Us">
-      <div>
-        <h1 id="Portfolio-text">Why Choose Us</h1>
-      </div>
-      <div class="row">
+        <!---Why Choose Us-->
+        <section class="Why-Choose-Us">
+          <div>
+            <h1 id="Portfolio-text">Why Choose Us</h1>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="Assets\security.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
+              <h3>Secure custody</h3>
+              <p>
+                Our partnerships with leading global blockchain platforms, bring you
+                one of the widest selections of crypto-assets.
+              </p>
+          </div>
+          <div class="column">
+            <img src="Assets\security(1).png" style="height: 50px; width: 50px;" alt="Security Icon"/>
+            <h3>Secure System</h3>
+            <p>
+              Our partnerships with leading global blockchain platforms, bring you
+              one of the widest selections of crypto-assets.
+            </p>
+        </div>
         <div class="column">
-          <img src="Assets\security.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
-          <h3>Secure custody</h3>
+          <img src="Assets\24-hours-support.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
+          <h3>24/7 Support</h3>
           <p>
             Our partnerships with leading global blockchain platforms, bring you
             one of the widest selections of crypto-assets.
           </p>
       </div>
       <div class="column">
-        <img src="Assets\security(1).png" style="height: 50px; width: 50px;" alt="Security Icon"/>
-        <h3>Secure System</h3>
+        <img src="Assets\guarantee.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
+
+        <h3>Always Reliable</h3>
         <p>
           Our partnerships with leading global blockchain platforms, bring you
           one of the widest selections of crypto-assets.
         </p>
     </div>
-    <div class="column">
-      <img src="Assets\24-hours-support.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
-      <h3>24/7 Support</h3>
-      <p>
-        Our partnerships with leading global blockchain platforms, bring you
-        one of the widest selections of crypto-assets.
-      </p>
-  </div>
-  <div class="column">
-    <img src="Assets\guarantee.png" style="height: 50px; width: 50px;" alt="Security Icon"/>
-
-    <h3>Always Reliable</h3>
-    <p>
-      Our partnerships with leading global blockchain platforms, bring you
-      one of the widest selections of crypto-assets.
-    </p>
-</div>
-<a href="Register Page.html">
-  <button class="Start-earnig">Start Earning</button>
-</a>
-    </section>
-    <footer>
-      <div class="footer-content">
-          <div class="footer-section links">
-              <h2>COMPANY</h2>
+    <a href="Register Page.html">
+      <button class="Start-earnig">Start Earning</button>
+    </a>
+        </section>
+        <footer>
+          <div class="footer-content">
+              <div class="footer-section links">
+                  <h2>COMPANY</h2>
+                  <ul>
+                      <li><a href="#">About us </a></li>
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Suppport</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section links">
+                <h2>PRODUCTS</h2>
+                <ul>
+                    <li><a href="#">About us </a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Suppport</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+              <h2>LEARN</h2>
               <ul>
                   <li><a href="#">About us </a></li>
                   <li><a href="#">Career</a></li>
@@ -165,39 +234,24 @@
                   <li><a href="#">Contact Us</a></li>
               </ul>
           </div>
-          <div class="footer-section links">
-            <h2>PRODUCTS</h2>
-            <ul>
-                <li><a href="#">About us </a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Suppport</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-section links">
-          <h2>LEARN</h2>
-          <ul>
-              <li><a href="#">About us </a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Suppport</a></li>
-              <li><a href="#">Contact Us</a></li>
-          </ul>
+          </div>
+      </footer>
+      <div class="bottomfooter">
+        <img src="reigntec-01.png" style="height: 54px; width: 286px;" alt="footer Icon" />
+        <p> Terms of Service </p>
+        <p> Privacy Policy </p>
+        <p> Cookies </p>
+        <!-- Social media icons -->
+        <a href="#" style="text-decoration: none;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
       </div>
-      </div>
-  </footer>
-  <div class="bottomfooter">
-    <img src="reigntec-01.png" style="height: 54px; width: 286px;" alt="footer Icon" />
-    <p> Terms of Service </p>
-    <p> Privacy Policy </p>
-    <p> Cookies </p>
-     <!-- Social media icons -->
-     <a href="#" style="text-decoration: none;"><i class="fab fa-twitter"></i></a>
-     <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></a>
-     <a href="#" style="text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2023 Reigntec. All rights reserved.
-</div>
+      
+      <div class="footer-bottom">
+        &copy; 2023 Reigntec. All rights reserved.
+    </div>
+    <script src="https://www.cryptohopper.com/widgets/js/script"></script>
   </body>
+  
 </html>
 <script src="javascript.js"></script>

@@ -3,42 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Exchange
-
-    </title>
+    <title>Wallet</title>
+    <link rel="stylesheet" href="Style.css" />
   </head>
-  <link rel="stylesheet" href="Style.css" />
-  <header>
-    <div class="nav">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Wallets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Trading</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Exchange</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Portfoilo</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+  <nav class="nav-bar">
+    <a href="welcomepage.html">
+      <img src="reigntec-01.png" alt="Logo" class="logo" />
+    </a>
+    <ul id="menu" class="nav-bar-menu">
+      <li class="active"><a href="Homepage.html">Home</a></li>
+      <li class="active"><a href="Details.html">Details</a></li>
+      <li class="active"><a href="trading.html">Trading</a></li>
+      <li class="active"><a href="Wallet.html">Wallet</a></li>
+      <li class="active"><a href="Exchange.html">Exchange</a></li>
+    </ul>
+  </nav>
 
-          
-        </div>
-      </nav>
+  <body class="wallet-body">
+    <div class="totalPort">
+      <h1 style="text-align: center">Wallet</h1>
+      <p>Total Portfoilo value</p>
+      <p>0.00 ZAR</p>
+      <p>YESTERDAY PROFIT/LOSS</p>
+      <p>0.00 ZAR</p>
+      <div class="fund-btn">
+        <button>BUY</button>
+        <button>DEPOSIT FUNDS</button>
+      </div>
     </div>
-  </header>
-  <body>
-</body>
+    <div class="wallets">
+      <div class="wallet">
+        <p>my Wallets</p>
+        <div class="search">
+          <form action="#" method="get">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="q" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="currency">
+      <div class="coin">
+        <img
+          src="/Assets/south-africa.png"
+          alt="Southafica Icon"
+          width="30"
+          height="30"
+        />
+        <p>ZAR</p>
+        <p>Balence</p>
+        <div class="Trade-btn">
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="#">Deposit</a>
+              <a href="#">Withdraw</a>
+              <a href="#">Transfer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

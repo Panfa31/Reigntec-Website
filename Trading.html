@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Trading</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="javascript.js" defer></script>
+    <script src="https://www.cryptohopper.com/widgets/js/script"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="top-cryptonow">
+      <h3>Top Crypto Now</h3>
+      <div
+        class="cryptohopper-web-widget"
+        data-id="7"
+        data-coins="bitcoin,ethereum,tether,xrp"
+        data-numcoins="undefined"
+      ></div>
+    </div>
+    <div class="ser-div">
+      <form action="#" method="get">
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="q" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="currency">
+      <div class="coin">
+        <img
+          src="/Assets/assests/bitcoin-btc-logo.png"
+          alt="Bitcoin Icon"
+          width="30"
+          height="30"
+        />
+        <p>BTN</p>
+        <p>bitcoin</p>
+        <p>0.00 ZAR</p>
+        <p>0.00%</p>
+        <div class="Trade-btn">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cryptohopper-web-widget"
+      data-id="4"
+      data-coins="bitcoin,ethereum,tether,bnb,xrp,usd-coin,litecoin"
+      data-list_design="1"
+      data-realtime="on"
+    ></div>
+  </body>
 </html>
