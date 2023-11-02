@@ -1,0 +1,215 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.logo {
+  height: 40px;
+  width: auto;
+  align: left;
+}
+/* Navigation styles */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding for better spacing */
+}
+
+.nav-bar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Center the items vertically */
+}
+
+.nav-bar-menu li {
+  margin-right: 20px;
+}
+
+.nav-bar-menu li a {
+  text-decoration: none;
+  color: #1c9d78;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar-menu li a:hover {
+  color: #ffcc00;
+}
+
+/* Main content styles */
+.container {
+  padding-top: 80px;
+}
+
+.wallet-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalPort {
+  background: radial-gradient(
+    circle at left center,
+    rgba(241, 185, 77, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100%;
+  max-width: 1200px;
+  height: 250px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.fund-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.wallets {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet {
+  background-color: #88ae60;
+  width: 100%;
+  max-width: 1200px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.currency {
+  background-color: #e2e2e2;
+  width: 100%;
+  max-width: 1200px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Trade-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar-menu {
+    margin-top: 10px;
+  }
+
+  .nav-bar-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/* Add styles for the menu button */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Styles for the mobile menu */
+@media only screen and (max-width: 768px) {
+  .nav-bar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-bar-menu.show {
+    display: flex;
+  }
+
+  .nav-bar-menu li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
+<title>Wallet</title>
+<link rel="stylesheet" href="Wallet.css" />
+<script src="Wallet.js"></script>

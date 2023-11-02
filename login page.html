@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOGIN</title>
-    <link rel="stylesheet" href="Style.css" />
-    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="Login.css" />
   </head>
   <body>
     <header>
@@ -21,24 +20,35 @@
         <p>Enter your details below</p>
 
         <div class="floating-label-input">
-          <input type="text" id="email" placeholder="email" />
+          <input type="text" id="email" placeholder="Email" required />
         </div>
 
         <div class="floating-label-input">
-          <input type="password" id="password" placeholder="password" />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
         </div>
         <div class="remember-forget">
-          <label><input type="checkbox" />remember me</label>
+          <label><input type="checkbox" id="remember-me" />Remember me</label>
           <a href="#">Forgot password?</a>
         </div>
 
-        <button type="submit" class="Login-btn">
-          Login<a href="Homepage.html"> </a>
-        </button>
+        <button type="submit" class="Login-btn">Login</button>
         <div class="register-link">
-          <p>Don't have an account?<a href="#"> Register</a></p>
+          <p>
+            Don't have an account?<a
+              href="Register Page.html"
+              id="register-link"
+            >
+              Register</a
+            >
+          </p>
         </div>
       </form>
     </div>
+    <script src="javascript-login.js" defer></script>
   </body>
 </html>

@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wallet</title>
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Wallet.css" />
+    <script src="Wallet.js"></script>
   </head>
-  <nav class="nav-bar">
-    <a href="welcomepage.html">
-      <img src="reigntec-01.png" alt="Logo" class="logo" />
-    </a>
-    <ul id="menu" class="nav-bar-menu">
-      <li class="active"><a href="Homepage.html">Home</a></li>
-      <li class="active"><a href="Details.html">Details</a></li>
-      <li class="active"><a href="trading.html">Trading</a></li>
-      <li class="active"><a href="Wallet.html">Wallet</a></li>
-      <li class="active"><a href="Exchange.html">Exchange</a></li>
-    </ul>
-  </nav>
-
   <body class="wallet-body">
+    <nav>
+      <div class="nav-bar">
+        <a href="welcomepage.html">
+          <img src="reigntec-01.png" alt="Logo" class="logo" />
+        </a>
+        <ul id="menu" class="nav-bar-menu">
+          <li class="active"><a href="Homepage.html">Home</a></li>
+          <li class="active"><a href="Details.html">Details</a></li>
+          <li class="active"><a href="trading.html">Trading</a></li>
+          <li class="active"><a href="Wallet.html">Wallet</a></li>
+          <li class="active"><a href="Exchange.html">Exchange</a></li>
+        </ul>
+        <div class="menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
     <div class="totalPort">
       <h1 style="text-align: center">Wallet</h1>
       <p>Total Portfoilo value</p>
@@ -66,4 +74,12 @@
       </div>
     </div>
   </body>
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navBarMenu = document.querySelector(".nav-bar-menu");
+
+    menuBtn.addEventListener("click", () => {
+      navBarMenu.classList.toggle("show");
+    });
+  </script>
 </html>

@@ -1,0 +1,72 @@
+.logo {
+  position: fixed;
+  width: 250px;
+}
+
+/* Styles for the login page */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+  font-family: Arial;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  color: var(--gold, #f1b94d);
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #f1b94d;
+}
+
+#email,
+#password {
+  text-align: center;
+  width: 372px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  margin: 5px;
+}
+
+.remember-forget {
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 372px;
+  margin: 10px;
+}
+
+.Login-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f1b94d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot {
+  color: #f1b94d;
+}
+
+.register-link p {
+  color: #000; /* Set text color to black */
+}
