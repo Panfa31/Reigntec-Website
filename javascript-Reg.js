@@ -1,7 +1,9 @@
 // Get the form element
 const form = document.querySelector("form");
 
-// Get the email and password input fields
+// Get the name, surname, email and password input fields
+const nameInput = document.querySelector("#name");
+const surnameInput = document.querySelector("#surname");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 
@@ -16,12 +18,14 @@ const passwordRegex =
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent the form from submitting
 
-  // Get the email and password values
+  // Get the name, surname, email and password values
+  const name = nameInput.value.trim();
+  const surname = surnameInput.value.trim();
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
 
-  // Check if the email and password are not empty
-  if (email !== "" && password !== "") {
+  // Check if the name, surname, email and password are not empty
+  if (name !== "" && surname !== "" && email !== "" && password !== "") {
     // Check if the email is valid
     if (emailRegex.test(email)) {
       // Check if the password is strong
@@ -61,54 +65,3 @@ loginLink.addEventListener("click", (event) => {
   // Redirect to the login page
   window.location.href = "login page.html";
 });
-
-// Get the remember me checkbox
-const rememberMeCheckbox = document.querySelector("#remember-me");
-
-// Get the login button
-const loginButton = document.querySelector(".Login-btn");
-
-// Get the register link
-const registerLink = document.querySelector(".register-link");
-
-// Get the forgot password link
-const forgotPasswordLink = document.querySelector(".forgot-password-link");
-
-// Add event listener to the register link click event
-registerLink.addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent the link from navigating
-
-  // Redirect to the registration page
-  window.location.href = "Register Page.html";
-});
-
-// Add event listener to the forgot password link click event
-forgotPasswordLink.addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent the link from navigating
-
-  // Get the email value
-  const email = emailInput.value.trim();
-
-  // Check if the email is not empty
-  if (email !== "") {
-    // Send a password reset email to the user's email address
-    // Implement a secure password reset process here
-    alert("A password reset link has been sent to your email address.");
-  } else {
-    // Display an error message
-    alert("Please enter your email.");
-  }
-});
-
-// Check if the email and password are stored in localStorage
-const storedEmail = localStorage.getItem("email");
-const storedPassword = localStorage.getItem("password");
-
-if (storedEmail && storedPassword) {
-  // Set the email and password values
-  emailInput.value = storedEmail;
-  passwordInput.value = storedPassword;
-
-  // Check the remember me checkbox
-  rememberMeCheckbox.checked = true;
-}

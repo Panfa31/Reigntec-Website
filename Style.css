@@ -167,7 +167,6 @@ input:checked + .slider.round:before {
 
 .Landing-Page .content-container {
   align-items: left;
-
   max-width: 600px;
   margin: 0 auto;
 }

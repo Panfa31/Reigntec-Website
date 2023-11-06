@@ -1,0 +1,114 @@
+.logo {
+  position: fixed;
+  width: 250px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(71, 23, 23);
+  width: 100%;
+
+  top: 0; /* Stick it to the top of the page */
+  left: 0; /* Stick it to the left corner of the page */
+  right: 0; /* Stretch it to the right edge of the page */
+  z-index: 999; /* Ensure it's above other content */
+}
+.nav_bar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav_bar li {
+  margin: 0 20px;
+}
+
+.nav_bar li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_bar li a:hover {
+  color: #007bff;
+}
+body.scrolled .navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.details-section1,
+.details-info {
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.buysell-title h1 {
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.buysell {
+  align-items: center;
+  background: #f1b94d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+}
+
+.col-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+}
+.col-detail h2 {
+  color: #000;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.col-detail p {
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.buysell-btn {
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #f1b94d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px; /* Adjusted spacing */
+  align: right;
+}
