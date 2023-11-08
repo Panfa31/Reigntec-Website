@@ -82,4 +82,10 @@
       navBarMenu.classList.toggle("show");
     });
   </script>
+  <script>
+    const ws = new WebSocket("ws://localhost:5501");
+    ws.addEventListener("open", () => {
+      console.log("We are connected!");
+    });
+  </script>
 </html>

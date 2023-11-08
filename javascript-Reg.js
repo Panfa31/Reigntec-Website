@@ -1,11 +1,26 @@
+// Define the countries array
+const countries = [
+  { code: "", name: "Select a Country" },
+  { code: "USA", name: "United States" },
+  { code: "CAN", name: "Canada" },
+  { code: "UK", name: "United Kingdom" },
+  { code: "AUS", name: "Australia" },
+  // Add more countries as needed
+];
+countries.forEach((country) => {
+  console.log(country.name);
+});
+
 // Get the form element
 const form = document.querySelector("form");
 
-// Get the name, surname, email and password input fields
+// Get the name, surname, email, password, confirm checkbox and country input fields
 const nameInput = document.querySelector("#name");
 const surnameInput = document.querySelector("#surname");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
+const confirmCheckbox = document.querySelector("#confirm");
+const countryDropdown = document.getElementById("country");
 
 // Regular expression to validate email
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -14,25 +29,42 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordRegex =
   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\|]).{8,}$/;
 
+// Populate the country dropdown options
+countries.forEach((country) => {
+  const option = document.createElement("option");
+  option.value = country.code;
+  option.text = country.name;
+  countryDropdown.appendChild(option);
+});
+
 // Add event listener to the form submit event
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent the form from submitting
 
-  // Get the name, surname, email and password values
+  // Get the name, surname, email, password and country values
   const name = nameInput.value.trim();
   const surname = surnameInput.value.trim();
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
+  const country = countryDropdown.value;
 
-  // Check if the name, surname, email and password are not empty
-  if (name !== "" && surname !== "" && email !== "" && password !== "") {
+  // Check if the name, surname, email, password, country and confirm checkbox are not empty
+  if (
+    name !== "" &&
+    surname !== "" &&
+    email !== "" &&
+    password !== "" &&
+    country !== "" &&
+    confirmCheckbox.checked
+  ) {
     // Check if the email is valid
     if (emailRegex.test(email)) {
       // Check if the password is strong
       if (passwordRegex.test(password)) {
-        // Store the email and password in localStorage
+        // Store the email, password and country in localStorage
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
+        localStorage.setItem("country", country);
 
         // Redirect to the welcome page
         window.location.href = "Homepage.html";
@@ -53,7 +85,9 @@ form.addEventListener("submit", (event) => {
     }
   } else {
     // Display an error message
-    alert("Please enter your name, surname, email and password.");
+    alert(
+      "Please enter your name, surname, email, password, country and confirm that you have read and agree to the privacy policy."
+    );
   }
 });
 

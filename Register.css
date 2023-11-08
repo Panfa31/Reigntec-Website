@@ -4,39 +4,26 @@
   width: 250px;
 }
 
-.logo {
-  height: 40px; /* Set the height of the logo */
-}
-
-/* Styles for the form section */
-.form_section-Register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  color: #f1b94d;
-}
-
 /* Styles for the form */
-.form {
+.Reg-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* Styles for the form-group */
-.form-group {
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Use min-height instead of height */
 }
 
 /* Styles for the input fields */
 #name,
 #surname,
 #email,
-#password {
+#password,
+#title,
+#country {
   text-align: center;
   width: 372px;
   height: 40px;
@@ -47,14 +34,16 @@
 
 /* Styles for the Register button */
 .Reg-btton {
-  margin-top: 10px;
-  padding: 5px 10px;
+  margin: 5px;
+  padding: 5px;
   background-color: #f1b94d;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   width: 372px;
+  height: 40px;
+  font-weight: bold;
 }
 
 /* Styles for the login-gold */
@@ -66,46 +55,6 @@
   font-weight: 400;
   line-height: normal;
   margin-left: 5px;
-}
-
-/* Styles for the header */
-header {
-  background-color: aqua;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-/* Styles for the nav */
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  width: 100%;
-}
-
-/* Styles for the welcomepage link */
-nav a {
-  text-decoration: none;
-}
-
-.login-Question {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Center items vertically within the login section */
-}
-
-.login-Question p {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  margin-right: auto; /* Add space between text and login link */
 }
 
 /* Styles for the forgot link */
@@ -139,6 +88,7 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
 }
 
 /* Styles for the p */
@@ -176,34 +126,14 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
-/* Styles for the nav */
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  width: 100%;
-}
-
-/* Styles for the welcomepage link */
-nav a {
-  text-decoration: none;
-}
-
 .login-Question {
   display: flex;
-  flex-direction: row;
   align-items: center; /* Center items vertically within the login section */
 }
 
 .login-Question p {
   color: #000;
   font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  margin-right: auto; /* Add space between text and login link */
 }
 
 /* Styles for the forgot link */
@@ -228,15 +158,6 @@ nav a {
   justify-content: center;
   height: 100vh;
   text-align: center;
-}
-
-/* Styles for the h1 */
-h1 {
-  color: #000;
-  font-family: Arial;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: normal;
 }
 
 /* Styles for the p */
@@ -282,48 +203,21 @@ a {
     padding: 10px;
   }
 
-  /* Adjust the font size on the h1 */
-  h1 {
-    font-size: 24px;
-  }
-
   /* Adjust the width on the remember-forget section */
   .remember-forget {
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
-  /* Adjust the padding on the nav */
-  nav {
-    padding: 10px;
-  }
+.confirm {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
 
-  /* Adjust the font size on the h1 */
-  h1 {
-    font-size: 24px;
-  }
-
-  /* Adjust the width on the input fields */
-  #name,
-  #surname,
-  #email,
-  #password {
-    width: 100%;
-  }
-
-  /* Adjust the margin on the form-group */
-  .form-group {
-    margin: 10px 0;
-  }
-
-  /* Adjust the width on the Register button */
-  .Reg-btton {
-    width: 100%;
-  }
-
-  /* Adjust the margin on the login-Question */
-  .login-Question {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+.confirm a {
+  color: var(--gold, #4d4df1);
+  text-decoration: underline;
 }

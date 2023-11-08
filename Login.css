@@ -54,13 +54,16 @@ a {
 }
 
 .Login-btn {
-  margin-top: 10px;
-  padding: 5px 10px;
+  margin: 5px;
+  padding: 5px;
   background-color: #f1b94d;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  width: 372px;
+  height: 40px;
+  font-weight: bold;
 }
 
 .forgot {
