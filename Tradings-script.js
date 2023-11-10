@@ -1,4 +1,4 @@
-let coins = ["btcusdt", "ethusdt", "adausdt", "bnbusdt"];
+let coins = ["btcusdt", "ethusdt", "adausdt", "bnbusdt"].slice(0, 4); // modify to only include top four coins
 let ws = new WebSocket(
   `wss://stream.binance.com:9443/ws/${coins.join("@trade/")}@trade`
 );
@@ -21,7 +21,7 @@ ws.onmessage = (event) => {
     if (hourPrice) {
       percentage = ((price - hourPrice) / hourPrice) * 100;
     }
-    StockPriceElements[index].innerText = ` Last Price: $${price}`;
+    StockPriceElements[index].innerText = `Last Price: $${price}`;
     PercentageElements[index].innerText = `Percentage: ${percentage.toFixed(
       2
     )}%`;

@@ -717,14 +717,6 @@ input[type="search"] {
   );
 }
 
-.top-cryptonow {
-  background-image: radial-gradient(
-    circle at left center,
-    rgba(241, 185, 77, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
 .row-learn-more {
   display: flex;
   justify-content: space-around;

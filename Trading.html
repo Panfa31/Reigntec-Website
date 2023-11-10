@@ -4,15 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trading</title>
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="trading.css" />
     <link rel="stylesheet" />
   </head>
   <body>
-    <div class="top-cryptonow">
-      <h3>Top Crypto Now</h3>
-    </div>
-    <h1>Market Data</h1>
-    <div id="market-data"></div>
+    <nav>
+      <div class="nav-bar">
+        <a href="welcomepage.html">
+          <img src="reigntec-01.png" alt="Logo" class="logo" />
+        </a>
+        <ul id="menu" class="nav-bar-menu">
+          <li class="active"><a href="Homepage.html">Home</a></li>
+          <li class="active"><a href="Details.html">Details</a></li>
+          <li class="active"><a href="trading.html">Trading</a></li>
+          <li class="active"><a href="Wallet.html">Wallet</a></li>
+          <li class="active"><a href="Exchange.html">Exchange</a></li>
+        </ul>
+        <div class="menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="top-cryptonow" id="top-cryptonow">
+        <h1>Trading</h1>
+        <p>Top Crypto Now</p>
+        <div class="top-four" id="top-four">
+          <div class="coin" id="btc">
+            <img src="btc-logo.png" alt="Bitcoin Logo" class="coin-logo" />
+            <h2 class="coin-name">Bitcoin</h2>
+            <p class="coin-percentage">Percentage: +5%</p>
+            <p class="coin-price">Last Price: $50,000</p>
+          </div>
+          <div class="coin" id="eth">
+            <img src="eth-logo.png" alt="Ethereum Logo" class="coin-logo" />
+            <h2 class="coin-name">Ethereum</h2>
+            <p class="coin-percentage">Percentage: -2%</p>
+            <p class="coin-price">Last Price: $3,500</p>
+          </div>
+          <div class="coin" id="ada">
+            <img src="ada-logo.png" alt="Cardano Logo" class="coin-logo" />
+            <h2 class="coin-name">Cardano</h2>
+            <p class="coin-percentage">Percentage: +10%</p>
+            <p class="coin-price">Last Price: $2.50</p>
+          </div>
+          <div class="coin" id="bnb">
+            <img src="bnb-logo.png" alt="Binance Coin Logo" class="coin-logo" />
+            <h2 class="coin-name">Binance Coin</h2>
+            <p class="coin-percentage">Percentage: +3%</p>
+            <p class="coin-price">Last Price: $400</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sort-container">
+        <div class="sort-options">
+          <button id="sort-by-name">Sort by Name</button>
+          <button id="sort-by-price">Sort by Price</button>
+          <button id="sort-by-change">Sort by 24hr Change</button>
+          <input type="text" id="search-bar" placeholder="Search..." />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="crypto-container">
+        <div class="crypto">
+          <img src="btc-logo.png" alt="Bitcoin Logo" class="crypto-logo" />
+          <h2 class="crypto-name">Bitcoin</h2>
+          <p class="crypto-price">Price: $50,000</p>
+          <p class="crypto-percentage">Percentage: +5%</p>
+          <button class="buy-btn">Buy</button>
+          <button class="sell-btn">Sell</button>
+        </div>
+        <div class="crypto">
+          <img src="eth-logo.png" alt="Ethereum Logo" class="crypto-logo" />
+          <h2 class="crypto-name">Ethereum</h2>
+          <p class="crypto-price">Price: $3,500</p>
+          <p class="crypto-percentage">Percentage: -2%</p>
+          <button class="buy-btn">Buy</button>
+          <button class="sell-btn">Sell</button>
+        </div>
+        <div class="crypto">
+          <img src="ada-logo.png" alt="Cardano Logo" class="crypto-logo" />
+          <h2 class="crypto-name">Cardano</h2>
+          <p class="crypto-price">Price: $2.50</p>
+          <p class="crypto-percentage">Percentage: +10%</p>
+          <button class="buy-btn">Buy</button>
+          <button class="sell-btn">Sell</button>
+        </div>
+        <div class="crypto">
+          <img src="bnb-logo.png" alt="Binance Coin Logo" class="crypto-logo" />
+          <h2 class="crypto-name">Binance Coin</h2>
+          <p class="crypto-price">Price: $400</p>
+          <p class="crypto-percentage">Percentage: +3%</p>
+          <button class="buy-btn">Buy</button>
+          <button class="sell-btn">Sell</button>
+        </div>
+      </div>
+    </section>
+    
+    </section>
 
     <script src="Trading-script.js"></script>
   </body>

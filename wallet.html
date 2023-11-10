@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wallet</title>
     <link rel="stylesheet" href="Wallet.css" />
-    <script src="Wallet.js"></script>
   </head>
   <body class="wallet-body">
     <nav>
@@ -60,7 +59,7 @@
           height="30"
         />
         <p>ZAR</p>
-        <p>Balence</p>
+        <p id="price">Balence</p>
         <div class="Trade-btn">
           <div class="dropdown">
             <button class="dropbtn">Menu</button>
@@ -74,18 +73,13 @@
       </div>
     </div>
   </body>
+  <script src="Wallet.js"></script>
   <script>
     const menuBtn = document.querySelector(".menu-btn");
     const navBarMenu = document.querySelector(".nav-bar-menu");
 
     menuBtn.addEventListener("click", () => {
       navBarMenu.classList.toggle("show");
-    });
-  </script>
-  <script>
-    const ws = new WebSocket("ws://localhost:5501");
-    ws.addEventListener("open", () => {
-      console.log("We are connected!");
     });
   </script>
 </html>
