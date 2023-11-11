@@ -3,26 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="Portfolio.css" />
+    <title>Portfolio</title>
   </head>
   <body>
-    <div class="Porfit-loss">
-      <h2>Profit/loss</h2>
-      <div class="Highlights">
-        <span> YESTERDAY</span>
-        <span> 0.00 ZAR</span>
-        <span> 0.00%</span>
+    <nav>
+      <div class="nav-bar">
+        <a href="welcomepage.html">
+          <img src="reigntec-01.png" alt="Logo" class="logo" />
+        </a>
+        <ul id="menu" class="nav-bar-menu">
+          <li class="active"><a href="Homepage.html">Home</a></li>
+          <li class="active"><a href="Details.html">Details</a></li>
+          <li class="active"><a href="trading.html">Trading</a></li>
+          <li class="active"><a href="Wallet.html">Wallet</a></li>
+          <li class="active"><a href="Exchange.html">Exchange</a></li>
+        </ul>
+        <div class="menu-btn" id="menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
-      <div class="Highlights">
-        <span> 30 Days</span>
-        <span> 0.00 ZAR</span>
-        <span> 0.00%</span>
+    </nav>
+    <section>
+      <div class="Total-portfolio-value" id="portfolioGraph">
+        <h1>Total Portfolio Value</h1>
+        <h2 class="Total" id="total">0.00 ZAR</h2>
+        <h3 class="percentage-growth" id="percentage-growth">0.00%</h3>
+
+        <canvas id="myChart"></canvas>
       </div>
-      <div class="Highlights">
-        <span> All time</span>
-        <span> 0.00 ZAR</span>
-        <span> 0.00%</span>
+    </section>
+    <section>
+      <div class="Porfit-loss">
+        <h2>Profit/Loss</h2>
+        <div class="Highlights">
+          <p>YESTERDAY</p>
+          <h1 class="current-amount">0.00 ZAR</h1>
+          <p class="current-percentage">0.00%</p>
+        </div>
+        <div class="Highlights">
+          <p>30 Days</p>
+          <h1 class="current-amount">0.00 ZAR</h1>
+          <p class="current-percentage">0.00%</p>
+        </div>
+        <div class="Highlights">
+          <p>All time</p>
+          <h1 class="current-amount">0.00 ZAR</h1>
+          <p class="current-percentage">0.00%</p>
+        </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div>
+        <h1>Daily Profit</h1>
+      </div>
+    </section>
+    <script src="Portfolio.js"></script>
   </body>
 </html>
