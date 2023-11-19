@@ -26,19 +26,62 @@
                 >
               </div>
             </div>
+            <div class="dark-mode-switch">
+              <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
+              <label for="dark-mode">Dark mode</label>
+            </div>
           </div>
+          
         <!---Landing page -->
-        <div class="Landing-Page">
+        <div class="Landing-Page" data-animate="fadeIn">
           <h1 class="buy-trade">Buy, trade and store</h1>
           <h1 class="cryptocurrencies">cryptocurrencies on Reigntec</h1>
           <p>Trade crypto anywhere</p>
-          <a href="Register Page.html">
-            <button class="Start-trading">Start Trading</button>
-          </a>
+          <form action="your-server-endpoint" method="post" id="startTradingForm">
+            <input type="email" name="start-trading" id="start-trading" placeholder="Your Email" required>
+            <button type="submit" class="Start-trading">Start Trading</button>
+        </form>
+
+      </div>
+      <aside>
+        <div class="coins">
+          <h2>Top Coins</h2>
+          <div class="coin-list">
+            <div class="top-four" id="top-four">
+              <div class="coin" id="btc">
+                <img src="Assets/assests/bitcoin-btc-logo.png" alt="Bitcoin Logo" class="coin-logo" style="height:30px;" />
+                <h2 class="coin-name">Bitcoin</h2>
+                <p class="coin-price">Last Price: $50,000</p>
+                <p class="coin-percentage">Percentage: +5%</p>
+              </div>
+              <div class="coin" id="eth">
+                <img src="eth-logo.png" alt="Ethereum Logo" class="coin-logo" />
+                <h2 class="coin-name">Ethereum</h2>
+                <p class="coin-price">Last Price: $3,500</p>
+                <p class="coin-percentage">Percentage: -2%</p>
+              </div>
+              <div class="coin" id="ada">
+                <img src="ada-logo.png" alt="Cardano Logo" class="coin-logo" />
+                <h2 class="coin-name">Cardano</h2>
+                <p class="coin-price">Last Price: $2.50</p>
+                <p class="coin-percentage">Percentage: +10%</p>
+              </div>
+              <div class="coin" id="bnb">
+                <img src="bnb-logo.png" alt="Binance Coin Logo" class="coin-logo" />
+                <h2 class="coin-name">Binance Coin</h2>
+                <p class="coin-price">Last Price: $400</p>
+                <p class="coin-percentage">Percentage: +3%</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="show-more">Show More</a>
+        </div>
+      </aside>
+
         </div>
         
         <!---Category1 -->
-        <div class="row-learn-more">
+        <div class="row-learn-more" data-animate="fadeIn">
           <div class="row-learn-more-column">
             <h3>Over 60 crypto-assets</h3>
             <p>
@@ -72,7 +115,7 @@
             </a>
           </div>
         </div>
-    <div class="infomation">
+    <div class="infomation" data-animate="fadeIn">
 
       <!---Create Portfolio-->
       <section class="Create-PortfolioSection">
@@ -85,6 +128,22 @@
       <section>
         <div  class="Mange-PortfolioSection">
           <h1>Manage your portfolio</h1>
+          
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
+            consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
+            amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
+            nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
+          </p>
+        
+        </div>
+
+        </section>
+
+      <!---Recurring buys-->
+        <section>
+        <div class="Recurring-buys">
+          <h1>Recurring buys</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
             consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
@@ -93,22 +152,9 @@
           </p>
         </div>
         </section>
-
-      <!---Recurring buys-->
-        <section>
-        <div class="Recurring-buys">
-          <h1>Recurring buys</h1>
-          <span>
-            Lorem ipsum dolor sit amet consectetur. Aliquet urna purus morbi eu
-            consequat urna luctus ipsum. In ut morbi id dui facilisis facilisi
-            amet tellus. Diam tristique eu sed amet. Massa venenatis suscipit leo
-            nunc. In adipiscing amet lectus ut nunc tempus quis nulla. Nibh.
-          </span>
-        </div>
-        </section>
     </div>
         <!---Why Choose Us-->
-        <section class="Why-Choose-Us">
+        <section class="Why-Choose-Us" data-animate="fadeIn">
           <div>
             <h1 id="Portfolio-text">Why Choose Us</h1>
           </div>
@@ -181,7 +227,7 @@
           </div>
           </div>
       </footer>
-      <div class="bottomfooter">
+      <div class="bottomfooter" data-animate="fadeIn">
         <img src="reigntec-01.png" style="height: 54px; width: 286px;" alt="footer Icon" />
         <p> Terms of Service </p>
         <p> Privacy Policy </p>

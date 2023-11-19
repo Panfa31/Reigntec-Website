@@ -32,6 +32,11 @@
   margin: 5px;
 }
 
+.togglePassword {
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 /* Styles for the Register button */
 .Reg-btton {
   margin: 5px;

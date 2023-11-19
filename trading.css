@@ -1,40 +1,27 @@
 .logo {
-  height: 40px;
-  width: auto;
-  align: left;
+  position: fixed;
+  width: 250px;
 }
 .nav-bar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 68px;
-  padding: 10px 20px;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: none; /* Remove the background */
+  padding-top: 10px;
 }
-
 /* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-}
-.coin {
-  border-radius: 10px;
-  background: #fff;
-}
+
 .nav_bar {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+}
+.nav-bar a {
+  color: var(--Black, #373637);
+  font-family: Arial Nova;
+  font-style: normal;
+  font-weight: bold;
 }
 /* Style for the nav-bar-menu */
 .nav-bar-menu {
@@ -47,7 +34,8 @@ body {
 
 /* Style for nav-bar list items */
 .nav-bar-menu li {
-  margin-right: 10px; /* Adjust spacing between items */
+  font-size: 16px; /* Set font size */
+  margin-right: 50px; /* Adjust spacing between items */
 }
 
 /* Style for nav-bar links */
@@ -59,26 +47,125 @@ body {
 
 /* Change text color on hover */
 .nav-bar-menu li a:hover {
-  color: #ff0000;
+  color: #f1b94d;
 }
-
-.top-cryptonow {
-  background-image: radial-gradient(
-    circle at left center,
-    rgba(241, 185, 77, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+.top-cryptonow-title h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0 5vh 0;
+  color: var(--Black, #373637);
+  font-family: Arial;
+  font-size: 32px;
+  font-weight: 700;
+}
+.top-cryptonow p {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 10px;
+  color: var(--Black, #373637);
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
 }
 .top-four {
   display: flex;
   justify-content: center; /* Align items to the start of the container */
   gap: 10px; /* Adjust the gap between .coin elements according to your preference */
   align-items: center;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #f1b94d 60%,
+    rgba(241, 185, 77, 0) 100%
+  );
+  padding: 10vh 0 10vh 0;
+  font-family: Arial;
+}
+.coin {
+  border-radius: 10px;
+  background: #fff;
+  width: 272px;
+  padding: 21px 23px;
+  flex-wrap: wrap;
+}
+h2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+p {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+.crypto {
+  width: 1162px;
+  height: 72px;
+  margin-bottom: 10px; /* Increase the margin-bottom value for more spacing */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+}
+
+.crypto-logo {
+  width: 40px; /* Adjust the width of the logo as needed */
+  height: 40px; /* Adjust the height of the logo as needed */
+  margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.crypto-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.crypto-price,
+.crypto-percentage {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.buy-btn,
+.sell-btn {
+  margin-left: auto; /* Push the buttons to the right side */
+}
+
+.crypto-logo {
+  width: 40px; /* Adjust the width of the logo as needed */
+  height: 40px; /* Adjust the height of the logo as needed */
+  margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.crypto-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.crypto-price,
+.crypto-percentage {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.buy-btn,
+.sell-btn {
+  margin-left: auto; /* Push the buttons to the right side */
+}
+.crypto-container {
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  align-items: center;
 }
 /* Style for the sort buttons */
 .sort-options button {
   position: relative;
-  padding: 10px 20px;
   border: none;
   background-color: #fff;
   color: #333;
@@ -88,9 +175,6 @@ body {
 
 /* Arrow shape for the up button */
 .sort-container {
-  width: 1162px;
-  height: 72px;
-  flex-shrink: 0;
   background: var(--White, #fff);
   color: #000;
   display: flex;
@@ -113,44 +197,6 @@ body {
   cursor: pointer;
 }
 
-/* Arrow shape for the up button */
-.sort-options button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 8px 8px 0;
-  border-color: transparent transparent #333 transparent;
-}
-
-/* Arrow shape for the down button */
-.sort-options button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(135deg);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 8px 8px 0;
-  border-color: transparent transparent #333 transparent;
-}
-
-/* Style for the up button on hover */
-.sort-options button:hover::before {
-  border-color: transparent transparent #ff0000 transparent;
-}
-
-/* Style for the down button on hover */
-.sort-options button:hover::after {
-  border-color: transparent transparent #ff0000 transparent;
-}
-
 #search-bar {
   flex-shrink: 0;
   border-radius: 30px;
@@ -160,34 +206,6 @@ body {
   color: #fff;
   border: none;
   outline: none;
-}
-.crypto-container {
-  display: flex;
-  flex-direction: column;
-  width: 1162px;
-  height: 72px;
-  flex-shrink: 0;
-  align-items: center;
-}
-
-.crypto {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  background-color: white;
-}
-
-.crypto-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.crypto-price,
-.crypto-percentage {
-  font-size: 16px;
-  margin-bottom: 5px;
 }
 
 .buy-btn {

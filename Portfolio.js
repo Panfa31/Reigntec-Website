@@ -32,3 +32,52 @@ const config = {
 // Create the chart
 const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, config);
+
+// Profit/Loss
+const profitLoss = document.querySelector(".Porfit-loss");
+
+// Function to calculate profit/loss
+const calculateProfitLoss = (currentValue, previousValue) => {
+  const difference = currentValue - previousValue;
+  const percentage = ((difference / previousValue) * 100).toFixed(2);
+  return { difference, percentage };
+};
+
+// Function to update profit/loss
+const updateProfitLoss = () => {
+  const currentAmounts = [2000, 1800, 1000]; // Replace with your actual current amounts
+  const previousAmounts = [1900, 1700, 900]; // Replace with your actual previous amounts
+
+  for (let i = 0; i < currentAmounts.length; i++) {
+    const currentAmount = currentAmounts[i];
+    const previousAmount = previousAmounts[i];
+    const { difference, percentage } = calculateProfitLoss(
+      currentAmount,
+      previousAmount
+    );
+
+    const currentAmountElement =
+      profitLoss.querySelectorAll(".current-amount")[i];
+    const currentPercentageElement = profitLoss.querySelectorAll(
+      ".current-percentage"
+    )[i];
+
+    currentAmountElement.textContent = `${currentAmount.toFixed(2)} ZAR`;
+
+    if (difference > 0) {
+      currentAmountElement.style.color = "green";
+      currentPercentageElement.style.color = "green";
+      currentPercentageElement.textContent = `+${percentage}%`;
+    } else if (difference < 0) {
+      currentAmountElement.style.color = "red";
+      currentPercentageElement.style.color = "red";
+      currentPercentageElement.textContent = `${percentage}%`;
+    } else {
+      currentAmountElement.style.color = "black";
+      currentPercentageElement.style.color = "black";
+      currentPercentageElement.textContent = `${percentage}%`;
+    }
+  }
+};
+
+updateProfitLoss();

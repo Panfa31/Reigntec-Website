@@ -1,7 +1,6 @@
 .logo {
   height: 40px;
   width: auto;
-  align: left;
 }
 /* Global styles */
 body {
@@ -38,17 +37,21 @@ body {
   color: #ffcc00;
 }
 
+.Porfit-loss {
+  display: flex;
+  flex-direction: row;
+}
 .Highlights {
-  display: inline-flex;
-  width: 372px;
+  width: 281px;
   height: 153px;
-  flex-shrink: 0;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1c9d78;
-  color: #fff;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
+  padding: 10px 31px;
+  margin: 10px;
+}
+.Highlights p {
   text-align: center;
 }

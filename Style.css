@@ -1,3 +1,9 @@
+html.dark-mode {
+  filter: invert(100%);
+}
+html.dark-mode img {
+  filter: invert(100%);
+}
 /* logo placement and size*/
 .logo {
   position: fixed;
@@ -19,15 +25,6 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-p {
-  color: var(--gold, #f1b94d);
-  font-family: Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  align: center;
 }
 
 #password {
@@ -159,10 +156,11 @@ input:checked + .slider.round:before {
 
 /* styles.css */
 .Landing-Page {
-  color: white;
+  background-color: rgb(145, 70, 70);
   margin-bottom: 200px;
   margin-top: 200px;
   margin-left: 200px;
+  flex: 1;
 }
 
 .Landing-Page .content-container {
@@ -210,29 +208,31 @@ button {
   color: #f1b94d;
 }
 p {
-  font-size: 1.2rem;
   color: #000;
-  text-align: center;
 }
 .Start-trading {
   width: 174px;
   height: 50px;
-  flex-shrink: 0;
   border-radius: 30px;
   font-size: 1.2rem;
   font-weight: bold;
-  border: none;
   background-color: #f1b94d;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   align: center;
 }
-
+#start-trading {
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  margin: 5px;
+  padding-right: 5px; /* Add padding for the icon */
+}
 .row {
   display: flex;
   justify-content: space-between;
-
   padding: 50px 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -254,17 +254,13 @@ h3 {
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 #Portfolio-text {
   text-align: center;
 }
 section {
-  padding: 70px 0;
+  text-align: center;
+  flex: 1;
+
   text-align: center;
 }
 
@@ -361,7 +357,7 @@ span {
 footer {
   background-color: #f1b94d; /* Set your desired background color */
   color: white;
-  padding: 50px 0;
+
   width: 100%;
   margin-top: auto; /* Push the footer to the bottom */
   text-align: center;
@@ -401,7 +397,6 @@ footer {
 .bottomfooter p {
   text-align: center;
   display: inline-block;
-  padding: 50px;
 }
 /* Reset some default styles */
 * {
@@ -577,16 +572,21 @@ button {
   margin-left: 10px;
   cursor: pointer;
 }
-.Mange-PortfolioSection {
-  display: inline-flex;
-  align-items: flex-start;
-  display: block;
+.Mange-PortfolioSection,
+.Recurring-buys {
+  background-color: #f1b94d;
+  align-items: center;
+  margin-left: 500px;
+  margin-right: 500px;
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
   max-width: 600px;
 }
 
-/* Add your other CSS styles as needed */
-
-/* Style for the logo */
 .logo {
   height: 40px;
 }
@@ -663,13 +663,14 @@ button {
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  color: #333;
+  color: #373637;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
 }
 
 .search {
@@ -743,10 +744,13 @@ input[type="search"] {
   cursor: pointer;
   text-decoration: none;
 }
-
+.footer-bottom,
+.bottomfooter {
+  text-align: center;
+}
 /* Dark mode styles */
 body.dark-mode {
-  background-color: black;
+  background-color: #373637;
   color: white;
 }
 
@@ -768,4 +772,50 @@ body.light-mode .invert {
 /* Example class to invert color */
 .invert-color {
   transition: color 0.3s ease;
+}
+/* Add animation styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply initial state to elements */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Apply animation on scroll */
+[data-animate].animated {
+  animation: fadeIn 0.5s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.coins {
+  background-color: #645d4f;
+  display: flex;
+}
+.coin {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 500px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+aside {
+  width: 30%;
+  height: 100%;
+  background-color: #f1b94d;
+  border-radius: 15px;
 }

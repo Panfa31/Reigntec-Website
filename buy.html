@@ -1,0 +1,73 @@
+<!-- FILEPATH: /e:/Projects/Websites/Reigntec Website/buy.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy/Sell Page</title>
+  </head>
+  <body>
+    <h1>Buy/Sell Page</h1>
+
+    <label for="coin">Select Coin:</label>
+    <select id="coin">
+      <option value="bitcoin">Bitcoin</option>
+      <option value="ethereum">Ethereum</option>
+      <option value="litecoin">Litecoin</option>
+      <!-- Add more options for other coins as needed -->
+    </select>
+
+    <br /><br />
+
+    <label for="payWith">Pay With:</label>
+    <select id="payWith">
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="gbp">GBP</option>
+      <!-- Add more options for other currencies as needed -->
+    </select>
+
+    <br /><br />
+
+    <h3>Exchange Rate:</h3>
+    <p id="exchangeRate"></p>
+
+    <script>
+      // Function to calculate and display the exchange rate
+      function calculateExchangeRate() {
+        var coin = document.getElementById("coin").value;
+        var payWith = document.getElementById("payWith").value;
+
+        // Perform API call or calculation to get the exchange rate
+        // Replace the following line with your own logic
+        var exchangeRate = getExchangeRate(coin, payWith);
+
+        // Display the exchange rate
+        document.getElementById("exchangeRate").innerHTML =
+          "1 " +
+          coin.toUpperCase() +
+          " = " +
+          exchangeRate +
+          " " +
+          payWith.toUpperCase();
+      }
+
+      // Function to get the exchange rate
+      function getExchangeRate(coin, payWith) {
+        // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
+        // For demonstration purposes, we'll return a random number between 1 and 10
+        return Math.floor(Math.random() * 10) + 1;
+      }
+
+      // Call the calculateExchangeRate function when the coin or payWith dropdowns are changed
+      document
+        .getElementById("coin")
+        .addEventListener("change", calculateExchangeRate);
+      document
+        .getElementById("payWith")
+        .addEventListener("change", calculateExchangeRate);
+
+      // Initial calculation on page load
+      calculateExchangeRate();
+    </script>
+  </body>
+</html>
