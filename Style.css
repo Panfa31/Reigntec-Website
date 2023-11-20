@@ -1,13 +1,72 @@
-html.dark-mode {
-  filter: invert(100%);
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root {
+  --page-bg: #fff;
+
+  --primary-text: #3c3a47;
+  --muted-text: #b1b0b5;
+
+  --logo-fill: var(--primary-text);
+
+  --input-bg: #f5f5f6;
+  --input-bg-hover: #ecebed;
+  --input-border-focus: var(--muted-text);
+  --input-text: var(--primary-text);
+  --input-placeholder: var(--muted-text);
+
+  --button-text: #d19361;
+  --button-text-hover: #faf4ef;
+
+  --switch-bg: #f5f5f6;
+  --switch-circle: #fff;
+  --icon-sun: #f1b94d;
+  --icon-moon: var(--muted-text);
+
+  --icon-socials: var(--primary-text);
+  --icon-socials-hover: #77757e;
+
+  --default-border-radius: 8px;
+  --default-transition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    fill 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-html.dark-mode img {
-  filter: invert(100%);
+
+/* ================================================= */
+/* General styles */
+/* ================================================= */
+html {
+  font-size: 112.5%; /* 18px */
+  margin: 0;
 }
-/* logo placement and size*/
 .logo {
   position: fixed;
   width: 250px;
+}
+
+#theme-switch {
+  background-color: var(--switch-bg);
+  border-radius: 50px;
+  display: flex;
+  alight-items: center;
+  gap: 1.33rem;
+  cursor: pointer;
+  padding: 0.66rem;
+}
+
+#theme-switch :: ::before {
+  content: "";
+  width: 1.33rem;
+  height: 1.33rem;
+  border-radius: 50%;
+  background-color: var(--switch-circle);
+  transition: transform 0.3s ease-in-out;
+}
+#icon-sun {
+  fill: var(--icon-sun);
+}
+#icon-moon {
+  fill: var(--icon-moon);
 }
 /*login Page*/
 .wrapper {
@@ -153,32 +212,42 @@ input:checked + .slider.round:before {
   background-color: #34495e;
   color: white;
 }
-
-/* styles.css */
-.Landing-Page {
-  background-color: rgb(145, 70, 70);
-  margin-bottom: 200px;
-  margin-top: 200px;
-  margin-left: 200px;
-  flex: 1;
+.land {
+  display: flex;
+  flex-direction: row;
 }
-
-.Landing-Page .content-container {
-  align-items: left;
-  max-width: 600px;
-  margin: 0 auto;
+.Landing-Page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 50px;
+  max-width: 700px;
+}
+.coins {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 250px;
+  max-width: 700px;
+}
+.coins h2 {
+  text-align: center;
+  align-items: center;
 }
 
 /* CSS for the row-learn-more container */
 .row-learn-more {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  padding: 50px;
   margin: 0 auto;
-  padding: 20px;
 }
-
+.section2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0 auto;
+  align-items: center;
+}
 /* CSS for each column inside row-learn-more */
 
 .Learn-More,
@@ -191,16 +260,6 @@ button {
   border-radius: 30px;
   cursor: pointer;
   align: center;
-}
-/* Adjust styles for smaller screens */
-@media only screen and (max-width: 768px) {
-  .row-learn-more-column {
-    flex: 1 1 100%; /* Take full width on smaller screens */
-    margin: 10px 0;
-  }
-}
-
- {
 }
 .buy-trade {
   font-size: 3rem;
@@ -247,20 +306,19 @@ button {
   flex: 1;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
-
+.row a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
 h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 #Portfolio-text {
-  text-align: center;
-}
-section {
-  text-align: center;
-  flex: 1;
-
   text-align: center;
 }
 
@@ -367,15 +425,15 @@ footer {
 .footer-section h2 {
   font-size: 16px; /* Adjust the font size as needed */
   margin-bottom: 10px;
-  /* Adjust the color as needed */
 }
 
 /* Remove underline from links within the footer section */
 .footer-section ul,
 .footer-section ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style: none; /* Remove default list styles */
-  padding: 0;
-  margin: 0;
 }
 
 .footer-section ul li a {
@@ -386,14 +444,11 @@ footer {
 /* Change to a horizontal structure */
 .footer-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   background-color: #f1b94d;
 }
 
-.footer-section {
-  text-align: center;
-  margin-bottom: 20px;
-}
 .bottomfooter p {
   text-align: center;
   display: inline-block;
@@ -404,7 +459,9 @@ footer {
   padding: 0;
   box-sizing: border-box;
 }
-
+.soicalmedia {
+  padding: 30px 0 0 30px;
+}
 /* Style the navbar */
 .navbar {
   padding: 10px; /* Add padding to the navbar */
@@ -500,13 +557,21 @@ h2 {
 }
 .coin {
   text-align: center;
+  height: 50px;
   display: flex;
-  margin: 0 10px; /* Optional: Add some spacing between elements */
-  vertical-align: top; /* Optional: Align elements to the top */
-  align-items: center;
-  gap: 83px;
-  padding: 15px;
+
   padding-right: 150px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 350px;
+
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin: 10px;
 }
 .fund-btn {
   padding-right: 100px;
@@ -522,7 +587,23 @@ h2 {
   margin: 0 5px; /* Optional: Add some spacing between buttons */
   left: 50%;
 }
+.seemorelin {
+  text-align: center;
+  align-items: center;
+  padding: auto;
+}
+.seemorelin a {
+  text-decoration: none;
+  color: #f1b94d;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  padding: auto;
+}
 
+.seemorelin a:hover {
+  color: #ffcc00; /* Change the color on hover */
+}
 .wallet {
   background-color: #88ae60;
   width: 1162px;
@@ -572,21 +653,20 @@ button {
   margin-left: 10px;
   cursor: pointer;
 }
-.Mange-PortfolioSection,
-.Recurring-buys {
-  background-color: #f1b94d;
-  align-items: center;
-  margin-left: 500px;
-  margin-right: 500px;
-  flex: 1;
+.Mange-PortfolioSection {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #f1f1f1;
   margin: 10px;
   text-align: center;
   max-width: 600px;
 }
-
+.Recurring-buys {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 600px;
+}
 .logo {
   height: 40px;
 }
@@ -688,17 +768,6 @@ input[type="search"] {
   border-radius: 5px;
 }
 
-.coin {
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  width: 200px;
-}
-
-.coin img {
-  margin-bottom: 10px;
-}
-
 .trade-btn button {
   margin-top: 10px;
   padding: 5px 10px;
@@ -718,22 +787,9 @@ input[type="search"] {
   );
 }
 
-.row-learn-more {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* CSS for each column inside row-learn-more */
 .row-learn-more-column {
   flex: 1;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  margin: 10px;
+  padding: 200px;
   text-align: center;
 }
 .Start-earning {
@@ -798,21 +854,6 @@ body.light-mode .invert {
   transform: translateY(0);
 }
 
-.coins {
-  background-color: #645d4f;
-  display: flex;
-}
-.coin {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  width: 500px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 aside {
   width: 30%;
   height: 100%;
