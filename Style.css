@@ -860,3 +860,29 @@ aside {
   background-color: #f1b94d;
   border-radius: 15px;
 }
+
+/* Add general styles for mobile phones */
+@media only screen and (max-width: 600px) {
+  /* Adjust padding and font sizes for smaller screens */
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Modify specific styles for mobile phones */
+  .trade-btn button {
+    margin-top: 5px;
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+
+  .row-learn-more-column {
+    padding: 50px;
+  }
+
+  .Start-earning {
+    padding: 8px 16px;
+  }
+}
+
+/* Add more media queries and styles as needed */
