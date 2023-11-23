@@ -829,60 +829,74 @@ body.light-mode .invert {
 .invert-color {
   transition: color 0.3s ease;
 }
-/* Add animation styles */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .row {
+    flex-direction: column;
+    padding: 20px;
   }
-}
 
-/* Apply initial state to elements */
-[data-animate] {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* Apply animation on scroll */
-[data-animate].animated {
-  animation: fadeIn 0.5s ease-out;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-aside {
-  width: 30%;
-  height: 100%;
-  background-color: #f1b94d;
-  border-radius: 15px;
-}
-
-/* Add general styles for mobile phones */
-@media only screen and (max-width: 600px) {
-  /* Adjust padding and font sizes for smaller screens */
-  body {
+  .row .column {
     padding: 10px;
-    font-size: 14px;
   }
 
-  /* Modify specific styles for mobile phones */
-  .trade-btn button {
-    margin-top: 5px;
-    padding: 3px 6px;
-    font-size: 12px;
+  .form_section-Register {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .totalPort,
+  .my-wallet,
+  .currency {
+    width: 100%;
+  }
+
+  .coin {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Trade-btn {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .seemorelin {
+    padding: 10px;
+  }
+
+  .nav-bar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .search {
+    margin: 10px 0;
   }
 
   .row-learn-more-column {
     padding: 50px;
   }
-
-  .Start-earning {
-    padding: 8px 16px;
-  }
 }
-
-/* Add more media queries and styles as needed */
