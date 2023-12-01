@@ -43,7 +43,9 @@ html {
   position: fixed;
   width: 250px;
 }
-
+.nav {
+  background-color: var(--icon-sun);
+}
 #theme-switch {
   background-color: var(--switch-bg);
   border-radius: 50px;
@@ -745,7 +747,9 @@ body {
   background-color: #ffffff;
   color: #373637;
 }
-
+body ::-webkit-scrollbar {
+  display: none;
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
