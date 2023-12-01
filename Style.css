@@ -25,7 +25,8 @@
 
   --icon-socials: var(--primary-text);
   --icon-socials-hover: #77757e;
-
+  --family: "Arial Regular", Arial Italic, Arial, Helvetica Neue Light,
+    Avenir Next Regular, Arial Bold Italic, Arial Bold;
   --default-border-radius: 8px;
   --default-transition: color 0.3s ease-in-out,
     background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
@@ -43,9 +44,7 @@ html {
   position: fixed;
   width: 250px;
 }
-.nav {
-  background-color: var(--icon-sun);
-}
+
 #theme-switch {
   background-color: var(--switch-bg);
   border-radius: 50px;
