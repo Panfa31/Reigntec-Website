@@ -49,13 +49,13 @@ html {
   background-color: var(--switch-bg);
   border-radius: 50px;
   display: flex;
-  alight-items: center;
+  align-items: center;
   gap: 1.33rem;
   cursor: pointer;
   padding: 0.66rem;
 }
 
-#theme-switch :: ::before {
+#theme-switch ::before {
   content: "";
   width: 1.33rem;
   height: 1.33rem;
@@ -105,12 +105,7 @@ h1 {
   font-weight: 400;
   line-height: normal;
 }
-.Login-button {
-  width: 174px;
-  border-radius: 30px;
-  flex-shrink: 0;
-  background: var(--gold, #f1b94d);
-}
+
 .forgot {
   color: #f1b94d;
 }
@@ -194,36 +189,6 @@ input:checked + .slider.round:before {
   height: auto;
 }
 
-.Login-button-Home,
-.Register-button-Home {
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  background-color: #f1b94d;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: 10px; /* Adjusted spacing */
-  align: right;
-}
-
-.Login-button-Home:hover,
-.Register-button-Home:hover {
-  background-color: #34495e;
-  color: white;
-}
-.land {
-  display: flex;
-  flex-direction: row;
-}
-.Landing-Page {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-left: 50px;
-  max-width: 700px;
-}
 .coins {
   display: flex;
   flex-direction: column;
@@ -251,17 +216,6 @@ input:checked + .slider.round:before {
 }
 /* CSS for each column inside row-learn-more */
 
-.Learn-More,
-button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #f1b94d;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  align: center;
-}
 .buy-trade {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -279,7 +233,7 @@ p {
   background-color: #f1b94d;
   color: white;
   cursor: pointer;
-  align: center;
+  align-items: center;
 }
 #start-trading {
   text-align: center;
@@ -626,19 +580,7 @@ h2 {
 .ser-div form {
   display: inline-block; /* Make the form inline-block to keep it on the same line */
 }
-/* Style for the nav-bar */
-.nav-bar {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 68px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: none; /* Remove the background */
-  padding: 10px 0;
-  z-index: 999;
-}
+
 .nav_bar {
   display: flex;
   justify-content: space-between;
@@ -670,32 +612,6 @@ button {
 }
 .logo {
   height: 40px;
-}
-
-/* Style for the nav-bar-menu */
-.nav-bar-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-/* Style for nav-bar list items */
-.nav-bar-menu li {
-  margin-right: 10px; /* Adjust spacing between items */
-}
-
-/* Style for nav-bar links */
-.nav-bar-menu li a {
-  text-decoration: none;
-  color: #333; /* Default text color */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Change text color on hover */
-.nav-bar-menu li a:hover {
-  color: #ff0000;
 }
 
 /* Style for the dropdown button */
@@ -875,11 +791,6 @@ body.light-mode .invert {
     padding: 10px;
   }
 
-  .nav-bar-menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .dropdown-content {
     position: static;
     background-color: transparent;
@@ -904,50 +815,9 @@ body.light-mode .invert {
   }
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
 /* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.nav_bar {
-  justify-content: space-between;
-}
-.nav-bar a {
-  color: var(--Black, #373637);
-  font-family: Arial Nova;
-  font-style: normal;
-  font-weight: bold;
-}
-/* Style for the nav-bar-menu */
-.nav-bar-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-/* Style for nav-bar list items */
-.nav-bar-menu li {
-  font-size: 16px; /* Set font size */
-  margin-right: 50px; /* Adjust spacing between items */
-}
-
-/* Style for nav-bar links */
-.nav-bar-menu li a {
-  text-decoration: none;
-  color: #333; /* Default text color */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Change text color on hover */
-.nav-bar-menu li a:hover {
-  color: #f1b94d;
 }

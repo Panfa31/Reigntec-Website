@@ -1,0 +1,267 @@
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root {
+  --page-bg: #fff;
+  --primary-text: #3c3a47;
+  --muted-text: #b1b0b5;
+  --logo-fill: var(--primary-text);
+  --input-bg: #f5f5f6;
+  --input-bg-hover: #ecebed;
+  --input-border-focus: var(--muted-text);
+  --input-text: var(--primary-text);
+  --input-placeholder: var(--muted-text);
+  --button-text: #d19361;
+  --button-text-hover: #faf4ef;
+  --switch-bg: #f5f5f6;
+  --switch-circle: #fff;
+  --primiry-color: #f1b94d;
+  --secondary-color: #373637;
+  --tertiary-color: #ffffff;
+}
+
+/* ================================================= */
+/* General styles */
+/* ================================================= */
+
+.logo {
+  position: fixed;
+  width: 250px;
+}
+
+/* ================================================= */
+/*Nav Style */
+/* ================================================= */
+
+.nav {
+  background-color: var(--primiry-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 10px;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for the nav-bar */
+.nav-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.nav-bar a {
+  color: var(--Black, #373637);
+  font-family: Arial Nova;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Style for the nav-bar-menu */
+.nav-bar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-menu li a {
+  text-decoration: none;
+  color: black; /* Default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  margin-right: 10px;
+}
+
+.nav-bar-menu li a:hover {
+  color: black;
+}
+
+/* ================================================= */
+/*Page1*/
+/* ================================================= */
+.land {
+  display: flex;
+  flex-direction: row;
+}
+.Landing-Page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+.buy-trade {
+  color: #f1b94d;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cryptocurrencies {
+  color: #373637;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* ================================================= */
+/*Page2*/
+/* ================================================= */
+.crypto-exchange {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1b94d;
+}
+.crypto-exchange-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.crypto-exchange-text h1 {
+  color: #373637;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.crypto-exchange-text p {
+  font-family: Arial;
+  font-size: 26px;
+  text-decoration: none;
+  color: black; /* Default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  margin-right: 10px;
+  list-style: none;
+  margin: 2px;
+}
+/* ================================================= */
+/*Page3*/
+/* ================================================= */
+#Portfolio-text {
+  color: #373637;
+  font-family: Arial;
+  font-size: 36px;
+  margin: 10px;
+}
+.row {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+  align-items: center;
+}
+.why {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+}
+#Portfolio-text {
+  text-align: center;
+}
+.column h3 {
+  color: #373637;
+  font-family: Arial;
+  font-size: 36px;
+  margin: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column p {
+  font-family: Arial;
+}
+/* ================================================= */
+/*Buttons*/
+/* ================================================= */
+
+.Login-button {
+  width: 174px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  background: var(--gold, #f1b94d);
+}
+
+.Login-button-Home {
+  border-radius: 30px;
+  font-size: 1rem;
+  border: 1px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  background-color: #f1b94d;
+  cursor: pointer;
+  margin-left: 10px; /* Adjusted spacing */
+  align-items: right;
+  font-weight: bold;
+}
+
+.Register-button-Home {
+  border-radius: 30px;
+  font-size: 1rem;
+  border: 1px solid var(--tertiary-color);
+
+  color: #f1b94d;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px; /* Adjusted spacing */
+  align-items: right;
+}
+.Login-button-Home:hover,
+.Register-button-Home:hover {
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: ;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: right;
+}
+.start_trading-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  background: var(--gold, #f1b94d);
+  font-weight: bold;
+}
+
+/* ================================================= */
+/*Assests*/
+/* ================================================= */
+
+.phone {
+  display: flex;
+  width: 700px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 400px;
+  overflow-x: hidden;
+}
+.crypto-exchange-img {
+  display: flex;
+
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 100px;
+  overflow-x: hidden;
+}
