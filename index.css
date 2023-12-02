@@ -23,7 +23,12 @@
 /* ================================================= */
 /* General styles */
 /* ================================================= */
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .logo {
   position: fixed;
   width: 250px;
@@ -112,6 +117,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 0;
+  margin: 0;
 }
 /* ================================================= */
 /*Page2*/
@@ -119,7 +126,9 @@
 .crypto-exchange {
   display: flex;
   flex-direction: row;
-  background-color: #f1b94d;
+
+  width: 100%;
+  height: 100%;
 }
 .crypto-exchange-text {
   display: flex;
@@ -149,10 +158,10 @@
 /*Page3*/
 /* ================================================= */
 #Portfolio-text {
-  color: #373637;
+  color: var(--primiry-color);
   font-family: Arial;
   font-size: 36px;
-  margin: 10px;
+  margin: 150px;
 }
 .row {
   display: flex;
@@ -172,7 +181,7 @@
 .column h3 {
   color: #373637;
   font-family: Arial;
-  font-size: 36px;
+  font-size: 26px;
   margin: 10px;
 }
 .column {
@@ -182,7 +191,50 @@
 }
 .column p {
   font-family: Arial;
+  text-align: center;
 }
+/* ================================================= */
+/*Footer*/
+/* ================================================= */
+.footer-content ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-section-links li {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section-links li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  align-items: center;
+  font-family: Arial;
+}
+
+.footer-section-links h2 {
+  color: #373637;
+  font-family: Arial;
+  font-size: 36px;
+  margin-top: 150px;
+  text-align: center;
+}
+.footer-section-links {
+  background-color: var(--primiry-color);
+}
+.footer-bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
 /* ================================================= */
 /*Buttons*/
 /* ================================================= */
@@ -224,7 +276,6 @@
 button {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: ;
   color: white;
   border: none;
   border-radius: 30px;
@@ -255,6 +306,7 @@ button {
   height: 600px;
   margin-top: 100px;
   margin-left: 400px;
+  margin-bottom: 100px;
   overflow-x: hidden;
 }
 .crypto-exchange-img {
@@ -265,3 +317,6 @@ button {
   margin-left: 100px;
   overflow-x: hidden;
 }
+/* ================================================= */
+/*Responsive*/
+/* ================================================= */
