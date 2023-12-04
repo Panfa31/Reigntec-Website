@@ -15,9 +15,10 @@
   --button-text-hover: #faf4ef;
   --switch-bg: #f5f5f6;
   --switch-circle: #fff;
-  --primiry-color: #f1b94d;
+  --primary-color: #f1b94d;
   --secondary-color: #373637;
   --tertiary-color: #ffffff;
+  --font-family: "HelveticaNeue";
 }
 
 /* ================================================= */
@@ -27,10 +28,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .logo {
-  position: fixed;
+  position: absolute;
   width: 250px;
 }
 
@@ -39,7 +39,7 @@ body {
 /* ================================================= */
 
 .nav {
-  background-color: var(--primiry-color);
+  background-color: var(--secondary-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -57,16 +57,13 @@ body {
 /* Style for the nav-bar */
 .nav-bar {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.nav-bar a {
-  color: var(--Black, #373637);
-  font-family: Arial Nova;
-  font-style: normal;
-  font-weight: bold;
+  flex: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "HelveticaNeue";
+  font-weight: 600;
+  color: #f1b94d;
+  margin: 50px;
 }
 
 /* Style for the nav-bar-menu */
@@ -80,7 +77,7 @@ body {
 
 .nav-bar-menu li a {
   text-decoration: none;
-  color: black; /* Default text color */
+  color: var(--primary-color);
   transition: color 0.3s ease; /* Smooth color transition on hover */
   margin-right: 10px;
 }
@@ -99,26 +96,33 @@ body {
 .Landing-Page {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
-  margin-left: 200px;
+  margin-top: 300px;
+  margin-left: 300px;
+  margin-bottom: 400px;
 }
 .buy-trade {
-  color: #f1b94d;
-  font-family: Arial;
-  font-size: 36px;
-  font-style: normal;
+  color: #373637;
+  font-family: "HelveticaNeue";
   font-weight: 700;
-  line-height: normal;
+  font-size: 36px;
+  padding: 5px;
+  margin: 0;
 }
 .cryptocurrencies {
   color: #373637;
-  font-family: Arial;
-  font-size: 36px;
-  font-style: normal;
+  font-family: "HelveticaNeue";
   font-weight: 700;
-  line-height: normal;
+  font-size: 36px;
   padding: 0;
   margin: 0;
+}
+.phone {
+  display: flex;
+  width: 300px;
+  height: 600px;
+  margin-top: 120px;
+  margin-left: 500px;
+  margin-bottom: 100px;
 }
 /* ================================================= */
 /*Page2*/
@@ -126,42 +130,46 @@ body {
 .crypto-exchange {
   display: flex;
   flex-direction: row;
-
   width: 100%;
   height: 100%;
+  background-color: #f1b94d;
 }
 .crypto-exchange-text {
   display: flex;
   flex-direction: column;
   margin-top: 200px;
-  margin-left: 100px;
+  margin-left: 300px;
 }
 .crypto-exchange-text h1 {
   color: #373637;
-  font-family: Arial;
+  font-family: "Arial";
   font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
+
+  font-weight: 600;
   line-height: normal;
 }
 .crypto-exchange-text p {
-  font-family: Arial;
+  font-family: "HelveticaNeue";
   font-size: 26px;
   text-decoration: none;
-  color: black; /* Default text color */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  color: var(--secondary-color);
   margin-right: 10px;
-  list-style: none;
   margin: 2px;
 }
 /* ================================================= */
 /*Page3*/
 /* ================================================= */
+.Why-Choose-Us {
+  margin: 0;
+}
 #Portfolio-text {
-  color: var(--primiry-color);
-  font-family: Arial;
+  color: #373637;
+  font-family: "Arial";
   font-size: 36px;
-  margin: 150px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-weight: 600;
+  text-align: center;
 }
 .row {
   display: flex;
@@ -173,14 +181,13 @@ body {
 .why {
   display: flex;
   flex-direction: row;
-  margin: 100px;
+  margin-top: 5px;
 }
-#Portfolio-text {
-  text-align: center;
-}
+
 .column h3 {
   color: #373637;
   font-family: Arial;
+  font-weight: 700;
   font-size: 26px;
   margin: 10px;
 }
@@ -190,7 +197,7 @@ body {
   align-items: center;
 }
 .column p {
-  font-family: Arial;
+  font-family: "HelveticaNeue";
   text-align: center;
 }
 /* ================================================= */
@@ -204,31 +211,19 @@ body {
 }
 
 .footer-section-links li {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
 }
 
 .footer-section-links li a {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
   margin-right: 10px;
   align-items: center;
   font-family: Arial;
 }
 
-.footer-section-links h2 {
-  color: #373637;
-  font-family: Arial;
-  font-size: 36px;
-  margin-top: 150px;
-  text-align: center;
-}
 .footer-section-links {
-  background-color: var(--primiry-color);
 }
 .footer-bottom {
   font-family: Arial, Helvetica, sans-serif;
@@ -249,7 +244,7 @@ body {
 .Login-button-Home {
   border-radius: 30px;
   font-size: 1rem;
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid var(--primary-color);
   color: var(--tertiary-color);
   background-color: #f1b94d;
   cursor: pointer;
@@ -261,13 +256,14 @@ body {
 .Register-button-Home {
   border-radius: 30px;
   font-size: 1rem;
-  border: 1px solid var(--tertiary-color);
-
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
   color: #f1b94d;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
+  font-weight: bold;
 }
 .Login-button-Home:hover,
 .Register-button-Home:hover {
@@ -281,6 +277,7 @@ button {
   border-radius: 30px;
   cursor: pointer;
   align-items: center;
+  font-weight: bold;
 }
 
 .button-container {
@@ -294,29 +291,59 @@ button {
   flex-shrink: 0;
   background: var(--gold, #f1b94d);
   font-weight: bold;
+  margin-top: 30px;
 }
 
 /* ================================================= */
 /*Assests*/
 /* ================================================= */
 
-.phone {
-  display: flex;
-  width: 700px;
-  height: 600px;
-  margin-top: 100px;
-  margin-left: 400px;
-  margin-bottom: 100px;
-  overflow-x: hidden;
-}
 .crypto-exchange-img {
   display: flex;
-
   height: 600px;
   margin-top: 100px;
   margin-left: 100px;
   overflow-x: hidden;
 }
+
 /* ================================================= */
-/*Responsive*/
+/*animation */
 /* ================================================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Apply the animation to specific elements */
+[data-animate="fadeIn"] {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+[data-animate="fadeOut"] {
+  opacity: 1;
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+/* Add a class to trigger the fadeOut animation on scroll */
+.fadeOutOnScroll {
+  animation: fadeOut 1s ease-in-out forwards;
+}
