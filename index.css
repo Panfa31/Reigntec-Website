@@ -47,7 +47,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Style for the nav-bar */
@@ -218,8 +217,6 @@
   font-family: Arial;
 }
 
-.footer-section-links {
-}
 .footer-bottom {
   margin: 10px;
   font-family: "Roboto", sans-serif;
@@ -258,9 +255,6 @@
   transition: background-color 0.3s, color 0.3s;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
-}
-.Login-button-Home:hover,
-.Register-button-Home:hover {
 }
 
 button {
@@ -420,7 +414,6 @@ button {
   }
   #Portfolio-text h1 {
     color: #373637;
-    font-family: "Arial";
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 7px;
