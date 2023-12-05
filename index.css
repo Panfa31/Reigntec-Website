@@ -18,7 +18,7 @@
   --primary-color: #f1b94d;
   --secondary-color: #373637;
   --tertiary-color: #ffffff;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Roboto", sans-serif;
 }
 
 /* ================================================= */
@@ -56,7 +56,7 @@
   flex: auto;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   color: #f1b94d;
   margin: 50px;
@@ -98,7 +98,7 @@
 }
 .buy-trade {
   color: #373637;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   font-size: 36px;
   padding: 5px;
@@ -106,7 +106,7 @@
 }
 .cryptocurrencies {
   color: #373637;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   font-size: 36px;
   padding: 0;
@@ -144,7 +144,7 @@
   line-height: normal;
 }
 .crypto-exchange-text p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 26px;
   text-decoration: none;
   color: var(--secondary-color);
@@ -176,7 +176,7 @@
 .why {
   display: flex;
   flex-direction: row;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .column h3 {
@@ -192,7 +192,7 @@
   align-items: center;
 }
 .column p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 /* ================================================= */
@@ -221,7 +221,8 @@
 .footer-section-links {
 }
 .footer-bottom {
-  font-family: Arial, Helveti"a,sans-serif
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -360,7 +361,7 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 5px;
@@ -368,7 +369,7 @@ button {
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 0;
@@ -401,7 +402,7 @@ button {
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     color: var(--secondary-color);
     margin: 2px;
@@ -448,7 +449,7 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 5px;
@@ -456,7 +457,7 @@ button {
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 0;
@@ -489,7 +490,7 @@ button {
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     color: var(--secondary-color);
     margin: 2px;
@@ -536,7 +537,7 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 5px;
@@ -544,7 +545,7 @@ button {
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     font-size: 30px;
     padding: 0;
@@ -578,7 +579,7 @@ button {
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     text-decoration: none;
     color: var(--secondary-color);
