@@ -18,7 +18,7 @@
   --primary-color: #f1b94d;
   --secondary-color: #373637;
   --tertiary-color: #ffffff;
-  --font-family: "HelveticaNeue";
+  --font-family: "HelveticaNeue", sans-serif;
 }
 
 /* ================================================= */
@@ -56,8 +56,8 @@
   flex: auto;
   justify-content: space-between;
   align-items: center;
-  font-family: "HelveticaNeue";
-  font-weight: 600;
+  font-family: "HelveticaNeue", sans-serif;
+
   color: #f1b94d;
   margin: 50px;
 }
@@ -98,16 +98,16 @@
 }
 .buy-trade {
   color: #373637;
-  font-family: "HelveticaNeue";
-  font-weight: 700;
+  font-family: "HelveticaNeue", sans-serif;
+
   font-size: 36px;
   padding: 5px;
   margin: 0;
 }
 .cryptocurrencies {
   color: #373637;
-  font-family: "HelveticaNeue";
-  font-weight: 700;
+  font-family: "HelveticaNeue", sans-serif;
+
   font-size: 36px;
   padding: 0;
   margin: 0;
@@ -141,11 +141,10 @@
   font-family: "Arial";
   font-size: 36px;
 
-  font-weight: 600;
   line-height: normal;
 }
 .crypto-exchange-text p {
-  font-family: "HelveticaNeue";
+  font-family: "HelveticaNeue", sans-serif;
   font-size: 26px;
   text-decoration: none;
   color: var(--secondary-color);
@@ -164,7 +163,7 @@
   font-size: 36px;
   margin-top: 50px;
   margin-bottom: 70px;
-  font-weight: 600;
+
   text-align: center;
 }
 .row {
@@ -183,7 +182,7 @@
 .column h3 {
   color: #373637;
   font-family: Arial;
-  font-weight: 700;
+
   font-size: 26px;
   margin: 10px;
 }
@@ -193,7 +192,7 @@
   align-items: center;
 }
 .column p {
-  font-family: "HelveticaNeue";
+  font-family: "HelveticaNeue", sans-serif;
   text-align: center;
 }
 /* ================================================= */
@@ -222,7 +221,7 @@
 .footer-section-links {
 }
 .footer-bottom {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helveti"a,sans-serif
   text-align: center;
 }
 
@@ -246,7 +245,6 @@
   cursor: pointer;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
-  font-weight: bold;
 }
 
 .Register-button-Home {
@@ -259,7 +257,6 @@
   transition: background-color 0.3s, color 0.3s;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
-  font-weight: bold;
 }
 .Login-button-Home:hover,
 .Register-button-Home:hover {
@@ -273,7 +270,6 @@ button {
   border-radius: 30px;
   cursor: pointer;
   align-items: center;
-  font-weight: bold;
 }
 
 .button-container {
@@ -286,7 +282,6 @@ button {
   border-radius: 30px;
   flex-shrink: 0;
   background: var(--gold, #f1b94d);
-  font-weight: bold;
   margin-top: 30px;
 }
 
@@ -348,7 +343,7 @@ button {
 /*media */
 /* ================================================= */
 /* smaller phone */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -365,16 +360,16 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 5px;
     margin: 0;
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -402,11 +397,11 @@ button {
     color: #373637;
     font-family: "Arial";
     font-size: 36px;
-    font-weight: 600;
+
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     font-size: 26px;
     color: var(--secondary-color);
     margin: 2px;
@@ -428,7 +423,7 @@ button {
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 7px;
-    font-weight: 600;
+
     text-align: center;
   }
   .why {
@@ -436,7 +431,7 @@ button {
   }
 }
 /* Smartpohne and more*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -453,16 +448,16 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 5px;
     margin: 0;
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -490,11 +485,11 @@ button {
     color: #373637;
     font-family: "Arial";
     font-size: 36px;
-    font-weight: 600;
+
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     font-size: 26px;
     color: var(--secondary-color);
     margin: 2px;
@@ -516,7 +511,7 @@ button {
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 7px;
-    font-weight: 600;
+
     text-align: center;
   }
   .why {
@@ -524,7 +519,7 @@ button {
   }
 }
 /* Laptops more*/
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -541,16 +536,16 @@ button {
   }
   .buy-trade {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 5px;
     margin: 0;
   }
   .cryptocurrencies {
     color: #373637;
-    font-family: "HelveticaNeue";
-    font-weight: 700;
+    font-family: "HelveticaNeue", sans-serif;
+
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -580,11 +575,10 @@ button {
     font-family: "Arial";
     font-size: 36px;
 
-    font-weight: 600;
     line-height: normal;
   }
   .crypto-exchange-text p {
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     font-size: 26px;
     text-decoration: none;
     color: var(--secondary-color);
@@ -608,7 +602,7 @@ button {
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 7px;
-    font-weight: 600;
+
     text-align: center;
   }
   .why {
