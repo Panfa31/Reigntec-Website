@@ -126,14 +126,17 @@
   margin-bottom: 100px;
 }
 .start_trading-btn {
+  color: black;
   font-size: 23px;
   font-weight: 700;
   width: 150px;
   height: 50px;
   border-radius: 30px;
   flex-shrink: 0;
-  background: var(--gold, #f1b94d);
   margin-top: 15px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  background-color: #ffffff;
 }
 
 /* ================================================= */
@@ -660,7 +663,6 @@ button {
     height: 50px;
     border-radius: 30px;
     flex-shrink: 0;
-    background: var(--gold, #f1b94d);
     margin-top: 15px;
     margin-left: 0px;
   }
