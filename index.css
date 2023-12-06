@@ -98,15 +98,13 @@
 .buy-trade {
   color: #373637;
   font-family: "Roboto", sans-serif;
-
   font-size: 36px;
-  padding: 5px;
+  padding: 0px;
   margin: 0;
 }
 .cryptocurrencies {
   color: #373637;
   font-family: "Roboto", sans-serif;
-
   font-size: 36px;
   padding: 0;
   margin: 0;
@@ -338,7 +336,7 @@ button {
 /*media */
 /* ================================================= */
 /* smaller phone */
-@media only screen and (min-width: 0px) and (width < 480px) {
+@media only screen (width < 0px) and (width < 480px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -513,7 +511,7 @@ button {
   }
 }
 /* Laptops more*/
-@media only screen and (width < 996px) {
+@media only screen and (width < 1024) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
