@@ -42,17 +42,6 @@
 /* ================================================= */
 /*Dark modes */
 /* ================================================= */
-.dark-mode .nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 10px;
-  background-color: var(--tertiary-color);
-}
-.dark-mode .logo {
-  filter: invert(100);
-}
 
 .dark-mode .buy-trade,
 .dark-mode .cryptocurrencies,
