@@ -459,7 +459,7 @@ button {
 /* ================================================= */
 
 /* smaller phone */
-@media only screen and (max-width: 0px) and (max-width: 480px) {
+@media only screen and(width < 0px) and (width > 480px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -539,7 +539,7 @@ button {
   }
 }
 /* Smartpohne and more*/
-@media only screen and (max-width: 767px) {
+@media only screen and (width < 768px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -623,7 +623,7 @@ button {
   }
 }
 /* Laptops more*/
-@media only screen and (max-width: 1024) {
+@media only screen and (width < 1024) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -709,7 +709,7 @@ button {
   }
 }
 /* Laptops and larger */
-@media only screen and (max-width: 1900px) {
+@media only screen and (width < 1900px) {
   /* ================================================= */
   /*Page1*/
   /* ================================================= */
@@ -766,15 +766,13 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    margin-left: 200px;
-    margin-top: 120px;
+    margin-left: 100px;
   }
 
   .crypto-exchange-img {
     margin-bottom: 50px;
     width: 420px;
     height: 320px;
-    margin-left: 300px;
   }
   /* ================================================= */
   /*Page3*/
