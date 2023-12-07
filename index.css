@@ -25,12 +25,19 @@
   background-color: #121212;
   color: #ffffff;
 }
+
 /* ================================================= */
 /* General styles */
 /* ================================================= */
 .logo {
   position: absolute;
   width: 250px;
+}
+.switch-1 {
+  color: #ffffff;
+}
+.dark-mode .switch-1 {
+  color: #000000;
 }
 /* ================================================= */
 /*Dark modes */
