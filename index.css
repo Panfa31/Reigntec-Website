@@ -34,7 +34,7 @@
   width: 250px;
 }
 /* ================================================= */
-/*Dark modes Button */
+/*Dark modes mode */
 /* ================================================= */
 
 .theme-switch {
@@ -82,11 +82,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #000000;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #000000;
 }
 
 input:checked + .slider:before {
