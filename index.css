@@ -22,7 +22,7 @@
 }
 .dark-mode {
   --primary-color: #f1b94d;
-  --secondary-color: #373637;
+  --secondary-color: #121212;
   --tertiary-color: #ffffff;
   --font-family: "Roboto", sans-serif;
   background-color: #121212;
@@ -37,6 +37,73 @@
   width: 250px;
 }
 
+/* ================================================= */
+/*Dark modes */
+/* ================================================= */
+
+.dark-mode .logo {
+  filter: invert(100);
+}
+
+.dark-mode .buy-trade,
+.dark-mode .cryptocurrencies,
+.dark-mode .trade-anyway {
+  color: #ffffff;
+}
+
+.dark-mode .start_trading-btn {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode .start_trading-btn:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+.dark-mode .Register-button-Home {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode .Register-button-Home:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.dark-mode .Login-button-Home {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+.dark-mode .Login-button-Home:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode h1 {
+  color: #ffffff;
+}
+.dark-mode .crypto-exchange {
+  background: #ffffff;
+}
+.dark-mode .row h3 {
+  color: #ffffff;
+}
+
+.dark-mode .crypto-exchange-text h1 {
+  color: var(--secondary-color);
+}
+
+.dark-mode .crypto-exchange-text p {
+  color: var(--secondary-color);
+}
+.dark-mode .footer-section-links li a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  margin-right: 10px;
+  align-items: center;
+  font-family: Arial;
+}
 /* ================================================= */
 /*Nav Style */
 /* ================================================= */
@@ -96,7 +163,7 @@
   margin-bottom: 100px;
 }
 .start_trading-btn {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 23px;
   font-weight: 700;
   width: 150px;
@@ -105,69 +172,14 @@
   flex-shrink: 0;
   margin-top: 15px;
   border-radius: 30px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   background-color: #ffffff;
 }
 
 .start_trading-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
-  box-shadow: 0 5px 15px #f1b94d;
-}
-
-/* ================================================= */
-/*Dark modes */
-/* ================================================= */
-
-.dark-mode .buy-trade,
-.dark-mode .cryptocurrencies,
-.dark-mode .trade-anyway {
-  color: #ffffff;
-}
-
-.dark-mode .start_trading-btn {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-}
-.dark-mode .start_trading-btn:hover {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  box-shadow: 0 5px 15px #f1b94d;
-}
-.dark-mode .Register-button-Home {
-  background-color: var(--secondary-color);
-}
-
-.dark-mode .Login-button-Home {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-}
-
-.dark-mode h1 {
-  color: #ffffff;
-}
-.dark-mode .crypto-exchange {
-  background: #ffffff;
-}
-.dark-mode .row h3 {
-  color: #ffffff;
-}
-
-.dark-mode .crypto-exchange-text h1 {
-  color: #f1b94d;
-}
-
-.dark-mode .crypto-exchange-text p {
-  color: #f1b94d;
-}
-.dark-mode .footer-section-links li a {
-  justify-content: space-between;
-  text-decoration: none;
-  color: var(--tertiary-color);
-  margin-right: 10px;
-  align-items: center;
-  font-family: Arial;
 }
 
 /* ================================================= */
@@ -280,26 +292,27 @@
   font-weight: 700;
   border-radius: 30px;
   font-size: 1rem;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary--color);
   color: var(--tertiary-color);
-  background-color: #f1b94d;
+  background-color: var(--secondary-color);
   cursor: pointer;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
 }
 
 .Login-button-Home:hover {
-  background-color: var(--tertiary-color);
-  color: #f1b94d;
+  background-color: var(--tertiary--color);
+  color: var(--secondary-color);
   transition: background-color 0.3s, color 0.3s;
+  border: 1px solid var(--secondary-color);
 }
 
 .Register-button-Home {
   font-weight: 700;
   border-radius: 30px;
   font-size: 1rem;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   background-color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -308,7 +321,7 @@
 }
 
 .Register-button-Home:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
 }
