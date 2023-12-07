@@ -185,9 +185,9 @@ input:checked + .slider:before {
 .Landing-Page {
   display: flex;
   flex-direction: column;
-  margin-top: 280px;
+  margin-top: 380px;
   margin-left: 300px;
-  margin-bottom: 350px;
+  margin-bottom: 430px;
 }
 .buy-trade {
   color: #121212;
@@ -217,8 +217,8 @@ input:checked + .slider:before {
   display: flex;
   width: 278px;
   height: 579px;
-  margin-top: 100px;
-  margin-left: 250px;
+  margin-top: 200px;
+  margin-left: 350px;
   margin-bottom: 100px;
 }
 .start_trading-btn {
@@ -247,7 +247,7 @@ input:checked + .slider:before {
 .crypto-exchange {
   display: flex;
   flex-direction: row;
-  background: var(--tertiary-color);
+  background: #121212;
 }
 .crypto-exchange-text {
   display: flex;
@@ -256,7 +256,7 @@ input:checked + .slider:before {
   margin-left: 300px;
 }
 .crypto-exchange-text h1 {
-  color: var(--tertiary-color);
+  color: #ffffff;
   font-family: "Arial";
   font-size: 36px;
 
@@ -266,7 +266,7 @@ input:checked + .slider:before {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: #ffffff;
   margin-right: 10px;
   margin: 2px;
 }
