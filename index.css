@@ -20,7 +20,14 @@
   --tertiary-color: #ffffff;
   --font-family: "Roboto", sans-serif;
 }
-
+.dark-mode {
+  --primary-color: #f1b94d;
+  --secondary-color: #373637;
+  --tertiary-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+  background-color: #373637;
+  color: #ffffff;
+}
 /* ================================================= */
 /* General styles */
 /* ================================================= */
@@ -41,7 +48,29 @@
   right: 0;
   padding-bottom: 10px;
 }
+/* ================================================= */
+/*Page1 */
+/* ================================================= */
 
+.land {
+  display: flex;
+  flex-direction: row;
+}
+.Landing-Page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 280px;
+  margin-left: 300px;
+  margin-bottom: 350px;
+}
+.buy-trade {
+  color: #373637;
+  font-family: "Roboto", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  padding: 0px;
+  margin: 0;
+}
 .cryptocurrencies {
   color: #373637;
   font-family: "Roboto", sans-serif;
@@ -84,6 +113,54 @@
   background-color: var(--primary-color);
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 5px 15px #f1b94d;
+}
+
+/* ================================================= */
+/*Dark modes */
+/* ================================================= */
+
+.dark-mode .nav {
+  background-color: #373637;
+}
+.dark-mode .buy-trade,
+.dark-mode .cryptocurrencies,
+.dark-mode .trade-anyway {
+  color: #ffffff;
+}
+.dark-mode .start_trading-btn {
+  color: var(--primary-color);
+  background-color: #ffffff;
+}
+.dark-mode .start_trading-btn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 5px 15px #f1b94d;
+}
+.dark-mode h1 {
+  color: #ffffff;
+}
+.dark-mode .crypto-exchange {
+  background: #ffffff;
+}
+.dark-mode .row h3 {
+  color: #ffffff;
+}
+
+.dark-mode .crypto-exchange-text h1 {
+  color: #f1b94d;
+}
+
+.dark-mode .crypto-exchange-text p {
+  color: #f1b94d;
+}
+.dark-mode .footer-section-links li a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  margin-right: 10px;
+  align-items: center;
+  font-family: Arial;
 }
 
 /* ================================================= */
@@ -121,7 +198,7 @@
 .Why-Choose-Us {
   margin: 0;
 }
-#Portfolio-text {
+.Portfolio-text {
   color: #373637;
   font-family: "Arial";
   font-size: 36px;
@@ -374,7 +451,7 @@ button {
   .Why-Choose-Us {
     margin-bottom: 10px;
   }
-  #Portfolio-text h1 {
+  .Portfolio-text h1 {
     color: #373637;
     font-size: 36px;
     margin-top: 5px;
@@ -463,7 +540,7 @@ button {
   .Why-Choose-Us {
     margin-bottom: 10px;
   }
-  #Portfolio-text h1 {
+  .Portfolio-text h1 {
     color: #373637;
     font-family: "Arial";
     font-size: 36px;
@@ -556,7 +633,7 @@ button {
   .Why-Choose-Us {
     margin-bottom: 10px;
   }
-  #Portfolio-text h1 {
+  .Portfolio-text h1 {
     color: #373637;
     font-family: "Arial";
     font-size: 36px;
@@ -656,7 +733,7 @@ button {
   .Why-Choose-Us {
     margin-bottom: 10px;
   }
-  #Portfolio-text h1 {
+  .Portfolio-text h1 {
     color: #373637;
     font-family: "Arial";
     font-size: 36px;
