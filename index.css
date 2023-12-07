@@ -120,23 +120,30 @@
 /*Dark modes */
 /* ================================================= */
 
-.dark-mode .nav {
-  background-color: #373637;
-}
 .dark-mode .buy-trade,
 .dark-mode .cryptocurrencies,
 .dark-mode .trade-anyway {
   color: #ffffff;
 }
+
 .dark-mode .start_trading-btn {
   color: var(--primary-color);
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 }
 .dark-mode .start_trading-btn:hover {
   background-color: var(--primary-color);
   color: #ffffff;
   box-shadow: 0 5px 15px #f1b94d;
 }
+.dark-mode .Register-button-Home {
+  background-color: var(--secondary-color);
+}
+
+.dark-mode .Login-button-Home {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
 .dark-mode h1 {
   color: #ffffff;
 }
@@ -280,6 +287,7 @@
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
 }
+
 .Login-button-Home:hover {
   background-color: var(--tertiary-color);
   color: #f1b94d;
