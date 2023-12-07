@@ -35,7 +35,6 @@
 /* ================================================= */
 
 .nav {
-  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +125,7 @@
   margin-bottom: 100px;
 }
 .start_trading-btn {
-  color: #373637;
+  color: var(--primary-color);
   font-size: 23px;
   font-weight: 700;
   width: 150px;
@@ -135,8 +134,14 @@
   flex-shrink: 0;
   margin-top: 15px;
   border-radius: 30px;
-  border: 1px solid #000;
+  border: 1px solid var(--primary-color);
   background-color: #ffffff;
+}
+
+.start_trading-btn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* ================================================= */
@@ -245,14 +250,6 @@
 /*Buttons*/
 /* ================================================= */
 
-.Login-button {
-  width: 174px;
-
-  border-radius: 30px;
-  flex-shrink: 0;
-  background: var(--gold, #f1b94d);
-}
-
 .Login-button-Home {
   font-weight: 700;
   border-radius: 30px;
@@ -264,20 +261,30 @@
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
 }
+.Login-button-Home:hover {
+  background-color: var(--tertiary-color);
+  color: #f1b94d;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 .Register-button-Home {
   font-weight: 700;
   border-radius: 30px;
   font-size: 1rem;
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  background-color: var(--secondary-color);
-  color: #f1b94d;
+  background-color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   margin-left: 10px; /* Adjusted spacing */
   align-items: right;
 }
 
+.Register-button-Home:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
 button {
   margin-top: 10px;
   padding: 5px 10px;
