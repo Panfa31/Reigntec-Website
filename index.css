@@ -182,6 +182,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   height: fit-content;
+  margin: 30px;
 }
 .Landing-Page {
   display: flex;
