@@ -181,6 +181,7 @@ input:checked + .slider:before {
 .land {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 .Landing-Page {
   display: flex;
