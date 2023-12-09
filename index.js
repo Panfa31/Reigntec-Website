@@ -1,8 +1,5 @@
 const switchElement = document.getElementById("switch-1");
-switchElement.addEventListener("change", function () {
-  const isDarkMode = switchElement.checked;
-  localStorage.setItem("darkMode", isDarkMode);
-});
+
 // Function to toggle dark mode
 function toggleDarkMode() {
   const body = document.body;
@@ -20,18 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     "(prefers-color-scheme: dark)"
   ).matches;
 
-  // Check if the user prefers dark mode and set it accordingly
+  // Set dark mode as the default theme
   if (prefersDarkMode) {
     body.classList.add("dark-mode");
     switchElement.checked = true;
   }
 
   switchElement.addEventListener("change", toggleDarkMode);
-
-  // Check local storage for theme preference
-  const isDarkMode = localStorage.getItem("darkMode");
-  if (isDarkMode === "true") {
-    body.classList.add("dark-mode");
-    switchElement.checked = true;
-  }
 });
