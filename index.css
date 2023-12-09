@@ -140,19 +140,17 @@ input:checked + .slider:before {
 .dark-mode h1 {
   color: #ffffff;
 }
-.dark-mode .crypto-exchange {
-  background: #ffffff;
-}
+
 .dark-mode .row h3 {
   color: #ffffff;
 }
 
 .dark-mode .crypto-exchange-text h1 {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .dark-mode .crypto-exchange-text p {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 .dark-mode .footer-section-links li a {
   justify-content: space-between;
@@ -249,7 +247,6 @@ input:checked + .slider:before {
 .crypto-exchange {
   display: flex;
   flex-direction: row;
-  background: #121212;
 }
 .crypto-exchange-text {
   display: flex;
@@ -258,7 +255,7 @@ input:checked + .slider:before {
   margin-left: 300px;
 }
 .crypto-exchange-text h1 {
-  color: #ffffff;
+  color: #121212;
   font-family: "Arial";
   font-size: 36px;
 
@@ -268,7 +265,8 @@ input:checked + .slider:before {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
   text-decoration: none;
-  color: #ffffff;
+  color: #121212;
+
   margin-right: 10px;
   margin: 2px;
 }
@@ -502,7 +500,6 @@ button {
   .crypto-exchange {
     display: flex;
     flex-direction: column;
-    background: var(--tertiary-color);
   }
   .crypto-exchange-text {
     display: flex;
@@ -585,7 +582,6 @@ button {
   .crypto-exchange {
     display: flex;
     flex-direction: column;
-    background: var(--tertiary-color);
   }
   .crypto-exchange-text {
     display: flex;
@@ -669,7 +665,6 @@ button {
   .crypto-exchange {
     display: flex;
     flex-direction: row;
-    background: var(--tertiary-color);
   }
   .crypto-exchange-text {
     display: flex;
@@ -762,7 +757,6 @@ button {
   .crypto-exchange {
     display: flex;
     flex-direction: row;
-    background: var(--secondary-color);
   }
   .crypto-exchange-text {
     display: flex;
