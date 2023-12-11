@@ -8,9 +8,6 @@ function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
 
-  // Save the user's preference in local storage
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDarkMode);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -27,11 +24,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   switchElement.addEventListener("change", toggleDarkMode);
-
-  // Check local storage for theme preference
-  const isDarkMode = localStorage.getItem("darkMode");
-  if (isDarkMode === "true") {
-    body.classList.add("dark-mode");
-    switchElement.checked = true;
-  }
-});
