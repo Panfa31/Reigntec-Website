@@ -789,3 +789,5 @@ button {
     flex-direction: row;
   }
 }
+
+@media (prefer-color-scheme: dark);
