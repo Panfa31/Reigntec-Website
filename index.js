@@ -8,6 +8,18 @@ function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
 
+  // Save the user's preference in local storage
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
+}
+
+function setDefaultDarkMode() {
+  const body = document.body;
+  body.classList.add("dark-mode");
+
+  // Save the user's preference in local storage
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -17,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "(prefers-color-scheme: dark)"
   ).matches;
 
-  // Check if the user prefers dark mode and set it accordingly
-  if (!prefersDarkMode) {
-    body.classList.add("dark-mode");
-    switchElement.checked = true;
-  }
-
   switchElement.addEventListener("change", toggleDarkMode);
+
+  // Set default mode to dark mode
+  if (prefersDarkMode) {
+    setDefaultDarkMode();
+  }
+});
