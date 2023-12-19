@@ -1,4 +1,5 @@
 const switchElement = document.getElementById("switch-1");
+const moonIcon = document.querySelector(".moon");
 
 // Function to toggle dark mode
 function toggleDarkMode() {
@@ -8,6 +9,13 @@ function toggleDarkMode() {
   // Save the user's preference in local storage
   const isDarkMode = body.classList.contains("dark-mode");
   localStorage.setItem("darkMode", isDarkMode);
+
+  // Change the icon based on dark mode state
+  if (isDarkMode) {
+    moonIcon.src = "Assets/sun.png";
+  } else {
+    moonIcon.src = "Assets/moon.png";
+  }
 }
 
 // Function to set dark mode as the default theme
@@ -23,6 +31,9 @@ function setDefaultDarkMode() {
 
   // Save the user's preference in local storage
   localStorage.setItem("darkMode", true);
+
+  // Change the icon to sun
+  moonIcon.src = "Assets/sun.png";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,9 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (prefersDarkMode) {
     body.classList.add("dark-mode");
     switchElement.checked = true;
+    moonIcon.src = "Assets/sun.png";
   } else {
     setDefaultDarkMode();
   }
 
   switchElement.addEventListener("change", toggleDarkMode);
+
+  // Toggle the icon when clicked
+  moonIcon.addEventListener("click", function () {
+    toggleDarkMode();
+  });
 });

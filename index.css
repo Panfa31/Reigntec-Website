@@ -457,235 +457,64 @@ button {
 /* ================================================= */
 /*media */
 /* ================================================= */
-
-/* smaller phone */
-@media only screen and(width < 0px) and (width > 480px) {
-  /* ================================================= */
-  /*Page1*/
-  /* ================================================= */
+@media only screen and (max-width: 480px) /* ================================================= */ /*Page1*/ /* ================================================= */ {
   .land {
     display: flex;
     flex-direction: column;
-  }
-
-  .Landing-Page {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-  }
-  .buy-trade {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
-
-    font-size: 30px;
     padding: 0;
     margin: 0;
   }
-  .cryptocurrencies {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
 
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  .phone {
-    height: 200px;
-    margin-top: 120px;
-  }
-
-  /* ================================================= */
-  /*Page2*/
-  /* ================================================= */
-  .crypto-exchange {
-    display: flex;
-    flex-direction: column;
-  }
-  .crypto-exchange-text {
-    display: flex;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .crypto-exchange-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: 26px;
-    color: var(--secondary-color);
-    margin: 2px;
-  }
-  .crypto-exchange-img {
-    width: 300px;
-    height: 200px;
-  }
-
-  /* ================================================= */
-  /*Page3*/
-  /* ================================================= */
-  .Why-Choose-Us {
-    margin-bottom: 10px;
-  }
-  .Portfolio-text h1 {
-    color: #121212;
-    font-size: 36px;
-    margin-top: 5px;
-    margin-bottom: 7px;
-
-    text-align: center;
-  }
-  .why {
-    flex-direction: column;
-  }
-}
-/* Smartpohne and more*/
-@media only screen and (width < 768px) {
-  /* ================================================= */
-  /*Page1*/
-  /* ================================================= */
-  .land {
-    display: flex;
-    flex-direction: row;
-  }
   .Landing-Page {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-  }
-  .buy-trade {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
-
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  .cryptocurrencies {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
-
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  .phone {
-    height: 400px;
-    margin-top: 120px;
-
-    margin-bottom: 100px;
-  }
-
-  /* ================================================= */
-  /*Page2*/
-  /* ================================================= */
-  .crypto-exchange {
-    display: flex;
-    flex-direction: column;
-  }
-  .crypto-exchange-text {
-    display: flex;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .crypto-exchange-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: 26px;
-    color: var(--secondary-color);
-    margin: 2px;
-  }
-  .crypto-exchange-img {
-    width: 400px;
-    height: 300px;
-  }
-
-  /* ================================================= */
-  /*Page3*/
-  /* ================================================= */
-  .Why-Choose-Us {
-    margin-bottom: 10px;
-  }
-  .Portfolio-text h1 {
-    color: #121212;
-    font-family: "Arial";
-    font-size: 36px;
-    margin-top: 5px;
-    margin-bottom: 7px;
-
-    text-align: center;
-  }
-  .why {
-    flex-direction: column;
-  }
-}
-/* Laptops more*/
-@media only screen and (width < 1024) {
-  /* ================================================= */
-  /*Page1*/
-  /* ================================================= */
-  .land {
-    display: flex;
-    flex-direction: row;
-  }
-  .Landing-Page {
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    margin-left: 150px;
-    margin-bottom: 10px;
-  }
-  .buy-trade {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
-
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  .cryptocurrencies {
-    color: #121212;
-    font-family: "Roboto", sans-serif;
-
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  .phone {
-    height: 400px;
-    margin-top: 120px;
-    margin-left: 500px;
-    margin-bottom: 100px;
-  }
-
-  /* ================================================= */
-  /*Page2*/
-  /* ================================================= */
-  .crypto-exchange {
-    display: flex;
-    flex-direction: row;
-  }
-  .crypto-exchange-text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-    margin-left: 100px;
-  }
-
-  .crypto-exchange-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: 26px;
-    text-decoration: none;
-    color: var(--secondary-color);
-    margin-right: 10px;
-    margin: 2px;
-  }
-  .crypto-exchange-img {
+    margin-left: 50px;
     margin-bottom: 50px;
-    width: 420px;
-    height: 320px;
   }
+  .buy-trade {
+    color: #121212;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .cryptocurrencies {
+    color: #121212;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+  }
+  .phone {
+    display: none;
+    height: 10px;
+    width: 10px;
+  }
+
+  /* ================================================= */
+  /*Page2*/
+  /* ================================================= */
+  .crypto-exchange {
+    display: flex;
+    flex-direction: column;
+  }
+  .crypto-exchange-text {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .crypto-exchange-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    color: var(--secondary-color);
+    margin: 2px;
+  }
+  .crypto-exchange-img {
+    width: 340px;
+    height: 250px;
+  }
+
   /* ================================================= */
   /*Page3*/
   /* ================================================= */
@@ -694,7 +523,6 @@ button {
   }
   .Portfolio-text h1 {
     color: #121212;
-    font-family: "Arial";
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 7px;
@@ -702,9 +530,10 @@ button {
     text-align: center;
   }
   .why {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
+
 /* Laptops and larger */
 @media only screen and (width < 1900px) {
   /* ================================================= */
@@ -789,5 +618,3 @@ button {
     flex-direction: row;
   }
 }
-
-@media (prefer-color-scheme: dark);
