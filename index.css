@@ -244,31 +244,50 @@ input:checked + .slider:before {
 /* ================================================= */
 /*Page2*/
 /* ================================================= */
-.crypto-exchange {
-  display: flex;
-  flex-direction: row;
-}
-.crypto-exchange-text {
+.buycrypto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 200px;
-  margin-left: 300px;
+  margin-bottom: 300px;
 }
-.crypto-exchange-text h1 {
-  color: #121212;
-  font-family: "Arial";
-  font-size: 36px;
-
-  line-height: normal;
-}
-.crypto-exchange-text p {
+.buycrypto-text {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
-  font-size: 26px;
-  text-decoration: none;
+  font-size: 46px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+  max-width: 600px;
+}
+.buycrypto-text h1 {
   color: #121212;
+  font-size: 36px;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
 
-  margin-right: 10px;
-  margin: 2px;
+.buycrypto-btn {
+  color: var(--secondary-color);
+  font-size: 23px;
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  flex-shrink: 0;
+
+  border-radius: 30px;
+  border: 1px solid var(--secondary-color);
+  background-color: #ffffff;
+}
+.buycrypto-btn-btn:hover {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 /* ================================================= */
 /*Page3*/
@@ -282,7 +301,6 @@ input:checked + .slider:before {
   font-size: 36px;
   margin-top: 50px;
   margin-bottom: 70px;
-
   text-align: center;
 }
 .row {
@@ -416,6 +434,16 @@ button {
 /*animation */
 /* ================================================= */
 
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
