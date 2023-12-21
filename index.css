@@ -295,10 +295,11 @@ input:checked + .slider:before {
   cursor: pointer;
   margin-left: 10px; /* Adjusted spacing */
 }
-.buycrypto-btn-btn:hover {
-  background-color: var(--secondary-color);
-  color: #ffffff;
+.buycrypto-btn:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
   transition: background-color 0.3s, color 0.3s;
+  border: 1px solid var(--secondary-color);
 }
 /* ================================================= */
 /*Page3*/
