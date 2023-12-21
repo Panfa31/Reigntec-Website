@@ -256,12 +256,12 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   font-family: "Arial", sans-serif;
-  font-size: 60px;
-  margin-top: 10px;
-  margin-bottom: 70px;
+  font-size: 52px;
   text-align: center;
   max-width: 800px;
   animation: fadeDown 1s ease-in-out;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 @keyframes fadeDown {
@@ -283,7 +283,7 @@ input:checked + .slider:before {
   font-size: 23px;
   font-weight: 700;
   width: 150px;
-  height: 50px;
+  height: 40px;
   border-radius: 30px;
   flex-shrink: 0;
   animation: fadeDown 1s ease-in-out;
