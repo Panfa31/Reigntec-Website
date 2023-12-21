@@ -244,6 +244,34 @@ input:checked + .slider:before {
 /* ================================================= */
 /*Page2*/
 /* ================================================= */
+
+.icon-1 {
+  height: 60px;
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.Unlim-Poss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.Unlim-Possibilities {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
 .buycrypto {
   display: flex;
   flex-direction: column;
@@ -262,6 +290,7 @@ input:checked + .slider:before {
   animation: fadeDown 1s ease-in-out;
   margin-bottom: 20px;
   font-weight: 600;
+  margin-top: 0;
 }
 
 @keyframes fadeDown {
