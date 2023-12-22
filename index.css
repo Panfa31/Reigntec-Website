@@ -19,6 +19,7 @@
   --primary-color: #f1b94d;
   --secondary-color: #121212;
   --tertiary-color: #ffffff;
+  --accent-color: #aaa1c8;
   --font-family: "Roboto", sans-serif;
 }
 .dark-mode {
@@ -276,7 +277,7 @@ input:checked + .slider:before {
   max-width: 800px;
   margin-bottom: 20px;
   font-weight: 600;
-  color: #aaa1c8;
+  color: var(--accent-color);
 }
 
 .buycrypto {
