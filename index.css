@@ -270,6 +270,7 @@ input:checked + .slider:before {
   max-width: 800px;
   margin-bottom: 20px;
   font-weight: 600;
+  color: #aaa1c8;
 }
 
 .buycrypto {
