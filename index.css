@@ -259,7 +259,7 @@ input:checked + .slider:before {
   align-items: center;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .Unlim-Possibilities {
