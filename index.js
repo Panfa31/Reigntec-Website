@@ -58,4 +58,19 @@ document.addEventListener("DOMContentLoaded", function () {
   moonIcon.addEventListener("click", function () {
     toggleDarkMode();
   });
+
+  // Intersection Observer functionality
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+
+  const scrollElements = document.querySelectorAll(".hidden");
+  scrollElements.forEach((el) => observer.observe(el));
 });
