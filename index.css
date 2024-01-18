@@ -348,7 +348,7 @@ input:checked + .slider:before {
 /* ================================================= */
 /*Page3*/
 /* ================================================= */
-.Why-Choose-Us {
+/* .Why-Choose-Us {
   margin: 0;
 }
 .Portfolio-text {
@@ -387,15 +387,40 @@ input:checked + .slider:before {
 .column p {
   font-family: "Roboto", sans-serif;
   text-align: center;
+} */
+.logo-s3
+{
+  border: none;
+  width: 400px; 
+
 }
+.Section-3
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+.sectionlogo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  align-items: center; 
+   /* box-shadow: rgba(170, 161, 200) 0 0 90px 3px; */
+}
+
 /* ================================================= */
 /*Footer*/
 /* ================================================= */
 .footer-content ul {
   list-style: none;
-  margin: 0;
-  text-align: center;
-  padding: 0;
+  margin-right: 500px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 200px;
 }
 
 .footer-section-links li {
@@ -406,8 +431,6 @@ input:checked + .slider:before {
   justify-content: space-between;
   text-decoration: none;
   color: var(--secondary-color);
-  margin-right: 10px;
-  align-items: center;
   font-family: Arial;
 }
 
@@ -416,7 +439,14 @@ input:checked + .slider:before {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
-
+.footer-section-links i
+{
+  display:  inline-block;
+  align-items:end;
+  float: right;
+  margin-left: 15px;
+  
+}
 /* ================================================= */
 /*Buttons*/
 /* ================================================= */
@@ -485,6 +515,7 @@ button {
   margin-left: 100px;
   overflow-x: hidden;
 }
+
 
 /* ================================================= */
 /*animation */
