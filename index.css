@@ -403,10 +403,11 @@ input:checked + .slider:before {
 .footer-content ul {
 
   list-style: none;
-  margin-right: 30px;
+  margin-right:52px;
   text-align: left;
   margin-bottom: 20px;
   margin-left: 10px;
+
 }
 
 .footer-section-links li {
@@ -428,11 +429,10 @@ input:checked + .slider:before {
 }
 .footer-section-links i
 {
-  display:  inline-block;
+  display:inline-block;
   align-items:end;
   float: right;
-  margin-left: 15px;
-  
+  margin-left: 15px;  
 }
 /* ================================================= */
 /*Buttons*/
