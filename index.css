@@ -176,6 +176,9 @@ input:checked + .slider:before {
   align-items: center;
   font-family: Arial;
 }
+.dark-mode .x {
+  filter: invert(100%);
+  }
 /* ================================================= */
 /*Nav Style */
 /* ================================================= */
@@ -364,7 +367,7 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: center;
   margin-top: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .sectionlogo{
@@ -415,7 +418,7 @@ input:checked + .slider:before {
   text-decoration: none;
   color: var(--secondary-color);
   font-family: Arial;
-
+  font-size: 10px;
 }
 
 .footer-bottom {
