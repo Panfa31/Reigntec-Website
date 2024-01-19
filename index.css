@@ -388,14 +388,11 @@ input:checked + .slider:before {
   
 }
 .glow-left{
-  opacity: .4;
+  opacity: 0.3;
   position:relative;
-  box-shadow: 0 0 150px 45px var(--accent-color);
-
+  box-shadow: 0 0 250px 100px var(--accent-color);
   bottom: 40px;
-
 }
-
 
 /* ================================================= */
 /*Footer*/
