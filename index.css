@@ -17,13 +17,13 @@
   --switch-bg: #f5f5f6;
   --switch-circle: #fff;
   --primary-color: #f1b94d;
-  --secondary-color: #121212;
+  --secondary-color: #000000;
   --tertiary-color: #ffffff;
-  --accent-color: #aaa1c8;
+  --accent-color: rgb(170, 161, 200);
   --font-family: "Roboto", sans-serif;
 }
 .dark-mode {
-  background-color: #121212;
+  background-color: #000000;
   color: #ffffff;
 }
 /* ================================================= */
@@ -234,6 +234,7 @@ input:checked + .slider:before {
   margin-top: 200px;
   margin-left: 350px;
   margin-bottom: 100px;
+  
 }
 .start_trading-btn {
   color: var(--secondary-color);
@@ -285,6 +286,7 @@ input:checked + .slider:before {
   margin-bottom: 20px;
   font-weight: 600;
   color: var(--accent-color);
+
 }
 
 .buycrypto {
@@ -306,6 +308,7 @@ input:checked + .slider:before {
   margin-bottom: 20px;
   font-weight: 600;
   margin-top: 0;
+  
 }
 
 @keyframes fadeDown {
@@ -348,79 +351,60 @@ input:checked + .slider:before {
 /* ================================================= */
 /*Page3*/
 /* ================================================= */
-/* .Why-Choose-Us {
-  margin: 0;
-}
-.Portfolio-text {
-  color: #121212;
-  font-family: "Arial";
-  font-size: 36px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-  text-align: center;
-}
-.row {
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 300px;
-  align-items: center;
-}
-.why {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
-}
 
-.column h3 {
-  color: #121212;
-  font-family: Arial;
-
-  font-size: 26px;
-  margin: 10px;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.column p {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-} */
 .logo-s3
 {
-  border: none;
-  width: 400px; 
-
+  max-width: 400px;
 }
 .Section-3
 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin-top: 200px;
   margin-bottom: 30px;
 }
+
 .sectionlogo{
   display: flex;
   flex-direction: column;
   margin-top: 200px;
   margin-bottom: 300px;
   align-items: center; 
-   /* box-shadow: rgba(170, 161, 200) 0 0 90px 3px; */
 }
+.boxlogo
+{
+  position: absolute;
+}
+
+.boxlogo img
+{
+  position: relative;
+  transform: translate(-50%);
+  left: 200px;
+
+  
+}
+.glow-left{
+  opacity: .4;
+  position:relative;
+  box-shadow: 0 0 150px 45px var(--accent-color);
+
+  bottom: 40px;
+
+}
+
 
 /* ================================================= */
 /*Footer*/
 /* ================================================= */
 .footer-content ul {
+
   list-style: none;
-  margin-right: 500px;
+  margin-right: 30px;
   text-align: left;
   margin-bottom: 20px;
-  margin-left: 200px;
+  margin-left: 10px;
 }
 
 .footer-section-links li {
@@ -432,6 +416,7 @@ input:checked + .slider:before {
   text-decoration: none;
   color: var(--secondary-color);
   font-family: Arial;
+
 }
 
 .footer-bottom {
@@ -729,3 +714,4 @@ button {
     flex-direction: row;
   }
 }
+
