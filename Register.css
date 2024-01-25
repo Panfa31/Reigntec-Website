@@ -208,3 +208,24 @@ margin-top: 10px;
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
+
+  .dark-mode #email:focus {
+    background-color: white;
+  }
+  .dark-mode #password:focus {
+    background-color: white;
+  }
+  .dark-mode #name:focus {
+    background-color: white;
+  }
+  .dark-mode #surname:focus {
+    background-color: white;
+  }
+  .dark-mode .togglePassword
+  {
+    color: var(--tertiary-color);
+  }
+  .dark-mode .togglePassword:focus
+  {
+    color: var(--secondary-color);
+  }
