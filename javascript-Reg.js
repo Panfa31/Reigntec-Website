@@ -100,65 +100,18 @@ loginLink.addEventListener("click", (event) => {
   window.location.href = "login page.html";
 });
 
-const switchElement = document.getElementById("switch-1");
-const moonIcon = document.querySelector(".moon");
 
-// Function to toggle dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle("dark-mode");
+function togglePassword() {
+  var passwordField = document.getElementById("password");
+  var eyeIcon = document.getElementById("eye-icon");
 
-  // Save the user's preference in local storage
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDarkMode);
-
-  // Change the icon based on dark mode state
-  if (isDarkMode) {
-    moonIcon.src = "Assets/sun.png";
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
   } else {
-    moonIcon.src = "Assets/moon.png";
+    passwordField.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
   }
 }
-
-// Function to set dark mode as the default theme
-function setDefaultDarkMode() {
-  const body = document.body;
-  const switchElement = document.getElementById("switch-1");
-
-  // Add dark mode class to body
-  body.classList.add("dark-mode");
-
-  // Set switch element to checked
-  switchElement.checked = true;
-
-  // Save the user's preference in local storage
-  localStorage.setItem("darkMode", true);
-
-  // Change the icon to sun
-  moonIcon.src = "Assets/sun.png";
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const body = document.body;
-  const switchElement = document.getElementById("switch-1");
-  const prefersDarkMode = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-
-  // Set dark mode as the default theme
-  if (prefersDarkMode) {
-    body.classList.add("dark-mode");
-    switchElement.checked = true;
-    moonIcon.src = "Assets/sun.png";
-  } else {
-    setDefaultDarkMode();
-  }
-
-  switchElement.addEventListener("change", toggleDarkMode);
-
-  // Toggle the icon when clicked
-  moonIcon.addEventListener("click", function () {
-    toggleDarkMode();
-  });
-
-});

@@ -128,7 +128,13 @@ transform: translate(-50%, -50%);
   margin: 5px;
   padding-right: 5px; /* Add padding for the icon */
 }
-
+#togglePassword {
+  position: absolute;
+  top: 67%;
+  right: 20px; /* Adjust the right position as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 /* ================================================= */
 /* Button*/
 /* ================================================= */
