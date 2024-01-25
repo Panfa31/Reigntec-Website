@@ -15,57 +15,53 @@
       <nav>
         <div class="navbar">
           <a href="index.html"
-            ><img src="reigntec-01.png" alt="Logo" class="logo"
+            ><img src="Assets\REIGNTEC Logo\reigntec-02.png" alt="Logo" class="logo"
           /></a>
+          <div class="register-link">
+            <p>Do you have a reigntec account?  
+            </p>
+              <button type="button"><a href="login page.html">
+                Sign in
+                </a>
+              </button>
+          </div>
         </div>
       </nav>
     </header>
     <section>
       <div class="form_section-Register">
         <form action="#" class="Reg-form">
-          <h1>Let's get Started!</h1>
-          <p>Enter your details below</p>
-          <div class="form-group">
-            <select id="title" name="title" required>
-              <option value="title">Title</option>
-              <option value="Mr.">Mr.</option>
-              <option value="Miss">Miss</option>
-              <option value="Mrs.">Mrs.</option>
-              <option value="Ms.">Ms.</option>
-            </select>
+          <h1>Create Account</h1>
+          <div class="fullname">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="name"  required />
+            </div>
+
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="surname"  required />
+            </div>
           </div>
           <div class="form-group">
-            <input type="text" id="name" placeholder="First Name*" required />
+            <label>Email</label>
+            <input type="email" id="email"  required />
           </div>
           <div class="form-group">
-            <input type="text" id="surname" placeholder="Last Name*" required />
-          </div>
-          <div class="form-group">
-            <select id="country" name="country" required></select>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Email*" required />
-          </div>
-          <div class="form-group">
+            <label>Password</label>
             <input
               type="password"
               id="password"
-              placeholder="Password*"
+             
               required
             />
           </div>
           <div class="confirm">
             <label
-              ><input type="checkbox" id="confirm" />I confirm I've read,
-              understand and agree to the <a href="#"> PRIVACY POLICY</a></label
-            >
+            ><input type="checkbox" id="confirm" />By clicking "Sign in" below, I agree to reigntec's <a href="#"> Privacy Policy </a> and <a href="#"> User Agreement</a> </label>
           </div>
           <div class="form-group">
             <button type="submit" class="Reg-btton">Register</button>
-          </div>
-          <div class="login-Question">
-            <p>Do you have an account?</p>
-            <a href="login page.html" class="login-gold">Login</a>
           </div>
         </form>
       </div>

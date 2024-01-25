@@ -15,51 +15,48 @@
       <nav>
         <div class="navbar">
           <a href="index.html"
-            ><img src="reigntec-01.png" alt="Logo" class="logo"
+            ><img src="Assets\REIGNTEC Logo\reigntec-02.png" alt="Logo" class="logo"
           /></a>
+          <div class="register-link">
+            <p>Dont't have reigntec account?  
+            </p>
+              <button type="button"><a href="Register Page.html">
+                Create a new account
+                </a>
+              </button>
+          </div>
         </div>
+        
       </nav>
     </header>
-    <div class="wrapper">
+    <div class="form_section-signin">
       <form action="">
-        <h1>Welcome Back!</h1>
-        <p>Enter your details below</p>
-
+        <h1> Sign in</h1>
         <div class="floating-label-input">
-          <input type="text" id="email" placeholder="Email" required />
+          <label> Email address</label>
+          <input type="text" id="email"  required />
         </div>
 
         <div class="floating-label-input">
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
+          <label> Password</label>
+          <input type="password" id="password" required/>
+
           <span id="togglePassword" onclick="togglePassword()">
             <i class="fas fa-eye" id="eye-icon"></i>
           </span>
         </div>
+<div class="tnc">
+By clicking "Sign in" below, I agree to reigntec's <a href="#"> Privacy Policy </a> and <a href="#"> User Agreement</a>
+</div>
 
         <div class="remember-forget">
-          <label><input type="checkbox" id="remember-me" />Remember me</label>
-          <a href="forgotpassword.html" class="forgot-password-link"
-            >Forgot password?</a
-          >
+        <p> <input type="checkbox" id="remember-me" />
+           Remember my email address
+        </p>  
         </div>
-
         <button type="submit" class="Login-btn">Login</button>
-
-        <div class="register-link">
-          <p>
-            Don't have an account?<a
-              href="Register Page.html"
-              id="register-link"
-            >
-              Register</a
-            >
-          </p>
-        </div>
+        <a href="forgotpassword.html" class="forgot-password-link"
+            >Forgot password?</a>
       </form>
     </div>
     <script src="javascript-login.js" defer></script>

@@ -1,228 +1,223 @@
-/* Styles for the logo */
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root,
+.dark-mode {
+  --page-bg: #fff;
+  --primary-text: #3c3a47;
+  --muted-text: #b1b0b5;
+  --logo-fill: var(--primary-text);
+  --input-bg: #f5f5f6;
+  --input-bg-hover: #ecebed;
+  --input-border-focus: var(--muted-text);
+  --input-text: var(--primary-text);
+  --input-placeholder: var(--muted-text);
+  --button-text: #d19361;
+  --button-text-hover: #faf4ef;
+  --switch-bg: #f5f5f6;
+  --switch-circle: #fff;
+  --primary-color: #f1b94d;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --accent-color: rgb(170, 161, 200);
+  --font-family: "Roboto", sans-serif;
+}
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ================================================= */
+/* General styles */
+/* ================================================= */
 .logo {
-  position: fixed;
+  position: absolute;
   width: 250px;
 }
 
-/* Styles for the form */
-.Reg-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; /* Use min-height instead of height */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-/* Styles for the input fields */
-#name,
-#surname,
-#email,
-#password,
-#title,
-#country {
+/* ================================================= */
+/* text */
+/* ================================================= */
+h1
+{
   text-align: center;
-  width: 372px;
-  height: 40px;
+  font-family: var(--font-family);
+}
+label
+{
+  font-family: var(--font-family);
+  align-items: center;
+}
+.login-Question p ,a
+
+{
+  font-family: var(--font-family);
+  text-align: center;
+  
+text-decoration: none;
+}
+.confirm label{
+  max-width: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-link
+{
+  font-family:  var(--font-family);
+  position: absolute;
+display: flex;
+flex-direction: row;
+right: 10px;
+gap: 10px;
+}
+.register-link  a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+label
+{
+  
+  display: block;
+
+  font-size: 14px;
+margin-left: 10px;
+}
+/* ================================================= */
+/* form style */
+/* ================================================= */
+.form_section-Register
+{
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.fullname
+{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+
+#name, #surname{
+  align-items: center;
+  width: 260px;
+  height: 50px;
   border-radius: 15px;
   border: 1px solid rgba(55, 54, 55, 0.3);
   margin: 5px;
+  padding-right: 5px; /* Add padding for the icon */
 }
 
-.togglePassword {
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-/* Styles for the Register button */
-.Reg-btton {
-  margin: 5px;
-  padding: 5px;
-  background-color: #f1b94d;
-  color: white;
-  border: none;
+#email, #password
+{
+  width: 550px;
+  height: 50px;
   border-radius: 15px;
-  cursor: pointer;
-  width: 372px;
-  height: 40px;
-  font-weight: bold;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  margin: 5px;
+  padding-right: 5px; /* Add padding for the icon */
 }
 
-/* Styles for the login-gold */
-.login-gold {
+/* ================================================= */
+/* Button*/
+/* ================================================= */
+.Reg-btton
+{
+
+  width: 570px;
+height: 50px;
+border-radius: 10px;
+ border: 1px solid rgba(55, 54, 55, 0.3);
+color: var(--tertiary-color);
+background-color: var(--secondary-color);
+margin-top: 10px;
+}
+
+.register-link button
+{ 
+  margin-top: 10px;
+width: 100px;
+height: 30px;
+border-radius: 10px;
+ border: 1px solid rgba(55, 54, 55, 0.3);
+color: var(--tertiary-color);
+background-color: var(--secondary-color);
+}
+
+
+/* ================================================= */
+/*Dark modes */
+/* ================================================= */
+
+.dark-mode .form_section-Register,
+.dark-mode .form-group,
+.dark-mode .trade-anyway {
+  color: #ffffff;
+}
+
+.dark-mode .start_trading-btn {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode .start_trading-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode .Login-button-Home {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode .Login-button-Home:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.dark-mode .Register-button-Home {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+.dark-mode .Register-button-Home:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+.dark-mode h1 {
+  color: #ffffff;
+}
+
+.dark-mode .row h3 {
+  color: #ffffff;
+}
+
+.dark-mode .crypto-exchange-text h1 {
+  color: var(--tertiary-color);
+}
+
+.dark-mode .crypto-exchange-text p {
+  color: var(--tertiary-color);
+}
+.dark-mode .footer-section-links li a {
+  justify-content: space-between;
   text-decoration: none;
-  color: var(--gold, #f1b94d);
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 5px;
-}
-
-/* Styles for the forgot link */
-.forgot {
-  color: var(--gold, #f1b94d);
-}
-
-/* Styles for the register-link */
-.register-link p {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* Styles for the login page */
-.wrapper {
-  display: flex;
-  flex-direction: column;
+  color: var(--tertiary-color);
+  margin-right: 10px;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
-/* Styles for the h1 */
-h1 {
-  color: #000;
   font-family: Arial;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0;
 }
-
-/* Styles for the p */
-p {
-  color: var(--gold, #f1b94d);
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* Styles for the a */
-a {
-  text-decoration: none;
-  color: var(--gold, #f1b94d);
-}
-
-/* Styles for the remember-forget */
-.remember-forget {
-  font-family: Helvetica;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 372px;
-  margin: 10px;
-}
-
-/* Styles for the Login-btn */
-.Reg-btn {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #f1b94d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.login-Question {
-  display: flex;
-  align-items: center; /* Center items vertically within the login section */
-}
-
-.login-Question p {
-  color: #000;
-  font-family: Helvetica;
-}
-
-/* Styles for the forgot link */
-.forgot {
-  color: var(--gold, #f1b94d);
-}
-
-/* Styles for the register-link */
-.register-link p {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* Styles for the login page */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
-/* Styles for the p */
-p {
-  color: var(--gold, #f1b94d);
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* Styles for the a */
-a {
-  text-decoration: none;
-  color: var(--gold, #f1b94d);
-}
-
-/* Styles for the remember-forget */
-.remember-forget {
-  font-family: Helvetica;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 372px;
-  margin: 10px;
-}
-
-/* Styles for the Login-btn */
-.Reg-btn {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #f1b94d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Media query for phones */
-@media only screen and (max-width: 600px) {
-  /* Adjust the padding on the nav */
-  nav {
-    padding: 10px;
+.dark-mode .x {
+  filter: invert(100%);
   }
-
-  /* Adjust the width on the remember-forget section */
-  .remember-forget {
-    width: 100%;
-  }
-}
-.confirm {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
-}
-
-.confirm a {
-  color: var(--gold, #4d4df1);
-  text-decoration: underline;
-}
