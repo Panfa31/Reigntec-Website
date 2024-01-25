@@ -40,6 +40,11 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 250px;
 }
+.nav
+{
+  margin-top: 10px;
+  margin-right: 10px;
+}
 body {
   margin: 0;
   padding: 0;

@@ -34,7 +34,10 @@
   position: absolute;
   width: 250px;
 }
-
+.navbar
+{
+  margin-top: 10px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -59,7 +62,7 @@ label
   font-family: var(--font-family);
   text-align: center;
   
-text-decoration: none;
+
 }
 .confirm label{
   max-width: 500px;
@@ -67,7 +70,7 @@ text-decoration: none;
   text-align: center;
 }
 
-.register-link
+.login-link
 {
   font-family:  var(--font-family);
   position: absolute;
@@ -76,7 +79,7 @@ flex-direction: row;
 right: 10px;
 gap: 10px;
 }
-.register-link  a
+.login-link  a
 {
   text-decoration: none;
   color: #ffffff;
@@ -138,92 +141,70 @@ transform: translate(-50%, -50%);
 /* ================================================= */
 /* Button*/
 /* ================================================= */
+
+
+.Login-btn 
+{ 
+  margin-top: 10px;
+width: 100px;
+height: 30px;
+border-radius: 15px;
+ border: 1px solid rgba(55, 54, 55, 0.3);
+color: var(--tertiary-color);
+background-color: var(--secondary-color);
+}
 .Reg-btton
 {
-
   width: 570px;
 height: 50px;
-border-radius: 10px;
+border-radius: 15px;
  border: 1px solid rgba(55, 54, 55, 0.3);
 color: var(--tertiary-color);
 background-color: var(--secondary-color);
 margin-top: 10px;
 }
-
-.register-link button
-{ 
-  margin-top: 10px;
-width: 100px;
-height: 30px;
-border-radius: 10px;
- border: 1px solid rgba(55, 54, 55, 0.3);
-color: var(--tertiary-color);
-background-color: var(--secondary-color);
-}
-
-
 /* ================================================= */
-/*Dark modes */
+/* Dark Mode */
 /* ================================================= */
 
-.dark-mode .form_section-Register,
-.dark-mode .form-group,
-.dark-mode .trade-anyway {
-  color: #ffffff;
-}
 
-.dark-mode .start_trading-btn {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  border: 1px solid var(--tertiary-color);
-}
-.dark-mode .start_trading-btn:hover {
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-  border: 1px solid var(--tertiary-color);
-}
-.dark-mode .Login-button-Home {
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
-  border: 1px solid var(--tertiary-color);
-}
-.dark-mode .Login-button-Home:hover {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-}
+  .dark-mode .Login-btn
+  {
+    background-color: var(--tertiary-color);
+  }
+  .dark-mode .Login-btn a 
+  {
+    color: var(--secondary-color);
+  }
 
-.dark-mode .Register-button-Home {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-}
-.dark-mode .Register-button-Home:hover {
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-  border: 1px solid var(--tertiary-color);
-}
-.dark-mode h1 {
-  color: #ffffff;
-}
-
-.dark-mode .row h3 {
-  color: #ffffff;
-}
-
-.dark-mode .crypto-exchange-text h1 {
-  color: var(--tertiary-color);
-}
-
-.dark-mode .crypto-exchange-text p {
-  color: var(--tertiary-color);
-}
-.dark-mode .footer-section-links li a {
-  justify-content: space-between;
-  text-decoration: none;
-  color: var(--tertiary-color);
-  margin-right: 10px;
-  align-items: center;
-  font-family: Arial;
-}
-.dark-mode .x {
-  filter: invert(100%);
+  .dark-mode .Reg-btton
+  {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+  }
+  .dark-mode .forgot-password-link
+  {
+    color: var(--tertiary-color);
+  }
+  .dark-mode #password
+  {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }.dark-mode #email
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }
+  .dark-mode #name
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }
+  .dark-mode #surname
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
   }
