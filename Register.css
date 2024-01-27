@@ -46,10 +46,16 @@ body {
 /* ================================================= */
 /* text */
 /* ================================================= */
-h1
+h2
 {
-  text-align: left;
+
   font-family: var(--font-family);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  
 }
 label
 {
@@ -92,13 +98,14 @@ gap: 10px;
   color: #ffffff;
 }
 
-label
+.form-group label 
 {
-  
-  display: block;
+display: block;
+font-size: 14px;
 
-  font-size: 14px;
-margin-left: 10px;
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 8px;
 }
 /* ================================================= */
 /* form style */
@@ -115,7 +122,7 @@ transform: translate(-50%, -50%);
 {
   display: flex;
   flex-direction: row;
-  gap: 2px;
+  gap: 20px;
 }
 
 
@@ -125,23 +132,27 @@ transform: translate(-50%, -50%);
   height: 50px;
   border-radius: 15px;
   border: 1px solid rgba(55, 54, 55, 0.3);
-  margin: 5px;
+  font-weight: 400;
   padding-right: 5px; /* Add padding for the icon */
+  margin-bottom: 8px;
+  padding: 8;
 }
 
 #email, #password
 {
+  font-weight: 400;
   width: 550px;
   height: 50px;
   border-radius: 15px;
   border: 1px solid rgba(55, 54, 55, 0.3);
-  margin: 5px;
   padding-right: 5px; /* Add padding for the icon */
+  margin-bottom: 8px;
+  padding: 8;
 
 }
 #togglePassword {
   position: absolute;
-  top: 72%;
+  top: 77%;
   right: 20px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
@@ -149,15 +160,13 @@ transform: translate(-50%, -50%);
 /* ================================================= */
 /* Button*/
 /* ================================================= */
-
-
 .Login-btn 
 { 
   font-size: 1rem;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 5px;
 width: 100px;
-height: 40px;
+height: 35px;
 border-radius: 15px;
  border: 1px solid rgba(55, 54, 55, 0.3);
 color: var(--tertiary-color);
@@ -168,7 +177,7 @@ background-color: var(--secondary-color);
 {
   font-size: 1rem;
   font-weight: 700;
-  width: 570px;
+  width: 560px;
 height: 40px;
 border-radius: 15px;
  border: 1px solid rgba(55, 54, 55, 0.3);
