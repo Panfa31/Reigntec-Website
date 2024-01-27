@@ -1,3 +1,15 @@
+// Define the countries array
+const countries = [
+  { code: "", name: "Select a Country" },
+  { code: "USA", name: "United States" },
+  { code: "CAN", name: "Canada" },
+  { code: "UK", name: "United Kingdom" },
+  { code: "AUS", name: "Australia" },
+  // Add more countries as needed
+];
+countries.forEach((country) => {
+  console.log(country.name);
+});
 const switchElement = document.getElementById("switch-1");
 const moonIcon = document.querySelector(".moon");
 

@@ -139,10 +139,22 @@ transform: translate(-50%, -50%);
   padding: 8;
 }
 
-#email, #password
+#email, #password 
 {
   font-weight: 400;
   width: 550px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  padding-right: 5px; /* Add padding for the icon */
+  margin-bottom: 8px;
+  padding: 8;
+
+}
+#country
+{
+  font-weight: 400;
+  width: 560px;
   height: 50px;
   border-radius: 15px;
   border: 1px solid rgba(55, 54, 55, 0.3);
@@ -243,6 +255,10 @@ margin-top: 10px;
   }
   .dark-mode #surname:focus {
     background-color: white;
+  }
+  .dark-mode #country {
+    background-color: black;
+    color: white;
   }
   .dark-mode .togglePassword
   {
