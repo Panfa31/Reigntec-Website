@@ -93,6 +93,7 @@ display: flex;
 flex-direction: row;
 right: 10px;
 gap: 10px;
+font-size: 14px;
 }
 .login-link  a
 {
@@ -103,8 +104,6 @@ gap: 10px;
 .form-group label 
 {
 display: block;
-font-size: 14px;
-
 font-size: 14px;
 line-height: 20px;
 margin-bottom: 8px;
@@ -178,7 +177,7 @@ transform: translate(-50%, -50%);
 { 
   font-size: 1rem;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 10px;
 width: 80px;
 height: 25px;
 border-radius: 30px;
@@ -258,6 +257,8 @@ margin-top: 10px;
     background-color: white;
   }
   .dark-mode #country {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
     background-color: black;
     color: white;
   }
