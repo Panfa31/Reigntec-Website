@@ -20,7 +20,7 @@
   --secondary-color: #000000;
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Poppins", sans-serif;
 }
 .dark-mode {
   background-color: #000000;
@@ -49,7 +49,7 @@ body {
 h2
 {
 
-  font-family: var(--font-family);
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   line-height: 30px;
   margin-bottom: 50px;
