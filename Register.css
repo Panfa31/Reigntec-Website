@@ -74,11 +74,11 @@ font-weight: 700;
 }
 .confirm label{
   font-family: var(--font-family-2);
-
+  font-size: 14px;
   max-width: 600px;
   margin-top: 10px;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 25px;
 
 }
 .confirm a 
