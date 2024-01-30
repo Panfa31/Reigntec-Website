@@ -21,6 +21,7 @@
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
   --font-family: "Poppins", sans-serif;
+  --font-family-2: "Roboto", sans-serif;
 }
 .dark-mode {
   background-color: #000000;
@@ -49,7 +50,7 @@ body {
 h2
 {
 
-  font-family: 'Roboto', sans-serif;
+font-family: var(--font-family-2);
   font-size: 32px;
   line-height: 30px;
   margin-bottom: 50px;
@@ -58,21 +59,21 @@ h2
 }
 label
 {
-  font-family: 'Roboto', sans-serif;
+font-family: var(--font-family-2);
   font-weight: 400;
   align-items: center;
 }
 .login-Question p ,a
 
 {
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
   text-align: center;
   font-size: 14px;
   
 
 }
 .confirm label{
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
   font-size: small;
   max-width: 600px;
   margin-top: 10px;
@@ -88,7 +89,7 @@ label
 }
 .login-link
 {
-  font-family:  var(--font-family);
+  font-family:  var(--font-family-2);
   position: absolute;
 display: flex;
 flex-direction: row;
@@ -98,6 +99,7 @@ font-size: 14px;
 }
 .login-link  a
 {
+  font: var(--font-family);
   text-decoration: none;
   color: #ffffff;
 }
@@ -154,6 +156,7 @@ transform: translate(-50%, -50%);
 }
 #country
 {
+  font-family: var(--font-family-2);
   font-weight: 400;
   width: 560px;
   height: 50px;

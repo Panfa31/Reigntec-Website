@@ -21,6 +21,7 @@
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
   --font-family: "Poppins", sans-serif;
+  --font-family-2: "Roboto", sans-serif;
 }
 .dark-mode {
   background-color: #000000;
@@ -88,7 +89,7 @@ body {
 h2
 {
 
-  font-family: 'Roboto', sans-serif;
+font-family: var(--font-family-2);
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
@@ -98,17 +99,18 @@ h2
 }
 label
 {
-  font-family: 'Roboto', sans-serif;
+font-family: var(--font-family-2);
   align-items: center;
 }
 .login-Question ,.register-link p ,a
 {
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
   font-size: 14px;
 }
 
 .register-link  a
 {
+  font-family: var(--font-family);
   text-decoration: none;
   color: #ffffff;
 }
@@ -124,7 +126,7 @@ label
 .tnc
 {
   margin-top:24px ;
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
   max-width: 350px;
   line-height:20px ;
   font-size: 14px;
@@ -132,18 +134,20 @@ label
 }
 .tnc a 
 { 
+  font-family: var(--font-family-2);
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
 }
 .remember-forget p
 {
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
   margin-top: 24px;
   padding: 0;
 }
 .register-link
 {
+
 position: absolute;
 display: flex;
 flex-direction: row;
@@ -153,6 +157,7 @@ gap: 10px;
 .forgot-password-link
 {
 color: #000000;
+font-family: var(--font-family-2);
 margin-left: 130px;
 }
 /* ================================================= */
