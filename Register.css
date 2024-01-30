@@ -156,6 +156,7 @@ transform: translate(-50%, -50%);
 }
 #country
 {
+  display: flex;
   font-family: var(--font-family-2);
   font-weight: 700;
   width: 560px;
@@ -164,17 +165,22 @@ transform: translate(-50%, -50%);
   border: 1px solid rgba(55, 54, 55, 0.3);
   padding-right: 5px; /* Add padding for the icon */
   margin-bottom: 8px;
-  padding: 8;
-    font-weight: 700;
-
+  padding: 10px;
+  font-weight: 700;
+  justify-content: space-between;
+appearance: none;
 }
+
+
 #togglePassword {
   position: absolute;
-  top: 45%;
+  top: 62%;
   right: 20px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
+
 }
+
 /* ================================================= */
 /* Button*/
 /* ================================================= */
