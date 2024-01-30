@@ -107,7 +107,6 @@ font-weight:normal;
 .login-Question ,.register-link p ,a
 {
   font-family: var(--font-family-2);
-  font-size: 14px;
 }
 
 .register-link  a
