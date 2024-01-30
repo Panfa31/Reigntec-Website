@@ -58,7 +58,8 @@ h2
 }
 label
 {
-  font-family: var(--font-family);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   align-items: center;
 }
 .login-Question p ,a
@@ -71,6 +72,7 @@ label
 
 }
 .confirm label{
+  font-family: var(--font-family);
   font-size: small;
   max-width: 600px;
   margin-top: 10px;
