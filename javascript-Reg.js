@@ -1,10 +1,13 @@
 // Define the countries array
 const countries = [
+  
   { code: "", name: "Select a Country" },
+  { code: "ZAR", name: "South Africa" },
   { code: "USA", name: "United States" },
   { code: "CAN", name: "Canada" },
   { code: "UK", name: "United Kingdom" },
   { code: "AUS", name: "Australia" },
+
   // Add more countries as needed
 ];
 countries.forEach((country) => {
