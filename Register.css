@@ -20,8 +20,9 @@
   --secondary-color: #000000;
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
-  --font-family: "Poppins", sans-serif;
+  --font-family: "roboto", sans-serif;
   --font-family-2:'IBM Plex Sans', sans-serif;
+
 }
 .dark-mode {
   background-color: #000000;
@@ -50,7 +51,7 @@ body {
 h2
 {
 
-font-family: var(--font-family-2);
+font-family: var(--font-family);
   font-size: 32px;
   line-height: 30px;
   margin-bottom: 50px;
@@ -60,7 +61,6 @@ font-family: var(--font-family-2);
 label
 {
 font-family: var(--font-family-2);
-font-weight: 700;
   align-items: center;
 }
 .login-Question p ,a
