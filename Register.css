@@ -21,7 +21,7 @@
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
   --font-family: "Poppins", sans-serif;
-  --font-family-2: "Roboto", sans-serif;
+  --font-family-2:'IBM Plex Sans', sans-serif;
 }
 .dark-mode {
   background-color: #000000;
