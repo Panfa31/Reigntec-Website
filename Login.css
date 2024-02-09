@@ -28,45 +28,7 @@
   color: var(--tertiary-color);
 
 }
-/* ================================================= */
-/* Dark Mode */
-/* ================================================= */
 
-.dark-mode .register-link button{
-background-color: var(--tertiary-color);
-color: var(--secondary-color);
-}
-.dark-mode .Login-btn
-{
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-}
-.dark-mode .Reg-btton a
-{
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-}
-.dark-mode .forgot-password-link
-{
-  color: var(--tertiary-color);
-}
-.dark-mode #password
-{
-
-  background-color: var(--secondary-color);
-  border: 1px solid var(--tertiary-color);
-}.dark-mode #email
-{
-
-  background-color: var(--secondary-color);
-  border: 1px solid var(--tertiary-color);
-}
- .dark-mode #email:focus {
-  background-color: white;
-}
-.dark-mode #password:focus {
-  background-color: white;
-}
 /* ================================================= */
 /* General styles */
 /* ================================================= */
@@ -231,4 +193,142 @@ border-radius: 30px;
 border: 1px solid rgba(55, 54, 55, 0.3);
 color: var(--tertiary-color);
 background-color: var(--secondary-color);
+}
+
+/* ================================================= */
+/* Dark Mode */
+/* ================================================= */
+
+.dark-mode .register-link button{
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  }
+  .dark-mode .Login-btn
+  {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+  }
+  .dark-mode .Reg-btton a
+  {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+  }
+  .dark-mode .forgot-password-link
+  {
+    color: var(--tertiary-color);
+  }
+  .dark-mode #password
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }.dark-mode #email
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }
+   .dark-mode #email:focus {
+    background-color: white;
+  }
+  .dark-mode #password:focus {
+    background-color: white;
+  }
+
+/* ================================================= */
+/* Resolution  */
+/* ================================================= */
+/* Media Query for max-width 375px */
+@media only screen and (max-width: 375px) {
+  .logo {
+    content: url('Assets/Icon-1.png');
+    width: 80px;
+    margin-top: auto;
+  }
+  
+  .navbar {
+    margin-top: 5px; 
+  }
+
+  .register-link 
+  {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 10px;
+    gap: 10px;
+  }
+  .register-link button
+  { 
+
+  }
+  .register-link p
+  {
+display: none;
+  }
+
+
+
+#email, #password{
+
+  width: 250px;
+  height: 45px;
+  border-radius: 15px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  margin-bottom: 8px;
+  padding: 8;
+
+}
+#togglePassword {
+  position: absolute;
+  top: 58%;
+  right: 20px; /* Adjust the right position as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.tnc
+{
+  margin-top:15px ;
+  margin-bottom:15px ;
+  font-family: var(--font-family-2);
+  max-width: 300px;
+  line-height:20px ;
+  margin-left: 0px;
+  font-size: 12px;
+}
+
+.Login-btn 
+{
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  margin: 0 auto; // Add this line to center the button
+  display: flex;
+  flex-direction: row;
+}
+
+.Login-btn a
+{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: var(--font-family-2);
+  font-size: 14px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.forgot-password-link 
+{
+color: #000000;
+font-family: var(--font-family-2);
+
+margin-left: 20px;
+
+}
 }
