@@ -617,6 +617,7 @@ button {
 
   }
   .buycrypto-text {
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     margin-top: 0;
   }
@@ -692,12 +693,10 @@ margin-right: 250px;
 
 .footer-section-links i
 {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
+  display:inline-flex;
+  align-items:center;
+  float:none;
+  margin-left: 15px;  
   margin-top: 10px;
-  align-items: center;
-  float: none;
-  margin-left: 0px;
 }
 }
