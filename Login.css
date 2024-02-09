@@ -243,7 +243,7 @@ background-color: var(--secondary-color);
   .logo {
     content: url('Assets/Icon-1.png');
     width: 80px;
-    margin-top: auto;
+    margin-top: -4px;
   }
   
   .navbar {
@@ -308,10 +308,10 @@ display: none;
   border: 1px solid rgba(55, 54, 55, 0.3);
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
-  margin: 0 auto; // Add this line to center the button
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-}
+
 
 .Login-btn a
 {
