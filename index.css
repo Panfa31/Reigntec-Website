@@ -683,7 +683,7 @@ margin-right: 250px;
   align-items: center; 
   opacity: 0.3;
   box-shadow: 0 0 250px 30px var(--accent-color);
-  bottom: 40px;
+  bottom: 30px;
   left: 100px;
 }
 
@@ -692,10 +692,5 @@ margin-right: 250px;
 
 .footer-section-links i
 {
-  display:inline-flex;
-  align-items:center;
-  float:none;
-  margin-left: 150px;  
-  margin-top: 20px;
 }
 }
