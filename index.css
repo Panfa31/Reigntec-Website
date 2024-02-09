@@ -673,17 +673,31 @@ margin-right: 250px;
 
 .boxlogo img
 {
-  align-items: center; 
+
   transform: translate(-50%);
   left: 200px;
 
   
 }
 .glow-left{
+  align-items: center; 
   opacity: 0.3;
-  position:relative;
-  box-shadow: 0 0 250px 100px var(--accent-color);
+  box-shadow: 0 0 250px 30px var(--accent-color);
   bottom: 40px;
+  left: 100px;
 }
 
+
+/* foooter */
+
+.footer-section-links i
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+  float: none;
+  margin-left: 0px;
+}
 }
