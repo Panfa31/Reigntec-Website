@@ -29,7 +29,9 @@
 /* ================================================= */
 /* Scroll  */
 /* ================================================= */
-
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* ================================================= */
 /* General styles */
@@ -44,6 +46,7 @@
   margin-right: 10px;
 }
 body {
+  overflow: none; /* Hide scrollbars */
   margin: 0;
   padding: 0;
 }
