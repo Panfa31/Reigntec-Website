@@ -316,22 +316,38 @@ h2{
 }
 #togglePassword {
   position: absolute;
-  top: 52%;
+  top: 57%;
   right: 20px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
 }
 
-.confirm
+.confirm 
 {
   margin-top:15px ;
   margin-bottom:15px ;
   font-family: var(--font-family-2);
+  max-width: 300px;
   line-height:20px ;
-  font-size: 10px;
+  margin-left: 0px;
+  font-size: 12px;
+  text-align: center;
+  
+}
+.confirm label
+{
+ 
+ 
+  margin-right: 15px;
+}
+.confirm a 
+{ 
+  font-family: var(--font-family-2);
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
   text-align: center;
 }
-
 .Reg-btton
 {
   font-size: 1rem;
