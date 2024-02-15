@@ -20,10 +20,10 @@
   --secondary-color: #000000;
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
-  --font-family: "roboto", sans-serif;
-  --font-family-2:'IBM Plex Sans', sans-serif;
-
+  --font-family: "Poppins", sans-serif;
+  --font-family-2: "Roboto", sans-serif;
 }
+
 .dark-mode {
   background-color: #000000;
   color: #ffffff;
@@ -51,10 +51,11 @@ body {
 h2
 {
 
-font-family: var(--font-family-2);
+  font-family: var(--font-family-2);
   font-size: 32px;
-  line-height: 30px;
-  margin-bottom: 50px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
   margin-top: 0px;
   
 }
@@ -260,7 +261,7 @@ margin-top: 10px;
 /* Resolution  */
 /* ================================================= */
 /* Media Query for max-width 375px */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
   .logo {
     content: url('Assets/Icon-1.png');
     width: 80px;
@@ -284,6 +285,8 @@ margin-top: 10px;
 height: 30px;
 width: 30px;
   }
+
+
   .register-link p
   {
 display: none;

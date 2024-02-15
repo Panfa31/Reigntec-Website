@@ -727,7 +727,7 @@ button {
   /* ================================================= */
   /*Page3*/
   /* ================================================= */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
   .logo {
     content: url('Assets/Icon-1.png');
     width: 80px;
