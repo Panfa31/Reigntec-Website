@@ -316,7 +316,7 @@ h2{
 }
 #togglePassword {
   position: absolute;
-  top: 57%;
+  top: 52%;
   right: 20px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
