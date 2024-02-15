@@ -635,14 +635,7 @@ button {
   .why {
     flex-direction: column;
   }
-  .social
-{
-display: flex;
-flex-direction:row;
-justify-content: center;
-margin-top: 5px;
 
-}
 }
 
 
@@ -851,14 +844,14 @@ margin-top: 5px;
 .boxlogo
 { 
   position: absolute;
-margin-right: 188px;
+margin-right: 190px;
 }
 
 .boxlogo img
 {
 
   transform: translate(-50%);
-  left: 200px;
+  left: 190px;
 
   
 }
@@ -873,8 +866,12 @@ margin-right: 188px;
 
 /* foooter */
 
-.footer-section-links i
+.social
 {
-  
+display: flex;
+flex-direction:row;
+justify-content: center;
+margin-top: 5px;
+margin-right: 60px ;
 }
 }

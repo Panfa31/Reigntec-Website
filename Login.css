@@ -307,26 +307,13 @@ display: none;
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
   margin: 0 auto;
-  display: flex;
   flex-direction: row;
-}
-
-.Login-btn a
-{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: var(--font-family-2);
-  font-size: 14px;
-  margin-top: 100px;
-  margin-left: 10px;
 }
 
 .forgot-password-link 
 {
 color: #000000;
 font-family: var(--font-family-2);
-
 margin-left: 20px;
-
 }
 }

@@ -122,27 +122,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.fullname
-{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
 
-
-#name, #surname{
-  align-items: center;
-  width: 260px;
-  height: 50px;
-  border-radius: 15px;
-  border: 1px solid rgba(55, 54, 55, 0.3);
-  font-weight: 400;
-  padding-right: 5px; /* Add padding for the icon */
-  margin-bottom: 8px;
-  padding: 8;
-}
-
-#email, #password 
+#fullname,#email, #password 
 {
   font-weight: 400;
   width: 550px;
@@ -152,8 +133,6 @@ transform: translate(-50%, -50%);
   padding-right: 5px; /* Add padding for the icon */
   margin-bottom: 8px;
   padding: 8;
-
-
 
 }
 #country
@@ -244,13 +223,7 @@ margin-top: 10px;
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
-  .dark-mode #name
-  {
-  
-    background-color: var(--secondary-color);
-    border: 1px solid var(--tertiary-color);
-  }
-  .dark-mode #surname
+  .dark-mode #fullname
   {
   
     background-color: var(--secondary-color);
@@ -263,12 +236,10 @@ margin-top: 10px;
   .dark-mode #password:focus {
     background-color: white;
   }
-  .dark-mode #name:focus {
+  .dark-mode #fullname:focus {
     background-color: white;
   }
-  .dark-mode #surname:focus {
-    background-color: white;
-  }
+
   .dark-mode #country {
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
@@ -325,13 +296,8 @@ h2{
   margin-top: 0px;
 }
 
-#fullname {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-#name, #surname{
+#fullname ,#name, #surname{
   width: 250px;
   height: 45px;
   border-radius: 15px;
@@ -350,9 +316,9 @@ h2{
 }
 #togglePassword {
   position: absolute;
-  top: 58%;
+  top: 52%;
   right: 20px; /* Adjust the right position as needed */
-  transform: translateY(-75%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -361,9 +327,7 @@ h2{
   margin-top:15px ;
   margin-bottom:15px ;
   font-family: var(--font-family-2);
-  max-width: 300px;
   line-height:20px ;
-  margin-right: -10px;
   font-size: 10px;
   text-align: center;
 }
@@ -379,19 +343,8 @@ h2{
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.Reg-btton a
-{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: var(--font-family-2);
-  font-size: 14px;
-  margin-top: 100px;
-  margin-left: 10px;
+align-items: center;
+padding: 0;
 }
 
 .forgot-password-link 
