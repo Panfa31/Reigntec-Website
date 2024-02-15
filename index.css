@@ -635,7 +635,16 @@ button {
   .why {
     flex-direction: column;
   }
+  .social
+{
+display: flex;
+flex-direction:row;
+justify-content: center;
+margin-top: 5px;
+
 }
+}
+
 
 /* Laptops and larger */
 @media only screen and (width < 1900px) {
@@ -842,7 +851,7 @@ button {
 .boxlogo
 { 
   position: absolute;
-margin-right: 250px;
+margin-right: 188px;
 }
 
 .boxlogo img

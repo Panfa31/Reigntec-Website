@@ -148,7 +148,8 @@ transform: translate(-50%, -50%);
   gap: 5px;
 }
 
-#email, #password{
+#email, #password , 
+  #name , #surname, #country{
 
   width: 350px;
   height: 50px;
@@ -258,10 +259,7 @@ background-color: var(--secondary-color);
     right: 10px;
     gap: 10px;
   }
-  .register-link button
-  { 
 
-  }
   .register-link p
   {
 display: none;
