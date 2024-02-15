@@ -858,7 +858,7 @@ margin-right: 190px;
 .glow-left{
   align-items: center; 
   opacity: 0.3;
-  box-shadow: 0 0 250px 30px var(--accent-color);
+  box-shadow: 0 0 50px 30px var(--accent-color);
   bottom: 30px;
   left: 100px;
 }
