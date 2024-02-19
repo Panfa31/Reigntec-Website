@@ -123,8 +123,29 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+.fullname
+{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
-#fullname,#email, #password 
+
+#name, #surname{
+
+  align-items: center;
+  width: 260px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgba(55, 54, 55, 0.3);
+  font-weight: 400;
+  padding-right: 5px; /* Add padding for the icon */
+  margin-bottom: 8px;
+  padding: 8;
+}
+
+
+#email, #password 
 {
   font-weight: 400;
   width: 550px;
@@ -157,7 +178,7 @@ appearance: none;
 #togglePassword {
   position: absolute;
   top: 62%;
-  right: 20px; /* Adjust the right position as needed */
+  right: 40px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
 
@@ -183,7 +204,7 @@ background-color: var(--secondary-color);
 {
   font-size: 1rem;
   font-weight: 700;
-  width: 560px;
+  width: 580px;
 height: 40px;
 border-radius: 30px;
  border: 1px solid rgba(55, 54, 55, 0.3);
@@ -237,8 +258,23 @@ margin-top: 10px;
   .dark-mode #password:focus {
     background-color: white;
   }
-  .dark-mode #fullname:focus {
+  .dark-mode #name
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+  }
+  .dark-mode #name:focus {
     background-color: white;
+  }
+  .dark-mode #surname:focus {
+    background-color: white;
+  }
+  .dark-mode #surname
+  {
+  
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
   }
 
   .dark-mode #country {
@@ -298,9 +334,17 @@ h2{
   margin-bottom: 20px;
   margin-top: 0px;
 }
+  .fullname
+  {
+    display: flex;
+    flex-direction: column;
+gap: 0px;
+  }
 
 
-#fullname ,#name, #surname{
+#name, #surname{
+  display: flex;
+  flex-direction: column;
   width: 250px;
   height: 45px;
   border-radius: 15px;
@@ -319,7 +363,7 @@ h2{
 }
 #togglePassword {
   position: absolute;
-  top: 52%;
+  top: 60%;
   right: 20px; /* Adjust the right position as needed */
   transform: translateY(-50%);
   cursor: pointer;
@@ -345,7 +389,6 @@ h2{
 }
 .confirm a 
 { 
-  font-family: var(--font-family-2);
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
