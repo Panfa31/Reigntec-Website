@@ -123,16 +123,14 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.fullname
+.fullnames
 {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-
 #name, #surname{
-
   align-items: center;
   width: 260px;
   height: 50px;
@@ -143,7 +141,6 @@ transform: translate(-50%, -50%);
   margin-bottom: 8px;
   padding: 8;
 }
-
 
 #email, #password 
 {
