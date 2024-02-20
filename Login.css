@@ -59,32 +59,35 @@ h2
   margin-top: 0px;
   
 }
-label
+
+.floating-label-input label
 {
   font-family: var(--font-family-2);
-font-weight:normal;
+  font-weight: 700;
   align-items: center;
+}
+.floating-label-input label
+{
+    font-family: var(--font-family-2);
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
   font-weight: 700;
 }
 .login-Question ,.register-link p ,a
 {
   font-family: var(--font-family-2);
   font-size: 14px;
+  font-weight: 700;
 }
+
 
 .register-link  a
 {
   font-family: var(--font-family);
   text-decoration: none;
   color: #ffffff;
-}
-label
-{
-  display: block;
-  font-size:5px;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 8px;
 }
 
 .tnc
@@ -116,12 +119,13 @@ label
 }
 .register-link
 {
-
-position: absolute;
+  font-family:  var(--font-family-2);
+  position: absolute;
 display: flex;
 flex-direction: row;
 right: 10px;
 gap: 10px;
+font-size: 14px;
 }
 .forgot-password-link
 {

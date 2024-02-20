@@ -23,10 +23,9 @@
   --font-family: "Poppins", sans-serif;
   --font-family-2: "Roboto", sans-serif;
 }
-
 .dark-mode {
   background-color: #000000;
-  color: #ffffff;
+  color: var(--tertiary-color);
 }
 
 /* ================================================= */
@@ -319,12 +318,6 @@ width: 30px;
 display: none;
   }
 
-h2{
-  font-size: 20px;
-  line-height: 20px;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
   .fullname
   {
     display: flex;
