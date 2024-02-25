@@ -63,7 +63,6 @@ h2
 .floating-label-input label
 {
   font-family: var(--font-family-2);
-  font-weight: 700;
   align-items: center;
 }
 .floating-label-input label
@@ -73,7 +72,7 @@ h2
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
-  font-weight: 700;
+
 }
 .login-Question ,.register-link p ,a
 {
