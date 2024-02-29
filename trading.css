@@ -1,7 +1,66 @@
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root,
+.dark-mode {
+  --page-bg: #fff;
+  --primary-text: #3c3a47;
+  --muted-text: #b1b0b5;
+  --logo-fill: var(--primary-text);
+  --input-bg: #f5f5f6;
+  --input-bg-hover: #ecebed;
+  --input-border-focus: var(--muted-text);
+  --input-text: var(--primary-text);
+  --input-placeholder: var(--muted-text);
+  --button-text: #d19361;
+  --button-text-hover: #faf4ef;
+  --switch-bg: #f5f5f6;
+  --switch-circle: #fff;
+  --primary-color: #f1b94d;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --accent-color: rgb(170, 161, 200);
+  --font-family: "Roboto", sans-serif;
+}
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* ================================================= */
+/* Scroll  */
+/* ================================================= */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================================================= */
+/* General styles */
+/* ================================================= */
 .logo {
-  position: fixed;
+  position: absolute;
   width: 250px;
 }
+.nav
+{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.show {
+  opacity: 1;
+}
+.hidden {
+  opacity: 0;
+  transition: all 0s ease-in-out;
+}
+/* ================================================= */
+/*Dark modes mode */
+/* ================================================= */
+
+
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -76,11 +135,7 @@
   justify-content: center; /* Align items to the start of the container */
   gap: 10px; /* Adjust the gap between .coin elements according to your preference */
   align-items: center;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #f1b94d 60%,
-    rgba(241, 185, 77, 0) 100%
-  );
+
   padding: 10vh 0 10vh 0;
   font-family: Arial;
 }

@@ -223,21 +223,16 @@ background-color: var(--secondary-color);
   }
   .dark-mode #password
   {
-  
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }.dark-mode #email
   {
-  
+  color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
-   .dark-mode #email:focus {
-    background-color: white;
-  }
-  .dark-mode #password:focus {
-    background-color: white;
-  }
+
 
 /* ================================================= */
 /* Resolution  */

@@ -142,7 +142,7 @@ form.addEventListener("submit", (event) => {
         localStorage.setItem("country", country);
 
         // Redirect to the welcome page
-        window.location.href = "Homepage.html";
+        window.location.href = "Trading.html";
       } else {
         // Display an error message with password suggestions
         const suggestions = [

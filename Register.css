@@ -207,6 +207,7 @@ border-radius: 30px;
 color: var(--tertiary-color);
 background-color: var(--secondary-color);
 margin-top: 10px;
+text-decoration: none;
 }
 /* ================================================= */
 /* Dark Mode */
@@ -222,10 +223,19 @@ margin-top: 10px;
     color: var(--secondary-color);
   }
 
+
   .dark-mode .Reg-btton
   {
+
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
+  }
+  .dark-mode .Reg-btton a 
+  {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
   }
   .dark-mode .forgot-password-link
   {
@@ -233,36 +243,25 @@ margin-top: 10px;
   }
   .dark-mode #password
   {
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }.dark-mode #email
   {
-  
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
 
-  .dark-mode #email:focus {
-    background-color: white;
-  }
-  .dark-mode #password:focus {
-    background-color: white;
-  }
   .dark-mode #name
   {
-  
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
-  .dark-mode #name:focus {
-    background-color: white;
-  }
-  .dark-mode #surname:focus {
-    background-color: white;
-  }
   .dark-mode #surname
   {
-  
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--tertiary-color);
   }
