@@ -20,12 +20,31 @@
   --secondary-color: #000000;
   --tertiary-color: #ffffff;
   --accent-color: rgb(170, 161, 200);
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Poppins", sans-serif;
+  --font-family-2: "Roboto", sans-serif;
 }
 .dark-mode {
   background-color: #000000;
   color: #ffffff;
-}
+} 
+/* ================================================= */
+/*Dark modes */
+/* ================================================= */
+  .dark-mode .nav-bar-menu li a {
+    color: var(--tertiary-color);
+  }
+  .dark-mode  .top-cryptonow-title h1 {
+    color:  var(--tertiary-color);
+  }
+  .dark-mode  .top-cryptonow p{
+    color:  var(--tertiary-color);
+  }
+
+  .dark-mode  .coin {
+    color: var(--secondary-color);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2); 
+  }
 /* ================================================= */
 /* Scroll  */
 /* ================================================= */
@@ -99,6 +118,7 @@ body {
 
 /* Style for nav-bar links */
 .nav-bar-menu li a {
+  font-family:  var(--font-family);
   text-decoration: none;
   color: #333; /* Default text color */
   transition: color 0.3s ease; /* Smooth color transition on hover */
@@ -160,13 +180,14 @@ p {
   font-weight: 400;
 }
 .crypto {
-  width: 1162px;
-  height: 72px;
-  margin-bottom: 10px; /* Increase the margin-bottom value for more spacing */
+
   display: flex;
-  align-items: center; /* Align items vertically */
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: row;
   justify-content: center;
+  color: var(--secondary-color);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .crypto-logo {
@@ -186,10 +207,7 @@ p {
   padding: 10px;
 }
 
-.buy-btn,
-.sell-btn {
-  margin-left: auto; /* Push the buttons to the right side */
-}
+
 
 .crypto-logo {
   width: 40px; /* Adjust the width of the logo as needed */
@@ -208,15 +226,13 @@ p {
   margin-bottom: 5px;
 }
 
-.buy-btn,
-.sell-btn {
-  margin-left: auto; /* Push the buttons to the right side */
-}
+
 .crypto-container {
   display: flex;
   flex-direction: column;
   height: 72px;
   align-items: center;
+  font-family: var(--font-family);
 }
 /* Style for the sort buttons */
 .sort-options button {
@@ -230,17 +246,9 @@ p {
 
 /* Arrow shape for the up button */
 .sort-container {
-  background: var(--White, #fff);
-  color: #000;
-  display: flex;
-  justify-content: center;
-
-  /* Arial Bold */
-  font-family: Arial;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 .sort-options button {
   position: relative;
