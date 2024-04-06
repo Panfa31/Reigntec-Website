@@ -128,16 +128,14 @@ body {
 .nav-bar-menu li a:hover {
   color: #f1b94d;
 }
-.top-cryptonow-title h1 {
+.top-cryptonow-title  h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vh 0 5vh 0;
   color: var(--Black, #373637);
-  font-family: Arial;
-  font-size: 32px;
-  font-weight: 700;
+  font-family: var(--font-family);
+  
 }
 .top-cryptonow p {
   display: flex;
@@ -186,8 +184,10 @@ p {
   justify-content: center;
   color: var(--secondary-color);
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-
     background-color: rgba(255, 255, 255, 0.2); 
+    width: 1200px;
+    gap: 100px;
+    text-align: center;
 }
 
 .crypto-logo {
@@ -199,12 +199,14 @@ p {
 .crypto-name {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .crypto-price,
 .crypto-percentage {
   font-size: 16px;
   padding: 10px;
+  text-align: center;
 }
 
 
@@ -226,11 +228,9 @@ p {
   margin-bottom: 5px;
 }
 
-
 .crypto-container {
   display: flex;
   flex-direction: column;
-  height: 72px;
   align-items: center;
   font-family: var(--font-family);
 }
