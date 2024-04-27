@@ -33,7 +33,11 @@
 body::-webkit-scrollbar {
   display: none;
 }
-
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}
 /* ================================================= */
 /* General styles */
 /* ================================================= */
@@ -461,7 +465,7 @@ input:checked + .slider:before {
   display:inline-block;
   align-items:end;
   float: right;
-  margin-left: 15px;  
+  margin-left: 15px;
 }
 /* ================================================= */
 /*Buttons*/
@@ -517,9 +521,6 @@ button {
 
 .button-container {
 align-items: center;
-
-
-
 }
 
 /* ================================================= */

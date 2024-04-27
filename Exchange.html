@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Exchange.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>Exchange page</title>
   </head>
   <body>
+    
     <h1>Market Chart</h1>
     <div id="chart"></div>
 
     <h1>Watchlist</h1>
-    <table>
+    <table id="watchlist">
       <thead>
         <tr>
           <th>Symbol</th>
@@ -36,40 +44,6 @@
         </tr>
       </tbody>
     </table>
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container" style="height: 100%; width: 100%">
-      <div
-        id="tradingview_03b61"
-        style="height: calc(100% - 32px); width: 100%"
-      ></div>
-      <div class="tradingview-widget-copyright">
-        <a
-          href="https://www.tradingview.com/"
-          rel="noopener nofollow"
-          target="_blank"
-          ><span class="blue-text">Track all markets on TradingView</span></a
-        >
-      </div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/tv.js"
-      ></script>
-      <script type="text/javascript">
-        new TradingView.widget({
-          autosize: true,
-          symbol: "NASDAQ:AAPL",
-          interval: "D",
-          timezone: "Etc/UTC",
-          theme: "light",
-          style: "1",
-          locale: "en",
-          enable_publishing: false,
-          allow_symbol_change: true,
-          container_id: "tradingview_03b61",
-        });
-      </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <script src="Exchange.js"></script>
   </body>
+  <script defer src="Exchange.js"></script>
 </html>

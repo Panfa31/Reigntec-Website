@@ -1,15 +1,56 @@
-/* Your CSS styles go here */
+/* ================================================= */
+/* Custom properties */
+/* ================================================= */
+:root,
+.dark-mode {
+  --page-bg: #fff;
+  --primary-text: #3c3a47;
+  --muted-text: #b1b0b5;
+  --logo-fill: var(--primary-text);
+  --input-bg: #f5f5f6;
+  --input-bg-hover: #ecebed;
+  --input-border-focus: var(--muted-text);
+  --input-text: var(--primary-text);
+  --input-placeholder: var(--muted-text);
+  --button-text: #d19361;
+  --button-text-hover: #faf4ef;
+  --switch-bg: #f5f5f6;
+  --switch-circle: #fff;
+  --primary-color: #f1b94d;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --accent-color: rgb(170, 161, 200);
+  --font-family: "Poppins", sans-serif;
+  --font-family-2: "Roboto", sans-serif;
+}
+.dark-mode {
+  background-color: #000000;
+  color: var(--tertiary-color);
+}
+
+/* ================================================= */
+/* General styles */
+/* ================================================= */
+.logo {
+  position: absolute;
+  width: 250px;
+}
+.navbar
+{
+  margin-top: 10px;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
+h1
+{
 
-.tradingview-widget-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family-2);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  
 }
-
-/* Add any additional styles related to the TradingView widget here */
