@@ -3,14 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Deposit.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script defer src="Deposit.js"></script>
+    <title>Deposit</title>
 </head>
+<div class="nav_bar">
+    <a href="index.html">
+      <img src="Assets\REIGNTEC Logo\reigntec-03.png" alt="Logo" class="logo" />
+    </a>
+  </div>
 <body>
-    <h1>Deposit</h1>
-    <h3>Select Currency</h3>
-    <div>
-        <button onclick="selectCurrency('Fiat')">Fiat</button>
-        <button onclick="selectCurrency('Crypto')">Crypto</button>
+    <div class="deposit">
+        <h1>Deposit</h1>
+        <h3>Select Currency</h3>
+        <div>
+            <button class="active" id="login-box-link" onclick="selectCurrency('Fiat')">Fiat</button>
+            <button onclick="selectCurrency('Crypto')">Crypto</button>
+        </div>
+        <div class="search">
+            <input type="text" id="search" onkeyup="search()" placeholder="Search for currency">
+        </div>
+        <div class="dep-fiat">
+            <button onclick="selectCurrency('USD')">USD</button>
+            <button onclick="selectCurrency('EUR')">EUR</button>
+            <button onclick="selectCurrency('GBP')">GBP</button>
+            <button onclick="selectCurrency('JPY')">JPY</button>
+            <button onclick="selectCurrency('BTC')">BTC</button>
+            <button onclick="selectCurrency('ETH')">ETH</button>
+            <button onclick="selectCurrency('XRP')">XRP</button>
+            <button onclick="selectCurrency('LTC')">LTC</button>
+            <button onclick="selectCurrency('BCH')">BCH</button>
+            <button onclick="selectCurrency('DOGE')">DOGE</button>
+        </div>
+        <div class="dep-crypto">
+              <button onclick="selectCurrency('ADA')">ADA</button>
+        <button onclick="selectCurrency('XLM')">XLM</button>
+        <button onclick="selectCurrency('DOT')">DOT</button>
+        <button onclick="selectCurrency('LINK')">LINK</button>
+        <button onclick="selectCurrency('UNI')">UNI</button>
+        <button onclick="selectCurrency('AAVE')">AAVE</button>
+        <button onclick="selectCurrency('SOL')">SOL</button>
+        <button onclick="selectCurrency('ATOM')">ATOM</button>
+        <button onclick="selectCurrency('AVAX')">AVAX</button>
+        <button onclick="selectCurrency('MATIC')">MATIC</button>
+        </div>
     </div>
+   
+</body>
+<script>
+function selectCurrency(currency) {
+    if (currency === 'Fiat') {
+        document.getElementById('dep-fiat').style.display = 'block';
+        document.getElementById('dep-crypto').style.display = 'none';
+    } else if (currency === 'Crypto') {
+        document.getElementById('dep-fiat').style.display = 'none';
+        document.getElementById('dep-crypto').style.display = 'block';
+    }
+}
+
+// Add ids for each class if missing
+document.querySelector('.dep-fiat').id = 'dep-fiat';
+document.querySelector('.dep-crypto').id = 'dep-crypto';
+document.getElementById('search').addEventListener('keyup', function() {
+    var input = this.value.toLowerCase();
+    var buttons = document.querySelectorAll('.dep-fiat button, .dep-crypto button');
     
+    buttons.forEach(function(button) {
+        var buttonText = button.textContent.toLowerCase();
+        
+        if (buttonText.includes(input)) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+});
+</script>
 </html>
+
