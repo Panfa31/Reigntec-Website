@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Buy</title>
+    <title>Sell</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./buy.css" />
+    <link rel="stylesheet" href="./sell.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<script defer src="buy.js"></script>
+
+  <script defer src="sell.js"></script>
   </head>
   <body>
     <div class="nav_bar">
@@ -21,10 +21,23 @@
 
   <div class="buy">
 
-    <div class="lb-header">
-      <a href="buy.html" class="active" id="login-box-link">Buy</a>
-      <a href="sell.html" id="signup-box-link">sell</a>
-    </div>
+        <div class="lb-header">
+          <a href="buy.html" class="active" id="login-box-link">Buy</a>
+          <a href="sell.html" id="signup-box-link">sell</a>
+        </div>
+
+    <div class="paywith">
+        <label for="payWith">Pay With:</label>
+        <a href="#" onclick="useAllFunds()">Add Funds</a>
+        <span id="availableBalance"></span>
+        <button onclick="useAllFunds()">Use All Funds</button>
+        <select id="payWith">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+          <!-- Add more options for other currencies as needed -->
+        </select>
+      </div>
 <div class="buycoin">
 
   <label for="coin">Buy</label>
@@ -36,18 +49,7 @@
   </select>
 </div>
 
-<div class="paywith">
-  <label for="payWith">Pay With:</label>
-  <a href="#" onclick="useAllFunds()">Add Funds</a>
-  <span id="availableBalance"></span>
-  <button onclick="useAllFunds()">Use All Funds</button>
-  <select id="payWith">
-    <option value="usd">USD</option>
-    <option value="eur">EUR</option>
-    <option value="gbp">GBP</option>
-    <!-- Add more options for other currencies as needed -->
-  </select>
-</div>
+
 
 
     <label for="amount">Enter Amount:</label>

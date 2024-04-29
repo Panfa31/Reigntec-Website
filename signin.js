@@ -106,8 +106,8 @@ form.addEventListener("submit", (event) => {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
 
-        // Redirect to the welcome page
-        window.location.href = "index.html";
+        // Redirect to the wallet page
+        window.location.href = "wallet.html";
       } else {
         // Display an error message with password suggestions
         const suggestions = [

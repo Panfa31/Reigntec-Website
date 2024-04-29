@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="Wallet.css" />
   </head>
   <body class="wallet-body">
-    <nav>
-      <div class="nav-bar">
-        <a href="welcomepage.html">
-          <img src="Assets\REIGNTEC Logo\reigntec-03.png" alt="Logo" class="logo" />
-        </a>
-        <ul id="menu" class="nav-bar-menu">
-          <li class="active"><a href="Wallet.html">Wallet</a></li>
-        </ul>
-      </div>
-    </nav>
+
+    <div class="nav_bar">
+      <a href="index.html">
+        <img src="Assets\REIGNTEC Logo\reigntec-03.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
 
     <div class="totalPort">
-      <h1 style="text-align: center">Wallet</h1>
+      <h1>Wallet</h1>
       <p>Total Portfoilo value</p>
-      <p>0.00 ZAR</p>
-      <p>YESTERDAY PROFIT/LOSS</p>
-      <p>0.00 ZAR</p>
+      <select>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+      </select>
+      
+      <p id="funds">0.00</p>
       <div class="fund-btn">
-        <button> <a href="buysell.html">Buy</a></button>
-        <button><a href="deposit.html">DEPOSIT FUNDS</a></button>
+        <button class="buy-btn"> <a href="buy.html">Buy</a></button>
+        <button class="deposit-btn"><a href="deposit.html">DEPOSIT FUNDS</a></button>
       </div>
     </div>
   </body>

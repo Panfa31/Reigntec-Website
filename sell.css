@@ -53,7 +53,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
 /* ================================================= */
 /* General styles */
 /* ================================================= */
@@ -89,7 +88,6 @@ body::-webkit-scrollbar {
 /* ================================================= */
 /* Reset default styles */
 
-
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
@@ -97,98 +95,30 @@ body {
   color: #333;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.logo {
-  height: 40px;
-  width: auto;
-  align: left;
-}
-/* Navigation styles */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px; /* Add padding for better spacing */
-}
-
-
-
-/* Main content styles */
-.container {
-  padding-top: 80px;
-}
-
-.totalPort {
-  display: flex;
-  flex-direction: column;
-
-
-
-  height: 250px;
-  margin-top: 100px;
-
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
-}
-
-.totalPort h1{
-  text-align: center
-}
-.buy-btn  {
-  font-weight: 700;
-  border-radius: 30px;
-  font-size: 1rem;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  background-color: #ffffff;
-  cursor: pointer;
-  width: 140px;
-  height: 40px;
-}
-.deposit-btn
+.buy
 {
-  font-weight: 700;
-  border-radius: 30px;
-  font-size: 1rem;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  cursor: pointer;
-  width: 140px;
-  height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
-
-.fund-btn a
-{
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-.wallets {
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
-}
-
-.wallet {
-  width: 100%;
-  max-width: 1200px;
-  height: 72px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: var(--secondary-color);
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
-}
+  
+  
+  .lb-header a{
+    margin: 0 25px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+  .lb-header .active{
+    color: #029f5b;
+    font-size: 18px;
+  }
