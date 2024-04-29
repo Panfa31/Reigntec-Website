@@ -12,25 +12,58 @@
       <a href="index.html">
         <img src="Assets\REIGNTEC Logo\reigntec-03.png" alt="Logo" class="logo" />
       </a>
+       <ul id="menu" class="nav-bar-menu">
+        <li class="active"><a href="Wallet.html">Wallet</a></li>
+          <li class="active"><a href="Buy.html">Buy</a></li>
+        </ul>
     </div>
 
 
-    <div class="totalPort">
-      <h1>Wallet</h1>
-      <p>Total Portfoilo value</p>
-      <select>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-      </select>
-      
-      <p id="funds">0.00</p>
+  <div class="totalPort">
+<div class="tot-val">
+  <p>Total Portfoilo value</p>
+  <div class="drop-current">
+    <select class="select-text" >
+      <option value="ZAR">ZAR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+    </select>
+  </div>
+</div>
+
+<div class="total-port">0.00</div>
+
       <div class="fund-btn">
         <button class="buy-btn"> <a href="buy.html">Buy</a></button>
-        <button class="deposit-btn"><a href="deposit.html">DEPOSIT FUNDS</a></button>
+        <button class="deposit-btn"><a href="deposit.html">Deposit Funds</a></button>
       </div>
+</div>
+<div class="my-wallet">
+  <h2>My wallet</h2>
+</div>
+
+<div class="dropdown-wallets">
+  <div class="tot-cypto">
+    <label for="touch"><span>Total Crypto
+      <p id="total-crypto">0.00</p>
+    </span>
+    </label>
+    <input type="checkbox" id="touch">
+
+      <div class="slide">
+        <div class="coin" id="coin">
+          <img src="Assets\assests\ethereum-eth-logo.png" alt="Ethereum Logo" class="coin-logo" style="height: 30px;" />
+          <p class="coin-name">ETN</p>
+          <p class="coin-amt" id="coin-amt">0.00</p>
+          
+          <p class="coin-price" id="coin-price">0.00</p>
     </div>
+
+</div>
+    </div>
+  </div>
+</div>
   </body>
   <script src="Wallet.js"></script>
 </html>

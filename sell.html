@@ -22,45 +22,43 @@
   <div class="buy">
 
         <div class="lb-header">
-          <a href="buy.html" class="active" id="login-box-link">Buy</a>
-          <a href="sell.html" id="signup-box-link">sell</a>
+          <a href="buy.html" id="login-box-link">Buy</a>
+          <a href="sell.html" class="active" id="signup-box-link">Sell</a>
         </div>
 
-    <div class="paywith">
-        <label for="payWith">Pay With:</label>
-        <a href="#" onclick="useAllFunds()">Add Funds</a>
-        <span id="availableBalance"></span>
-        <button onclick="useAllFunds()">Use All Funds</button>
-        <select id="payWith">
-          <option value="usd">USD</option>
-          <option value="eur">EUR</option>
-          <option value="gbp">GBP</option>
-          <!-- Add more options for other currencies as needed -->
-        </select>
-      </div>
-<div class="buycoin">
+        <div class="buycoin">
 
-  <label for="coin">Buy</label>
-  <select id="coin">
-    <option value="bitcoin">Bitcoin</option>
-    <option value="ethereum">Ethereum</option>
-    <option value="litecoin">Litecoin</option>
-    <!-- Add more options for other coins as needed -->
-  </select>
-</div>
+          <label for="coin">Sell</label>
+           <div class="paywith">
+          <label for="payWith">Pay With: </label>
+          <a href="#" onclick="useAllFunds()"> Add Funds</a>
+          <p id="availableBalance">available Balance</p>
+          <a onclick="useAllFunds()">Use All Funds</a>
+         </div>
+          <select id="payWith"class="paywith-select" >
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <!-- Add more options for other currencies as needed -->
+          </select>
+          <input type="text" id="amount" />
+        </div>     
+          <div class="paywith-text">
+            <label for="payWith">Recive: </label>
+            <select id="coin" class="coin">
+              <option value="bitcoin">Bitcoin</option>
+              <option value="ethereum">Ethereum</option>
+              <option value="litecoin">Litecoin</option>
+              <!-- Add more options for other coins as needed -->
+            </select>           
+          </div>
 
-
-
-
-    <label for="amount">Enter Amount:</label>
-    <input type="text" id="amount" />
-
-
-
-    <h3>Exchange Rate:</h3>
-    <p id="exchangeRate"></p>
-
-  </div>
+          
+          <div class="exchangeRate">
+            <p>Exchange Rate:</p>
+            <p id="exchangeRate"></p>
+        
+          </div>
    
     <script>
       // Function to calculate and display the exchange rate

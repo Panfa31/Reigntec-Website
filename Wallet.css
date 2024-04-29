@@ -26,7 +26,7 @@
 .dark-mode {
   background-color: #000000;
   color: #ffffff;
-} 
+}
 /* ================================================= */
 /*Dark modes */
 /* ================================================= */
@@ -40,11 +40,6 @@
     color:  var(--tertiary-color);
   }
 
-  .dark-mode  .coin {
-    color: var(--secondary-color);
-    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-    background-color: rgba(255, 255, 255, 0.2); 
-  }
   
 /* ================================================= */
 /* Scroll  */
@@ -86,6 +81,29 @@ body::-webkit-scrollbar {
   justify-content: center;
   padding-top: 10px;
 }
+/* Style for the nav-bar-menu */
+.nav-bar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 900px;
+}
+
+/* Style for nav-bar list items */
+.nav-bar-menu li {
+  font-size: 16px; /* Set font size */
+  margin-right: 50px; /* Adjust spacing between items */
+}
+
+/* Style for nav-bar links */
+.nav-bar-menu li a {
+  text-decoration: none;
+  color: var(--tertiary-color); /* Default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-family: var(--font-family-2);
+}
+
 /* ================================================= */
 /* Reset default styles */
 
@@ -94,9 +112,16 @@ body::-webkit-scrollbar {
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  color: #333;
+  color: #2d2f31
 }
-
+.select-text {
+border: none;
+  background-color:  #2d2f31;
+  border-radius: 30px;
+  font-family: var(--font-family-2);
+  font-size: 16px;
+  color: #fff;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -114,32 +139,32 @@ body {
   align-items: center;
   padding: 10px 20px; /* Add padding for better spacing */
 }
-
-
-
-/* Main content styles */
-.container {
-  padding-top: 80px;
-}
-
-.totalPort {
-  display: flex;
-  flex-direction: column;
-
-
-
-  height: 250px;
+.totalPort
+{
   margin-top: 100px;
-
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
+background-color: #2d2f31;
+margin-left: 100px;
+margin-right: 100px;
+padding: 20px;
+border-radius: 30px;
+}
+.total-port
+{
+  font-size: 36px;
+}
+.fund-btn
+{
+  margin-top: 20px;
 }
 
-.totalPort h1{
-  text-align: center
+.fund-btn a
+{
+  text-decoration: none;
+  color: var(--secondary-color);
 }
+
 .buy-btn  {
-  font-weight: 700;
+
   border-radius: 30px;
   font-size: 1rem;
   color: var(--secondary-color);
@@ -149,23 +174,27 @@ body {
   width: 140px;
   height: 40px;
 }
+
 .deposit-btn
 {
-  font-weight: 700;
   border-radius: 30px;
   font-size: 1rem;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   cursor: pointer;
-  width: 140px;
+  width: 150px;
   height: 40px;
 }
-
-.fund-btn a
+.my-wallet
 {
-  text-decoration: none;
-  color: var(--secondary-color);
+  font-weight: 700;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+margin-left: 100px;
+padding-right: 50px;
 }
+
 .wallets {
   width: 100%;
   max-width: 1200px;
@@ -173,8 +202,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .wallet {
@@ -189,6 +218,63 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: var(--secondary-color);
-  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
-  background-color: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+span {
+  padding : 30px;
+  background : #2d2f31;
+  color : white;
+  font-size : 1.2em;
+  cursor : pointer;
+  display: block;
+  border-radius: 30px;
+  width:300px;
+  border-color: #ffffff;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:300px;
+height: 0px;
+border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+  background : #2d2f31;
+
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}
+
+#touch:checked + .slide {height: 300px;}
+
+.tot-cypto
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+
+
+}
+.coin{
+  width: 10px;
+  max-width: 50px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+
+
 }

@@ -28,7 +28,7 @@
 <div class="buycoin">
 
   <label for="coin">Buy</label>
-  <select id="coin">
+  <select id="coin" class="coin">
     <option value="bitcoin">Bitcoin</option>
     <option value="ethereum">Ethereum</option>
     <option value="litecoin">Litecoin</option>
@@ -37,25 +37,22 @@
 </div>
 
 <div class="paywith">
-  <label for="payWith">Pay With:</label>
-  <a href="#" onclick="useAllFunds()">Add Funds</a>
-  <span id="availableBalance"></span>
-  <button onclick="useAllFunds()">Use All Funds</button>
-  <select id="payWith">
-    <option value="usd">USD</option>
-    <option value="eur">EUR</option>
-    <option value="gbp">GBP</option>
-    <!-- Add more options for other currencies as needed -->
-  </select>
-</div>
-
-
-    <label for="amount">Enter Amount:</label>
+  <label for="payWith">Pay With: </label>
+  <a href="#" onclick="useAllFunds()"> Add Funds</a>
+  <p id="availableBalance">available Balance</p>
+  <a onclick="useAllFunds()">Use All Funds</a>
+ </div>
+  <div class="paywith-text">
+    <select id="payWith"class="paywith-select" >
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="gbp">GBP</option>
+      <!-- Add more options for other currencies as needed -->
+    </select>
     <input type="text" id="amount" />
-
-
-
-    <h3>Exchange Rate:</h3>
+  </div>
+  <div class="exchangeRate">
+    <p>Exchange Rate:</p>
     <p id="exchangeRate"></p>
 
   </div>
@@ -81,7 +78,7 @@
       }
 
       // Function to get the exchange rate
-      function getExchangeRate(coin, payWith) {
+      function getExchangeRate(coin, payWith ,amount) {
         // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
         // For demonstration purposes, we'll return a random number between 1 and 10
         return Math.floor(Math.random() * 10) + 1;
@@ -94,8 +91,9 @@
       document
         .getElementById("payWith")
         .addEventListener("change", calculateExchangeRate);
-
-      // Initial calculation on page load
+        document
+        .getElementById("amount")
+        .addEventListener("change",calculateExchangeRate)        // Initial calculation on page load
       calculateExchangeRate();
     </script>
   </body>
