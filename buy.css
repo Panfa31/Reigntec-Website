@@ -176,7 +176,7 @@ text-align: center;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  font-family: var(--font-family-2);
+    font-family: var(--font-family-2);
 }
 .lb-header .active{
 text-decoration: solid;

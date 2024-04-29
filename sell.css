@@ -40,7 +40,7 @@
     color:  var(--tertiary-color);
   }
 
-  .dark-mode  .coin {
+  .dark-mode  .current {
     color: var(--secondary-color);
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
 
@@ -94,7 +94,7 @@ body {
   background-color: #f0f0f0;
   color: #333;
 }
-.coin
+.current
 {
   border: none;
   font-family: var(--font-family-2);
@@ -104,21 +104,22 @@ body {
   margin-bottom: 20px;
 
 }
-
-.paywith
+.sellcoin
+{
+  
+}
+.addfunds
 {
   display: flex;
   flex-direction: row;
   font-size: x-small;
-text-align: center;
-  justify-content:space-between;
-  align-items: center;
+margin-left: 220px;
 
-  gap: 10px;
+  align-items: center;
 
 }
 
-.paywith a
+.addfunds a
 {
   color: #747474;
 }
@@ -130,15 +131,28 @@ text-align: center;
   padding: 8;
 }
 
-.paywith-select
+.addfunds-select
 {
   
   border: none;
-  width: 40px;
+  width: 50px;
   height: 30px;
 
 }
+.Receivewith
+{
 
+  display: flex;
+  flex-direction: row;
+  font-size: x-small;
+  margin-left: 200px;
+  align-items: center;
+  gap: 10px;
+}
+.Receivewith-text
+{
+  padding-top: 30px;
+}
 .buy
 {
     display: flex;

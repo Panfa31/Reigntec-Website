@@ -26,31 +26,32 @@
           <a href="sell.html" class="active" id="signup-box-link">Sell</a>
         </div>
 
-        <div class="buycoin">
+        <div class="sellcoin">
 
           <label for="coin">Sell</label>
-           <div class="paywith">
-          <label for="payWith">Pay With: </label>
+           <div class="addfunds">
+          <label for="addfunds">Add Funds: </label>
           <a href="#" onclick="useAllFunds()"> Add Funds</a>
           <p id="availableBalance">available Balance</p>
           <a onclick="useAllFunds()">Use All Funds</a>
          </div>
-          <select id="payWith"class="paywith-select" >
+          <select id="addfunds"class="addfunds-select" >
             <option value="usd">USD</option>
             <option value="eur">EUR</option>
             <option value="gbp">GBP</option>
             <!-- Add more options for other currencies as needed -->
           </select>
           <input type="text" id="amount" />
-        </div>     
-          <div class="paywith-text">
-            <label for="payWith">Recive: </label>
-            <select id="coin" class="coin">
+        </div>
+       
+          <div class="Receivewith-text">
+             <label for="Receivewith">Receive: </label>
+            <select id="current" class="current">
               <option value="bitcoin">Bitcoin</option>
               <option value="ethereum">Ethereum</option>
               <option value="litecoin">Litecoin</option>
               <!-- Add more options for other coins as needed -->
-            </select>           
+            </select>
           </div>
 
           
@@ -63,12 +64,12 @@
     <script>
       // Function to calculate and display the exchange rate
       function calculateExchangeRate() {
-        var coin = document.getElementById("coin").value;
-        var payWith = document.getElementById("payWith").value;
+        var coin = document.getElementById("current").value;
+        var addfunds = document.getElementById("addfunds").value;
 
         // Perform API call or calculation to get the exchange rate
         // Replace the following line with your own logic
-        var exchangeRate = getExchangeRate(coin, payWith);
+        var exchangeRate = getExchangeRate(coin, addfunds);
 
         // Display the exchange rate
         document.getElementById("exchangeRate").innerHTML =
@@ -77,22 +78,22 @@
           " = " +
           exchangeRate +
           " " +
-          payWith.toUpperCase();
+          addfunds.toUpperCase();
       }
 
       // Function to get the exchange rate
-      function getExchangeRate(coin, payWith) {
+      function getExchangeRate(coin, addfunds) {
         // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
         // For demonstration purposes, we'll return a random number between 1 and 10
         return Math.floor(Math.random() * 10) + 1;
       }
 
-      // Call the calculateExchangeRate function when the coin or payWith dropdowns are changed
+      // Call the calculateExchangeRate function when the coin or addfunds dropdowns are changed
       document
-        .getElementById("coin")
+        .getElementById("current")
         .addEventListener("change", calculateExchangeRate);
       document
-        .getElementById("payWith")
+        .getElementById("addfunds")
         .addEventListener("change", calculateExchangeRate);
 
       // Initial calculation on page load
