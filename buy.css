@@ -101,7 +101,7 @@ body {
   font-size: 16px;
   width: 400px;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
 }
 
@@ -134,8 +134,10 @@ text-align: center;
 {
   
   border: none;
-  width: 40px;
+  width: 50px;
   height: 30px;
+background-color: #000000;
+color: white;
 
 }
 
@@ -145,9 +147,8 @@ text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
     margin-top: 250px;
-    
+    margin-left: 10px;
 }
 .exchangeRate
 {
@@ -156,7 +157,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: var(--font-family-2);
 
 }
@@ -181,4 +182,24 @@ text-align: center;
 .lb-header .active{
 text-decoration: solid;
   color: #ffffff;
+}
+
+.confirm-btn button
+{
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.confirm-btn button:hover
+{
+  background-color: var(--tertiary-color);
+  color: #000000;
+  border: 1px solid var(--secondary-color);
+
 }

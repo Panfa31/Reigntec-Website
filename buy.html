@@ -27,7 +27,7 @@
     </div>
 <div class="buycoin">
 
-  <label for="coin">Buy</label>
+  <label for="coin">Buy:</label>
   <select id="coin" class="coin">
     <option value="bitcoin">Bitcoin</option>
     <option value="ethereum">Ethereum</option>
@@ -39,7 +39,7 @@
 <div class="paywith">
   <label for="payWith">Pay With: </label>
   <a href="#" onclick="useAllFunds()"> Add Funds</a>
-  <p id="availableBalance">available Balance</p>
+  <p id="availableBalance">available Balance:</p>
   <a onclick="useAllFunds()">Use All Funds</a>
  </div>
   <div class="paywith-text">
@@ -56,45 +56,8 @@
     <p id="exchangeRate"></p>
 
   </div>
-   
-    <script>
-      // Function to calculate and display the exchange rate
-      function calculateExchangeRate() {
-        var coin = document.getElementById("coin").value;
-        var payWith = document.getElementById("payWith").value;
-
-        // Perform API call or calculation to get the exchange rate
-        // Replace the following line with your own logic
-        var exchangeRate = getExchangeRate(coin, payWith);
-
-        // Display the exchange rate
-        document.getElementById("exchangeRate").innerHTML =
-          "1 " +
-          coin.toUpperCase() +
-          " = " +
-          exchangeRate +
-          " " +
-          payWith.toUpperCase();
-      }
-
-      // Function to get the exchange rate
-      function getExchangeRate(coin, payWith ,amount) {
-        // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
-        // For demonstration purposes, we'll return a random number between 1 and 10
-        return Math.floor(Math.random() * 10) + 1;
-      }
-
-      // Call the calculateExchangeRate function when the coin or payWith dropdowns are changed
-      document
-        .getElementById("coin")
-        .addEventListener("change", calculateExchangeRate);
-      document
-        .getElementById("payWith")
-        .addEventListener("change", calculateExchangeRate);
-        document
-        .getElementById("amount")
-        .addEventListener("change",calculateExchangeRate)        // Initial calculation on page load
-      calculateExchangeRate();
-    </script>
-  </body>
+<div class="confirm-btn">
+  <button class="confrim" onclick="confirm('confirmed')">Confirm</button>
+  <button onclick="window.location.href='wallet.html'">Cancel</button>
+</div>
 </html>

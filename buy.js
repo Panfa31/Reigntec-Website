@@ -73,19 +73,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const scrollElements = document.querySelectorAll(".hidden");
   scrollElements.forEach((el) => observer.observe(el));
-});
+})
 
-$(".email-signup").hide();
-$("#signup-box-link").click(function(){
-  $(".email-login").fadeOut(100);
-  $(".email-signup").delay(100).fadeIn(100);
-  $("#login-box-link").removeClass("active");
-  $("#signup-box-link").addClass("active");
-});
-$("#login-box-link").click(function(){
-  $(".email-login").delay(100).fadeIn(100);;
-  $(".email-signup").fadeOut(100);
-  $("#login-box-link").addClass("active");
-  $("#signup-box-link").removeClass("active");
-});
+   // Function to calculate and display the exchange rate
+   function calculateExchangeRate() {
+    var coin = document.getElementById("coin").value;
+    var payWith = document.getElementById("payWith").value;
 
+    // Perform API call or calculation to get the exchange rate
+    // Replace the following line with your own logic
+    var exchangeRate = getExchangeRate(coin, payWith);
+
+    // Display the exchange rate
+    document.getElementById("exchangeRate").innerHTML =
+      "1 " +
+      coin.toUpperCase() +
+      " = " +
+      exchangeRate +
+      " " +
+      payWith.toUpperCase();
+  }
+
+  // Function to get the exchange rate
+  function getExchangeRate(coin, payWith ,amount) {
+    // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
+    // For demonstration purposes, we'll return a random number between 1 and 10
+    return Math.floor(Math.random() * 10) + 1;
+  }
+
+  // Call the calculateExchangeRate function when the coin or payWith dropdowns are changed
+  document
+    .getElementById("coin")
+    .addEventListener("change", calculateExchangeRate);
+  document
+    .getElementById("payWith")
+    .addEventListener("change", calculateExchangeRate);
+    document
+    .getElementById("amount")
+    .addEventListener("change",calculateExchangeRate)        // Initial calculation on page load
+  calculateExchangeRate();

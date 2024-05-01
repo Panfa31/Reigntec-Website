@@ -76,16 +76,39 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollElements.forEach((el) => observer.observe(el));
 });
 
-$(".email-signup").hide();
-$("#signup-box-link").click(function(){
-  $(".email-login").fadeOut(100);
-  $(".email-signup").delay(100).fadeIn(100);
-  $("#login-box-link").removeClass("active");
-  $("#signup-box-link").addClass("active");
-});
-$("#login-box-link").click(function(){
-  $(".email-login").delay(100).fadeIn(100);;
-  $(".email-signup").fadeOut(100);
-  $("#login-box-link").addClass("active");
-  $("#signup-box-link").removeClass("active");
-});
+ // Function to calculate and display the exchange rate
+ function calculateExchangeRate() {
+  var coin = document.getElementById("current").value;
+  var addfunds = document.getElementById("addfunds").value;
+
+  // Perform API call or calculation to get the exchange rate
+  // Replace the following line with your own logic
+  var exchangeRate = getExchangeRate(coin, addfunds);
+
+  // Display the exchange rate
+  document.getElementById("exchangeRate").innerHTML =
+    "1 " +
+    coin.toUpperCase() +
+    " = " +
+    exchangeRate +
+    " " +
+    addfunds.toUpperCase();
+}
+
+// Function to get the exchange rate
+function getExchangeRate(coin, addfunds) {
+  // Replace this with your own logic to fetch the exchange rate from an API or perform a calculation
+  // For demonstration purposes, we'll return a random number between 1 and 10
+  return Math.floor(Math.random() * 10) + 1;
+}
+
+// Call the calculateExchangeRate function when the coin or addfunds dropdowns are changed
+document
+  .getElementById("current")
+  .addEventListener("change", calculateExchangeRate);
+document
+  .getElementById("addfunds")
+  .addEventListener("change", calculateExchangeRate);
+
+// Initial calculation on page load
+calculateExchangeRate();
