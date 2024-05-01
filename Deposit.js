@@ -74,3 +74,32 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollElements = document.querySelectorAll(".hidden");
   scrollElements.forEach((el) => observer.observe(el));
 });
+
+function selectCurrency(currency) {
+  if (currency === 'Fiat') {
+      document.getElementById('dep-fiat').style.display = 'block';
+      document.getElementById('dep-crypto').style.display = 'none';
+  } else if (currency === 'Crypto') {
+      document.getElementById('dep-fiat').style.display = 'none';
+      document.getElementById('dep-crypto').style.display = 'block';
+  }
+}
+
+// Add ids for each class if missing
+document.querySelector('.dep-fiat').id = 'dep-fiat';
+document.querySelector('.dep-crypto').id = 'dep-crypto';
+document.getElementById('search').addEventListener('keyup', function() {
+  var input = this.value.toLowerCase();
+  var buttons = document.querySelectorAll('.dep-fiat button, .dep-crypto button');
+  
+  buttons.forEach(function(button) {
+      var buttonText = button.textContent.toLowerCase();
+      
+      if (buttonText.includes(input)) {
+          button.style.display = 'block';
+      } else {
+          button.style.display = 'none';
+      }
+  });
+});
+

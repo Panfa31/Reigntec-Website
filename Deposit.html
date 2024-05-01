@@ -23,9 +23,9 @@
     <div class="deposit">
         <h1>Deposit</h1>
         <h3>Select Currency</h3>
-        <div>
-            <button class="active" id="login-box-link" onclick="selectCurrency('Fiat')">Fiat</button>
-            <button onclick="selectCurrency('Crypto')">Crypto</button>
+        <div class="Switch-Currency">
+            <button id="Currency" onclick="selectCurrency('Fiat')" class="currency-option">Fiat</button>
+            <button id="Currency" onclick="selectCurrency('Crypto')" class="currency-option">Crypto</button>
         </div>
         <div class="search">
             <input type="text" id="search" onkeyup="search()" placeholder="Search for currency">
@@ -34,16 +34,17 @@
             <button onclick="selectCurrency('USD')">USD</button>
             <button onclick="selectCurrency('EUR')">EUR</button>
             <button onclick="selectCurrency('GBP')">GBP</button>
-            <button onclick="selectCurrency('JPY')">JPY</button>
-            <button onclick="selectCurrency('BTC')">BTC</button>
-            <button onclick="selectCurrency('ETH')">ETH</button>
-            <button onclick="selectCurrency('XRP')">XRP</button>
-            <button onclick="selectCurrency('LTC')">LTC</button>
-            <button onclick="selectCurrency('BCH')">BCH</button>
-            <button onclick="selectCurrency('DOGE')">DOGE</button>
+
+
         </div>
         <div class="dep-crypto">
-              <button onclick="selectCurrency('ADA')">ADA</button>
+        <button onclick="selectCurrency('BTC')">BTC</button>
+        <button onclick="selectCurrency('ETH')">ETH</button>
+        <button onclick="selectCurrency('XRP')">XRP</button>
+        <button onclick="selectCurrency('LTC')">LTC</button>
+        <button onclick="selectCurrency('BCH')">BCH</button>
+        <button onclick="selectCurrency('DOGE')">DOGE</button>
+        <button onclick="selectCurrency('ADA')">ADA</button>
         <button onclick="selectCurrency('XLM')">XLM</button>
         <button onclick="selectCurrency('DOT')">DOT</button>
         <button onclick="selectCurrency('LINK')">LINK</button>
@@ -57,34 +58,5 @@
     </div>
    
 </body>
-<script>
-function selectCurrency(currency) {
-    if (currency === 'Fiat') {
-        document.getElementById('dep-fiat').style.display = 'block';
-        document.getElementById('dep-crypto').style.display = 'none';
-    } else if (currency === 'Crypto') {
-        document.getElementById('dep-fiat').style.display = 'none';
-        document.getElementById('dep-crypto').style.display = 'block';
-    }
-}
-
-// Add ids for each class if missing
-document.querySelector('.dep-fiat').id = 'dep-fiat';
-document.querySelector('.dep-crypto').id = 'dep-crypto';
-document.getElementById('search').addEventListener('keyup', function() {
-    var input = this.value.toLowerCase();
-    var buttons = document.querySelectorAll('.dep-fiat button, .dep-crypto button');
-    
-    buttons.forEach(function(button) {
-        var buttonText = button.textContent.toLowerCase();
-        
-        if (buttonText.includes(input)) {
-            button.style.display = 'block';
-        } else {
-            button.style.display = 'none';
-        }
-    });
-});
-</script>
 </html>
 

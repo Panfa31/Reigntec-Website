@@ -40,14 +40,12 @@
     color:  var(--tertiary-color);
   }
 
-  
 /* ================================================= */
 /* Scroll  */
 /* ================================================= */
 body::-webkit-scrollbar {
   display: none;
 }
-
 
 /* ================================================= */
 /* General styles */
@@ -112,8 +110,6 @@ body {
 }
 .deposit
 {
-   
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,8 +140,14 @@ button {
     cursor: pointer;
 }
 
-.search {
+#search {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
     margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-bottom:  10px;
 }
 
 input[type="text"] {
@@ -159,4 +161,77 @@ input[type="text"] {
 .dep-fiat,
 .dep-crypto {
     display: none;
+}
+
+
+.dep-crypto  button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: 1px solid var(--tertiary-color);
+    width: 200px;
+    height: 40px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.dep-crypto button::after {
+  content: "\2192"; /* Unicode for right arrow */
+  margin-left: 7rem;
+  white-space: nowrap;
+  margin-right: 20px;
+  
+}
+
+.dep-fiat button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 1px solid var(--tertiary-color);
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.dep-fiat button::after {
+  content: "\2192"; /* Unicode for right arrow */
+  margin-left: 120px;
+}
+
+
+
+.currency-option button {
+  display: flex;
+  flex-direction: row;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: 1px solid var(--tertiary-color);
+    width: 500px;
+    height: 50px;
+    text-align: left;
+}
+.dep-crypto button:hover {
+    background-color: var(--tertiary-color);
+    color: #000000;
+}
+.dep-fiat button:hover {
+  background-color: var(--tertiary-color);
+  color: #000000;
+}
+.Switch-Currency button{
+  text-decoration: solid;
+    background-color:#000000;
+    color: #fff;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 30px;
+}
+.Switch-Currency button:hover {
+    background-color: var(--tertiary-color);
+    color: #000000;
 }
