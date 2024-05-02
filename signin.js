@@ -188,6 +188,55 @@ if (storedEmail && storedPassword) {
   // Check the remember me checkbox
   rememberMeCheckbox.checked = true;
 }
+// Add event listener to the form submit event
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the email and password values
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
+
+
+  // Check if the name, surname, email, password, country and confirm checkbox are not empty
+  if (
+ 
+    email !== "" &&
+    password !== "" &&
+    confirmCheckbox.checked
+  ) {
+    // Check if the email is valid
+    if (emailRegex.test(email)) {
+      // Check if the password is strong
+      if (passwordRegex.test(password)) {
+        // Store the email, password and country in localStorage
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        // Redirect to the welcome page
+        window.location.href = "Trading.html";
+      } else {
+        // Display an error message with password suggestions
+        const suggestions = [
+          "Use at least 8 characters",
+          "Include uppercase and lowercase letters",
+          "Include numbers and symbols",
+        ];
+        alert(
+          `Password must be strong. Suggestions: ${suggestions.join(", ")}`
+        );
+      }
+    } else {
+      // Display an error message
+      alert("Please enter a valid email address.");
+    }
+  } else {
+    // Display an error message
+    alert(
+      "Please enter your name, surname, email, password, country and confirm that you have read and agree to the privacy policy."
+    );
+  }
+});
+// Add event listener to the login link click event
 function togglePassword() {
   var passwordField = document.getElementById("password");
   var eyeIcon = document.getElementById("eye-icon");
