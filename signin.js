@@ -30,7 +30,7 @@ function setDefaultDarkMode() {
   switchElement.checked = true;
 
   // Save the user's preference in local storage
-  localStorage.setItem("darkMode",true);
+  localStorage.setItem("darkMode", true);
 
   // Change the icon to sun
   moonIcon.src = "Assets/sun.png";
