@@ -13,8 +13,6 @@ const countries = [
 countries.forEach((country) => {
   console.log(country.name);
 });
-const switchElement = document.getElementById("switch-1");
-const moonIcon = document.querySelector(".moon");
 
 // Function to toggle dark mode
 function toggleDarkMode() {
