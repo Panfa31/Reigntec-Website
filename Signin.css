@@ -206,6 +206,14 @@ background-color: var(--secondary-color);
 /* ================================================= */
 /* Dark Mode */
 /* ================================================= */
+.dark-mode .Login-btn
+{
+  background-color: var(--tertiary-color);
+}
+.dark-mode .Login-btn a 
+{
+  color: var(--secondary-color);
+}
 
 .dark-mode .register-link button{
   background-color: var(--tertiary-color);
